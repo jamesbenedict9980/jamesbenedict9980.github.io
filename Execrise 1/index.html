@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SUNIDHI</title>
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/login_Style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript">
+function nameValidate(){
+valid= true;
+
+if(document.getElementById('textBox1').value=="" || document.getElementById('textBox2').value=="" ){
+   document.getElementById("textBox1").value= "";
+   document.getElementById("textBox2").value= "";
+valid = false;
+}
+return valid;
+}
+
+</script>
+
+<body>
+<div class="item animated bounce">
+<div id="login">
+<h1 class="logo">SUNIDHI</h1>
+<div class="rectangle">
+<p class="colorsiz"><b>Welcome,</b> Please login</p>
+<div>
+<form name="myForm" action="DashBoard/DashBoard.html" 
+onsubmit="return nameValidate();">
+<div>
+<input type="text"  id="textBox1" placeholder="Username"/>
+<br/>
+<input type="password" id="textBox2" name="fname" placeholder="Password"/>
+<br/>
+<p><b><a href="others/blank.html" target="blank">Forgot Your Password?</a></b></p>
+</div>
+<div>
+<input type="submit" id="loginBox" value="Log In""/></div>
+</form>
+</div>
+<div class="copyRight">
+<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2015 AppName</i></div>
+
+<div class="about"> About | Privacy | Contact Us</div>
+</div>
+</body>
+</head>
+</html>
