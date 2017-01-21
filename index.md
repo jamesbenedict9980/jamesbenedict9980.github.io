@@ -5,6 +5,9 @@ My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+
 ### About me
 To utilize my skills and abilities in the Computer industries on which i earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER, And i have very good knoweldge in web designing as well. I would welcome the opportunity to discuss my suitability in more detail.
 
+
+
+
 ```markdown
 
 Skills & Competences
@@ -32,9 +35,9 @@ For more details about my designs and code:
 
 ### Work Experience
 
-- **Graphic Automation Developer in "Avery Dennison Asia Pacific"** _March 2012 - Present | Bangalore_
-- **Game Executing Testing in "Hewlett-Packard Globalsoft Pvt Ltd"**_June 2011 - Sept 2011 | Bangalore_
-- **Software Trainer in "I-Tech Institute of Computer Software"**_April 2006 - July 2008 | Bangalore_
+**Graphic Automation Developer in "Avery Dennison Asia Pacific"**  March 2012 - Present | Bangalore
+**Game Executing Testing in "Hewlett-Packard Globalsoft Pvt Ltd"** June 2011 - Sept 2011 | Bangalore
+**Software Trainer in "I-Tech Institute of Computer Software"** April 2006 - July 2008 | Bangalore
 
 ### Contact Me:
 - +919980445348
