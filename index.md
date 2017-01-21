@@ -37,8 +37,8 @@ For more details about my designs and code:
 - **Software Trainer in "I-Tech Institute of Computer Software"**_April 2006 - July 2008 | Bangalore_
 
 ### Contact Me:
-+919980445348
-jamesbenedict.9980@gmail.com
-[Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
-163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
+- +919980445348
+- jamesbenedict.9980@gmail.com
+- [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
+- 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
 
