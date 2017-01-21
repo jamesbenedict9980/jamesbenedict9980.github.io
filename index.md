@@ -1,15 +1,13 @@
-## Welcome to GitHub Pages
+# James Benedict
 
-You can use the [editor on GitHub](https://github.com/jamesbenedict9980/jamesbenedict9980.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+ years experience in computer coding.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### About me
+To utilize my skills and abilities in the Computer industries on which i earned 4+ years experience in GRAPHIC AUTOMATION, And i have very good knoweldge in web designing as well. I would welcome the opportunity to discuss my suitability in more detail.
 
 ```markdown
-Syntax highlighted code block
+
+Skills & Competences
 
 # Header 1
 ## Header 2
@@ -26,12 +24,21 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details about my designs and code: 
+[Designs 1](https://jamesbenedict9980.github.io/Execrise%201/),
+[Designs 2](https://jamesbenedict9980.github.io/Project%203/),
+[Designs 3](https://jamesbenedict9980.github.io/MobiCarCare/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamesbenedict9980/jamesbenedict9980.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+###Work Experience
 
-### Support or Contact
+- **Graphic Automation Developer in "Avery Dennison Asia Pacific"**           _March 2012 - Present | Bangalore_
+- **Game Executing Testing in "Hewlett-Packard Globalsoft Pvt Ltd"**          _June 2011 - Sept 2011 | Bangalore_
+- **Software Trainer in "I-Tech Institute of Computer Software"**             _April 2006 - July 2008 | Bangalore_
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+###Contact Me:
++919980445348
+jamesbenedict.9980@gmail.com
+https://in.linkedin.com/in/james-benedict-67457675
+163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
+
