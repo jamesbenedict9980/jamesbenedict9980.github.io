@@ -39,6 +39,6 @@ For more details about my designs and code:
 ###Contact Me:
 +919980445348
 jamesbenedict.9980@gmail.com
-![IN](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/2000px-Linkedin_icon.svg.png)https://in.linkedin.com/in/james-benedict-67457675
+[Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
 
