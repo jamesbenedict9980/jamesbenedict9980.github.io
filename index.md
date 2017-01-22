@@ -1,4 +1,4 @@
-# James Benedict
+# James Benedict                                                                                              ![269404.jpg](/my photo/)
 
 My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+ years experience in computer coding.
 
@@ -21,7 +21,7 @@ Skills & Competences
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and 
 ```
 
 For more details about my designs and code: 
@@ -32,13 +32,13 @@ For more details about my designs and code:
 
 ### Work Experience
 
-**Graphic Automation Developer in "Avery Dennison Asia Pacific"**  March 2012 - Present | Bangalore
-**Game Executing Testing in "Hewlett-Packard Globalsoft Pvt Ltd"** June 2011 - Sept 2011 | Bangalore
-**Software Trainer in "I-Tech Institute of Computer Software"** April 2006 - July 2008 | Bangalore
+**Graphic Automation Developer in "Avery Dennison Asia Pacific"**  |March 2012 - Present, Bangalore.
+**Game Executing Testing in "Hewlett-Packard Globalsoft Pvt Ltd"** |June 2011 - Sept 2011, Bangalore.
+**Software Trainer in "I-Tech Institute of Computer Software"** |April 2006 - July 2008, Bangalore.
 
 ### Contact Me:
 - +919980445348
 - jamesbenedict.9980@gmail.com
 - 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
-More info [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
+- More info [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
 
