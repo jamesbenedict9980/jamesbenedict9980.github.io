@@ -30,9 +30,9 @@ For more details about my designs and code:
 [Designs 3](https://jamesbenedict9980.github.io/MobiCarCare/).
 
 
-### Work Experience
+### <u>Work Experience</u>
 
-**Graphic Automation Developer in "Avery Dennison Asia Pacific"**  |March 2012 - Present, Bangalore.
+_March 2012 - Present, Bangalore_|**Graphic Automation Developer in| "Avery Dennison Asia Pacific"**.
 **Game Executing Testing in "Hewlett-Packard Globalsoft Pvt Ltd"** |June 2011 - Sept 2011, Bangalore.
 **Software Trainer in "I-Tech Institute of Computer Software"** |April 2006 - July 2008, Bangalore.
 
