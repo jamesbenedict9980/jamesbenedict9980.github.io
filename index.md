@@ -1,9 +1,9 @@
 # James Benedict<img src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right">
 
-My name is James Benedict, As i was very passinate about computers and website designing which i started doing it after schools and then i purused my graduated in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff in Computers and though me to code as well .
+My name is James Benedict, I am a Graphic Automation Developer and i have great deal of knoweldge about Web Desinging and stuff which i developed some websites as well and obvisouly i didn't invent the internet but i know how to make it look good.
 
-### More about me:
-#### Allow me to introduce myself.
+### More about me:_ Allow me to introduce myself._
+As i was very passinate about computers and designing which i started doing it from schools and then i purused my graduation in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff in Computers and thought me to code as well . I am obsessed with making things better.
 To utilize my skills and abilities in the Computer industries on which i earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER, And i have very good knoweldge in web designing as well. I would welcome the opportunity to discuss my suitability in more detail.
 
 ```markdown
