@@ -13,6 +13,7 @@ I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me t
 + Android app Using Cordova
 + Javascript coding
 + Logo Making
++ GMC
 
 
 **TOOLS I USED AND EXPERIENCED**
@@ -48,9 +49,13 @@ For more details about my designs and code:
 **Game Executing Testing**          | **Hewlett-Packard Globalsoft Pvt Ltd**
 **Software Trainer**                | **I-Tech Institute of Computer Software**
 
-### Contact Me:
+### Contact Me
 - +919980445348
 - jamesbenedict.9980@gmail.com
 - 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
-- More info [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
+
+### FOLLOW ME ONLINE
+- [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
+- [facebook](https://www.facebook.com/Jamesbendict)
+- [twitter](https://twitter.com/Jamesbenedict88)
 
