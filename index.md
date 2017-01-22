@@ -1,4 +1,4 @@
-# James Benedict                                                                                              ![269404.jpg](/my photo/)
+# James Benedict                                                                                ![269404.jpg](jamesbenedict9980.github.io/my photo/269404.jpg)
 
 My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+ years experience in computer coding.
 
