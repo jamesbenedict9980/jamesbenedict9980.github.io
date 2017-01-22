@@ -9,6 +9,14 @@ I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me t
 ```markdown
 **LOOK WHAT I CAN DO**
 
+Web designing
+Android app Using Cordova
+Javascript coding
+Logo Making
+
+
+**TOOLS I USED AND EXPERIENCED**
+
 `Javascript`
 `HTML`
 `CSS`
