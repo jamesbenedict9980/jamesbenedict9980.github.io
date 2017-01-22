@@ -40,9 +40,9 @@ For more details about my designs and code:
 **Software Trainer**                | **I-Tech Institute of Computer Software**
 
 ### Contact Me
-- # +919980445348
-- @ jamesbenedict.9980@gmail.com
-- ^ 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
+- +919980445348
+- jamesbenedict.9980@gmail.com
+- 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
 
 ### FOLLOW ME ONLINE
 - [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
