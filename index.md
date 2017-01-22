@@ -43,11 +43,9 @@ For more details about my designs and code:
 
 ### Contact Me
 
-- 163, M.R.S Palya,
-- Nandi Durga Road Cross, 
-- Benson Town Post,Bangalore – 5600646.
-- +919980445348
-- jamesbenedict.9980@gmail.com
+ 163, M.R.S Palya,<br>Nandi Durga Road Cross,<br> Benson Town Post,Bangalore – 5600646.<br>
+ +919980445348<br>
+ jamesbenedict.9980@gmail.com
 
 
 ### FOLLOW ME ONLINE
