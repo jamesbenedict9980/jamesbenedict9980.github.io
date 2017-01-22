@@ -1,16 +1,16 @@
 # James Benedict<img style="border:5px solid black;" src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right" >
 
-My name is James Benedict, I am a Graphic Automation Developer and i have great deal of knoweldge about Web Desinging and stuff which i developed some websites as well and obvisouly i didn't invent the internet but i know how to make it look good.
+My name is James Benedict, I am a Graphic Automation Developer and i have a great deal of knoweldge about Web Desinging and stuff which pushed me to developed some websites as well and obvisouly i didn't invent the internet but i know how to make it look good.
 
-### More about me:
+### More about me
 As i was very passinate about computers and designing which i started doing it from schools and then i purused my graduation in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff in Computers and thought me to code as well . I am obsessed with making things better.
 I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which lead me to be more obbessive on Web designing and tools such as HTML,CSS,javascript, Illustrator and Indesign.
 
 ```markdown
 
-Skills & Competences
+LOOK WHAT I CAN DO
 
-# Header 1
+## Javascript <hr>
 ## Header 2
 ### Header 3
 
