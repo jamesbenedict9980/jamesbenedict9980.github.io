@@ -28,9 +28,9 @@ I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me t
 ```
 
 For more details about my designs and code: 
-[Designs 1](https://jamesbenedict9980.github.io/Execrise%201/),
-[Designs 2](https://jamesbenedict9980.github.io/Project%203/),
-[Designs 3](https://jamesbenedict9980.github.io/MobiCarCare/).
+[Design 1](https://jamesbenedict9980.github.io/Execrise%201/),
+[Design 2](https://jamesbenedict9980.github.io/Project%203/),
+[Design 3](https://jamesbenedict9980.github.io/MobiCarCare/).
 
 
 
@@ -42,9 +42,12 @@ For more details about my designs and code:
 
 
 ### Contact Me
+
+- 163, M.R.S Palya,
+- Nandi Durga Road Cross, 
+- Benson Town Post,Bangalore – 5600646.
 - +919980445348
 - jamesbenedict.9980@gmail.com
-- 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
 
 
 ### FOLLOW ME ONLINE
