@@ -7,15 +7,15 @@ I am obsessed with making things way better. As i was very passinate about compu
 I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me to be more obbessive on Web designing and tools such as HTML,CSS,javascript, Illustrator and Indesign.
 
 ```markdown
-<u>**LOOK WHAT I CAN DO**</u>
+**LOOK WHAT I CAN DO**
 
-+Web designing
-+Android app Using Cordova
-+Javascript coding
-+Logo Making
++ Web designing
++ Android app Using Cordova
++ Javascript coding
++ Logo Making
 
 
-<u>**TOOLS I USED AND EXPERIENCED**</u>
+**TOOLS I USED AND EXPERIENCED**
 
 `Javascript`
 `HTML`
@@ -44,9 +44,9 @@ For more details about my designs and code:
 
 ### <u>Work Experience</u>
 
-**Graphic Automation Developer**| **Avery Dennison Asia Pacific**
-**Game Executing Testing**| **Hewlett-Packard Globalsoft Pvt Ltd**
-**Software Trainer**| **I-Tech Institute of Computer Software**
+**Graphic Automation Developer**    | **Avery Dennison Asia Pacific**
+**Game Executing Testing**          | **Hewlett-Packard Globalsoft Pvt Ltd**
+**Software Trainer**                | **I-Tech Institute of Computer Software**
 
 ### Contact Me:
 - +919980445348
