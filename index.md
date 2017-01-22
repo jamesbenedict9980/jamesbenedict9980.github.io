@@ -3,16 +3,20 @@
 My name is James Benedict, I am a Graphic Automation Developer and i have a great deal of knoweldge about Web Desinging and stuff which pushed me to developed some websites as well and obvisouly i didn't invent the internet but i know how to make it look good.
 
 ### More about me
-As i was very passinate about computers and designing which i started doing it from schools and then i purused my graduation in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff in Computers and thought me to code as well . I am obsessed with making things better.
-I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which lead me to be more obbessive on Web designing and tools such as HTML,CSS,javascript, Illustrator and Indesign.
+I am obsessed with making things way better. As i was very passinate about computers and designing which i started doing it from schools and then i purused my graduation in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff and thought me to code as well .
+I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me to be more obbessive on Web designing and tools such as HTML,CSS,javascript, Illustrator and Indesign.
 
 ```markdown
 
 LOOK WHAT I CAN DO
 
-## Javascript <hr>
-## Header 2
-### Header 3
+<h2> Javascript</h2>
+<h2> HTML</h2>
+<h2> CSS</h2>
+<h2> GMC</h2>
+<h2> Illustrator</h2>
+<h2> Indesign</h2>
+
 
 - Bulleted
 - List
