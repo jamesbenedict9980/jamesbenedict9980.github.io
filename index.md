@@ -1,4 +1,4 @@
-# James Benedict<img style="border:10px solid black;" src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right" >
+# James Benedict<img style="border:5px solid black;" src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right" >
 
 My name is James Benedict, I am a Graphic Automation Developer and i have great deal of knoweldge about Web Desinging and stuff which i developed some websites as well and obvisouly i didn't invent the internet but i know how to make it look good.
 
