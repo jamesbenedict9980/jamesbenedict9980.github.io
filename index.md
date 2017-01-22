@@ -25,12 +25,13 @@ I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me t
 `Illustrator`
 `Indesign`
 
+```
 
 For more details about my designs and code: 
 [Designs 1](https://jamesbenedict9980.github.io/Execrise%201/),
 [Designs 2](https://jamesbenedict9980.github.io/Project%203/),
 [Designs 3](https://jamesbenedict9980.github.io/MobiCarCare/).
-```
+
 
 
 ### <u>Work Experience</u>
