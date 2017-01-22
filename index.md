@@ -25,12 +25,12 @@ I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me t
 `Illustrator`
 `Indesign`
 
-```
 
 For more details about my designs and code: 
 [Designs 1](https://jamesbenedict9980.github.io/Execrise%201/),
 [Designs 2](https://jamesbenedict9980.github.io/Project%203/),
 [Designs 3](https://jamesbenedict9980.github.io/MobiCarCare/).
+```
 
 
 ### <u>Work Experience</u>
@@ -39,10 +39,12 @@ For more details about my designs and code:
 **Game Executing Testing**          | **Hewlett-Packard Globalsoft Pvt Ltd**
 **Software Trainer**                | **I-Tech Institute of Computer Software**
 
+
 ### Contact Me
 - +919980445348
 - jamesbenedict.9980@gmail.com
 - 163, M.R.S Palya, Nandi Durga Road Cross, Benson Town Post,Bangalore – 5600646.
+
 
 ### FOLLOW ME ONLINE
 - [Linkedin](https://in.linkedin.com/in/james-benedict-67457675)
