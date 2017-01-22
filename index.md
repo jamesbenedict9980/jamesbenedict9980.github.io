@@ -4,7 +4,7 @@ My name is James Benedict, I am a Graphic Automation Developer and i have great 
 
 ### More about me:_ Allow me to introduce myself._
 As i was very passinate about computers and designing which i started doing it from schools and then i purused my graduation in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff in Computers and thought me to code as well . I am obsessed with making things better.
-To utilize my skills and abilities in the Computer industries on which i earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER, And i have very good knoweldge in web designing as well. I would welcome the opportunity to discuss my suitability in more detail.
+I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which lead me to be more obbessive on Web designing and tools such as HTML,CSS,javascript, Illustrator and Indesign.
 
 ```markdown
 
