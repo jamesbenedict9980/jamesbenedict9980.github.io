@@ -1,8 +1,9 @@
 # James Benedict<img src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right">
 
-My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+ years experience in computer coding.
+My name is James Benedict, As i was very passinate about computers and website designing which i started doing it after schools and then i purused my graduated in Computer Science(BCA). Which luckily gave me more ideas and creativity on designing stuff in Computers and though me to code as well .
 
-### About me
+### More about me:
+#### Allow me to introduce myself.
 To utilize my skills and abilities in the Computer industries on which i earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER, And i have very good knoweldge in web designing as well. I would welcome the opportunity to discuss my suitability in more detail.
 
 ```markdown
