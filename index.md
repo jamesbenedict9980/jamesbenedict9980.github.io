@@ -7,15 +7,14 @@ I am obsessed with making things way better. As i was very passinate about compu
 I have earned 4+ years experience in GRAPHIC AUTOMATION DEVELOPER which led me to be more obbessive on Web designing and tools such as HTML,CSS,javascript, Illustrator and Indesign.
 
 ```markdown
+**LOOK WHAT I CAN DO**
 
-LOOK WHAT I CAN DO
-
-<h2> Javascript</h2>
-<h2> HTML</h2>
-<h2> CSS</h2>
-<h2> GMC</h2>
-<h2> Illustrator</h2>
-<h2> Indesign</h2>
+`Javascript`
+`HTML`
+`CSS`
+`GMC`
+`Illustrator`
+`Indesign`
 
 
 - Bulleted
