@@ -1,5 +1,4 @@
-# James Benedict               <img width=50px:>![james.jpg](jamesbenedict9980.github.io/my photo/james.jpg)</img>
-<img src="jamesbenedict9980.github.io/my photo/james.jpg" alt="Smiley face" height="42" width="42">
+# James Benedict<img src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="50" width="50">
 
 My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+ years experience in computer coding.
 
