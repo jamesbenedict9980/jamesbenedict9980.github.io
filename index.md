@@ -1,4 +1,4 @@
-# James Benedict<img src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="50" width="50">
+# James Benedict                      <img src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="100" width="100">
 
 My name is James Benedict, i have graduated in Computer Science(BCA) and have 4+ years experience in computer coding.
 
