@@ -32,9 +32,9 @@ For more details about my designs and code:
 
 ### <u>Work Experience</u>
 
-**Graphic Automation Developer| Avery Dennison Asia Pacific**| _March 2012 - Present, Bangalore._
-**Game Executing Testing| Hewlett-Packard Globalsoft Pvt Ltd**| _June 2011 - Sept 2011, Bangalore._
-**Software Trainer| I-Tech Institute of Computer Software** | _April 2006 - July 2008, Bangalore._
+**Graphic Automation Developer**| **Avery Dennison Asia Pacific**| _March 2012 - Present, Bangalore._
+**Game Executing Testing**| **Hewlett-Packard Globalsoft Pvt Ltd**| _June 2011 - Sept 2011, Bangalore._
+**Software Trainer**| **I-Tech Institute of Computer Software** | _April 2006 - July 2008, Bangalore._
 
 ### Contact Me:
 - +919980445348
