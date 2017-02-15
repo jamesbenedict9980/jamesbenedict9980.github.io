@@ -1,6 +1,4 @@
-# James Benedict<img style="border:5px solid black;" src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right" >
-
-<a href="jamesbenedict9980.github.io/zipball/master.zip" title="Download my Resume and Portfolio">Download my Resume and Portfolio</a>
+# James Benedict<img style="border:5px solid black;" src="jamesbenedict9980.github.io/my photo/james.jpg" alt="James" height="150" width="150" align="right" ><a href="jamesbenedict9980.github.io/zipball/master.zip" title="Download my Resume and Portfolio">Download my Resume and Portfolio</a>
 
 My name is James Benedict, I am a Graphic Automation Developer and i have a great deal of knoweldge about Web Desinging and stuff which pushed me to developed some websites as well and obvisouly i didn't invent the internet but i know how to make it look good.
 
