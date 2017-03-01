@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Talent Zone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  .line{
+    margin: 10px 0 30px 0;
+      font-size: 20px;
+      color: white;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+.card{
+background-color: #2d2d30;
+color: white;
+    text-align: center;
+padding-top:50px;
+padding-bottom:50px;
+margin-top:25px;
+
+}
+.card:hover{
+ -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.card1{
+background-color: white;
+color: #2d2d30;
+    text-align: center;
+padding-top:20px;
+padding-bottom:20px;
+margin-top:25px;
+
+}
+.social li {
+ background: none repeat scroll 0 0 #B5B5B5;
+ border: 2px solid #B5B5B5;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -o-border-radius: 50%;
+ -ms-border-radius: 50%;
+ border-radius: 50%;
+ float: right;
+ height: 36px;
+ line-height: 36px;
+ margin: -15px 8px 0 0;
+ padding: 0;
+ text-align: center;
+ width: 36px;
+ transition: all 0.5s ease 0s;
+ -moz-transition: all 0.5s ease 0s;
+ -webkit-transition: all 0.5s ease 0s;
+ -ms-transition: all 0.5s ease 0s;
+ -o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+ transform: scale(1.15) rotate(360deg);
+ -webkit-transform: scale(1.1) rotate(360deg);
+ -moz-transform: scale(1.1) rotate(360deg);
+ -ms-transform: scale(1.1) rotate(360deg);
+ -o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+ color: #EDEFF1;
+}
+.social li:hover {
+ border: 2px solid #2c3e50;
+ background: #2c3e50;
+}
+.social li a i {
+ font-size: 16px;
+ margin: 0 0 0 5px;
+ color: #EDEFF1 !important;
+}
+.footer ul {
+ font-size: 13px;
+ list-style-type: none;
+ margin-left: 0;
+ padding-left: 0;
+ margin-top: 15px;
+ color: #7F8C8D;
+}
+.footer ul li a {
+ padding: 0 0 5px 0;
+ display: block;
+}
+.footer a {
+ color: #78828D
+}
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">OUR SERVICES</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Carrier</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Container (The Band Section) -->
+<div id="home" class="container text-center">
+  <h3>Welcome to Talent Zone</h3>
+ 
+  <p style="text-align:left">Talent Zone HR Services is leading recruitment process outsourcing and consulting organization. The company is managed by an experienced team of professionals who have served leading organizations. Established in 2014, Talent Zone HR Services has helped more clients in finding the right talent and helped more than 500 candidates to find their dream jobs since inception. Working across Industry Verticals and Functional Areas, we are trusted to deliver fast, efficient and caring service to clients and candidates alike.
+Talent Zone HR Services has won accolades and business from existing and new clients for our consultative recruitment approach. We have been helping our clients to improve their recruitment process in terms of Quality-of-Hire, Time-to-Fill and Cost-per-Hire. We specialize in providing customized hiring solutions to our clients so that they can achieve greater efficiency and business performance. Through our collaborative approach and flawless execution we help our clients achieve their strategic talent acquisition goals.
+Our passion, integrity and work ethics set us apart and make us a preferred hiring partner with our ever expanding client base. We seek to deliver excellent value to our clients and candidates alike with our highly professional services. 
+</p>
+ <h3>Vision</h3>
+<p>To be one of the world's leading professional recruitment and talent management solutions  </p>
+<h3>Mission</h3>
+<p>To help candidates realize their true talents and career aspirations, at the same time help employers recruit the best available talent and implement sound and effective HR practices.</p>
+  <br>
+
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="about" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">About us:</h3>
+    
+  <p> Talent Zone HR Services, is a licensed HR Services company. We specialize in the Recruitment   and staffing and selection programs that are tailored to meet the business objectives and relevant demands of our clients marketplaces.
+Talent Zone HR Services Pvt. Ltd. was established in 2014 to provide end to end HR solutions to corporate firms. Talent Zone HR Services focuses on the delivery of Permanent Recruitment, Contract Staffing, Mass Recruitments, Reference Checks and Employee Validation for our clients. Talent Zone HR Services is positioned to cater to a company's contract staffing needs on all the verticals. 
+</p>
+  </div>
+  </div>
+<!-- services-->
+<div id="services" class="container">
+    <h3 class="text-center">SERVICES</h3>
+ <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="card">
+         
+          Labour Contract Staffing Service
+         
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+         
+         Statutory Compliance Service
+          
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="card">
+          
+         Contract Labour Act
+         
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+         
+         Recruitment & Placement Service 
+         
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+         
+          Factories Act
+
+         
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+         
+          Shops & Commercial Establishment Act
+         
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-4">
+        <div class="card">
+         
+         Payroll Service
+         
+        </div>
+      </div>
+    </div>
+   
+</div>
+ <!-- clints-->
+	<div id="clints" class="bg-1" >
+     <div class="container">
+      <h3 class="text-center">Clients</h3>
+       <p> 
+        Our client base is wide and varied, catering to companies of different sizes and from different sectors. Our clients range from large multinational corporations to medium sized companies and rapidly growing start-ups. As one of the few integrated HR solutions companies in India, we have the unique expertise to provide a one-stop solution for every client's unique requirements.
+       </p><br>
+	   <p class="text-center line">We serve clients from a variety of sectors including:</p>
+	   <hr>
+	   <div class="row">
+	   <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-cogs" style="font-size: 4.5em"></span></P>
+         Automotive
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="glyphicon glyphicon-piggy-bank" style="font-size: 4em"></span></P>
+         Banking.
+         
+        </div>
+      </div>
+	  
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="glyphicon glyphicon-headphones" style="font-size: 4em"></span></P>
+        BPO & ITES.
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+         <p><span class="ionicons ion-erlenmeyer-flask" style="font-size: 4em"></span></P> 
+         Chemical.
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="ionicons ion-settings" style="font-size: 4em"></span></P>
+         Engineering.
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-shopping-cart" style="font-size: 4em"></span></P>
+         FMCG
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-cutlery" style="font-size: 4em"></span></P>
+         Hospitality.
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-building-o" style="font-size: 4em"></span></P>
+         Manufacturing
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-medkit" style="font-size: 4em"></span></P>
+         Pharmaceutical
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-truck" style="font-size: 4em"></span></P>
+         Supply Chain & Logistics.
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="glyphicon glyphicon-phone-alt" style="font-size: 4em"></span></P>
+         Telecom
+         
+        </div>
+      </div>
+	  <div class="col-sm-4 ">
+        <div class="card1">
+          <p><span class="fa fa-plane" style="font-size: 4em"></span></P>
+         Transportation 
+         
+        </div>
+      </div>
+	     
+	  </div>
+	   
+     </div>
+   </div>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact Us</h3>
+  <p class="text-center"><em>We are happy to serve you.</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+   <address>
+  <span class="glyphicon glyphicon-map-marker"></span><strong> Talent Zone HR Services</strong><br>
+  1st floor #18 muniyamma Building<br>
+  Hebbagodi, Anekal (T) Bangalore (D)<br>
+  Karnataka-560099<br>
+  India:<br><br>
+  <p><span class="glyphicon glyphicon-phone"></span> Phone: +00 1515151515</p>
+  <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+</address>
+     
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">OUR AMAZING TEAM</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#menu">Eswar Moorthy</a></li>
+    <li><a data-toggle="tab" href="#menu1">Koteshwar</a></li>
+    <li><a data-toggle="tab" href="#menu2">Leela Prasad</a></li>
+    <li><a data-toggle="tab" href="#menu3">Sukhadev</a></li>
+    <li><a data-toggle="tab" href="#menu4">Thulasiram</a></li>
+  </ul>
+
+ <div class="tab-content">
+    <div id="menu" class="tab-pane fade in active">
+       <h2>Eswar Moorthy, Manager</h2>
+      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <p><span class="glyphicon glyphicon-phone"></span> Phone: +91 9071095000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+       <h2>Koteshwar, Manager</h2>
+      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <p><span class="glyphicon glyphicon-phone"></span> Phone: +91 9071095000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+     <h2>Leela Prasad, Manager</h2>
+      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <p><span class="glyphicon glyphicon-phone"></span> Phone: +91 9071095000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h2>Sukhadev, Manager</h2>
+      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <p><span class="glyphicon glyphicon-phone"></span> Phone: +91 7090071999</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+    </div>
+   <div id="menu4" class="tab-pane fade">
+     <h2>Thulasiram, Manager</h2>
+      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <p><span class="glyphicon glyphicon-phone"></span> Phone: +91 9964332777</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+    </div>
+  </div>
+</div>
+
+<!--<div id="googleMap"></div>-->
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Copyright &copy www.talentzone.com 2016</p>
+<div class="col-sm-4 col-sm-offset-8">
+                    <ul class="social list-unstyled">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+</div>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
