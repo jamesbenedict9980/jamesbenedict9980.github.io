@@ -26,9 +26,13 @@ html body{
     width:100%;
     height:600px;
 	margin:auto;
-    box-shadow: 0 0 2px 2px red inset;
     position:absolute;
-    -webkit-filter:blur(15px);
+        -webkit-filter:blur(15px);
+    -moz-filter: blur(15px);
+	-ms-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(15px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
 }
 
 .imageUpper {
@@ -38,8 +42,12 @@ html body{
     width:100%;
     height:140px;
 	margin-top:-70px;
-    box-shadow: 0 0 2px 2px red inset;
-    -webkit-filter:blur(15px);
+       -webkit-filter:blur(15px);
+    -moz-filter: blur(15px);
+	-ms-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(15px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
     position:fixed;
     z-index:10;
 }
@@ -52,8 +60,12 @@ html body{
     width:100%;
     height:140px;
 	margin-top:-10px;
-    box-shadow: 0 0 2px 2px red inset;
-    -webkit-filter:blur(15px);
+       -webkit-filter:blur(15px);
+    -moz-filter: blur(15px);
+	-ms-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(15px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
     position:fixed;
     z-index:10;
 }
