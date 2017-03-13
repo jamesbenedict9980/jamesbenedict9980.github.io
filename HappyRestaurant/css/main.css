@@ -767,7 +767,7 @@ z-index:-1;
     	width:auto;
     	top:6.5%;
     }
-
+ .imageUpper{height:200px;}
 .freshimage{
 	height:400px;
 	width:100%;
@@ -820,6 +820,5 @@ z-index:-1;
 	 height:364px;width:20%;
 	 float:right;
 	position:relative;
-
 }
 }
