@@ -160,8 +160,18 @@ cillum dolore eu fugiat nulla pariatur.
 
 <script language="Javascript">
 function clicker(){ 
-ss.innerHTML='<h3>'+'<b>'+"Thanks for your Reservation! We will get back to you soon!"+'</b>'+'</h3>';
+var name=document.getElementById("data_3").value;
+var date=document.getElementById("data_11").value;
+var time=document.getElementById("data_7").value;
+
+if(name=='' || date=='' || time=='')
+{
+  ss.innerHTML = '<h5>'+'<b>'+"Please Enter all the mandatory fields"+'</b>'+'</h5>';
+}
+else{
+ss.innerHTML='<h5>'+'<b>'+"Thanks for your Reservation! We will get back to you soon!"+'</b>'+'</h5>';
 setTimeout("kk()",1000);
+}
 }
 
 function kk(){
