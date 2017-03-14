@@ -66,7 +66,7 @@ $(document).ready(function() {
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
           </ul>
         </li>
       </ul>
@@ -115,7 +115,7 @@ cillum dolore eu fugiat nulla pariatur.
 
 
 <div class="wrapper">
-    <div id="one">
+    <div class="one">
  <div class="frm">
 <form method="post" action="//submit.form" onSubmit="return validateForm();">
 <div style="width: 400px;">
@@ -159,7 +159,7 @@ cillum dolore eu fugiat nulla pariatur.
 </div>
 
 <script language="Javascript">
-function clicker(){ 
+function clicker(){
 var name=document.getElementById("data_3").value;
 var date=document.getElementById("data_11").value;
 var time=document.getElementById("data_7").value;
@@ -169,7 +169,7 @@ if(name=='' || date=='' || time=='')
   ss.innerHTML = '<h5>'+'<b>'+"Please Enter all the mandatory fields"+'</b>'+'</h5>';
 }
 else{
-ss.innerHTML='<h5>'+'<b>'+"Thanks for your Reservation! We will get back to you soon!"+'</b>'+'</h5>';
+ss.innerHTML='<h5>'+'<b>'+"Thanks for your Reservation! We will get back to you soon!"+'<br>'+'<br>'+"Refresh the page or Press F5 for another reservation"+'</br>'+'</br>'+'</b>'+'</h5>';
 setTimeout("kk()",1000);
 }
 }
@@ -187,6 +187,9 @@ document.forms[0].submit();
 
 }
 
+
+
+
 </script>
 <div style="padding-bottom: 18px;">
     <button class="button-success pure-button button-xlarge" name="skip_Submit" type="submit" onClick="clicker()">
@@ -202,7 +205,7 @@ document.forms[0].submit();
 
 
     </div>
-    <div id="two">
+    <div class="two">
       <h3 class="text-center"><u>OUR AMAZING CHEFS</u></h3>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#menu">Eswar</a></li>
