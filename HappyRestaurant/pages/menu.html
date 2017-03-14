@@ -61,7 +61,7 @@ $(document).ready(function() {
         <li><a href="../index.html">HOME</a></li>
         <li><a href="../pages/toReserve.html">TO RESERVE</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle active" data-toggle="dropdown" href="#">MORE
+          <a class="dropdown-toggle  active" data-toggle="dropdown" href="#">MORE
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="active"><a href="#">Menu</a></li>
@@ -113,12 +113,18 @@ cillum dolore eu fugiat nulla pariatur.
 
 
   <h3 class="text-center"><u>OUR RESTAURANT MENU</u></h3>
+
 <div class="tab">
-  <a href="javascript:void(0)" class="tablinks" onclick="openMenu(event, 'nonveg')">NON-VEG</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openMenu(event, 'veg')">VEG</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openMenu(event, 'snacks')">SNACKS</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openMenu(event, 'beverages')"> BEVERAGES</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openMenu(event, 'icecream')">ICE CREAMS</a>
+  <button class="tablinks" onclick="openMenu(event, 'nonveg')" id="defaultOpen">NON-VEG</button>
+  <button class="tablinks" onclick="openMenu(event, 'veg')">VEG</button>
+  <button class="tablinks" onclick="openMenu(event, 'snacks')">SNACKS</button>
+  <button class="tablinks" onclick="openMenu(event, 'beverages')">BEVERAGES</button>
+  <button class="tablinks" onclick="openMenu(event, 'icecream')">ICE CREAMS</button>
+
+</div>
+
+
+
 </div>
 <div id="nonveg" class="tabcontent">
   <h3>NON-VEGETARAIN</h3>
@@ -214,7 +220,9 @@ function openMenu(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
-}
+  }
+
+    document.getElementById("defaultOpen").click()
 </script>
 
 
