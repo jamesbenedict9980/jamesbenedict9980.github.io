@@ -60,12 +60,8 @@ $(document).ready(function() {
         <li><a href="#"></a></li>
         <li><a href="../index.html">HOME</a></li>
         <li><a href="toReserve.html">TO RESERVE</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle active" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="menu.html">Menu</a></li>
-            <li class="active"><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li class="active"><a href="contactUs.html">CONTACT US</a></li>
           </ul>
         </li>
       </ul>
@@ -112,7 +108,7 @@ cillum dolore eu fugiat nulla pariatur.
 
  <h3 class="text-center line"><b>Contact Us and Find Us here&#x2193;:</b></h3>
      <hr style="height:2px;border:none;color:#292c2f;background-color:#333;" />
-     <div class="row">
+   <div class="row">
 
  <link rel="stylesheet" href="../css/pure-min.css">
    <!-- Style The Contact Form How Ever You Prefer -->
@@ -150,13 +146,14 @@ cillum dolore eu fugiat nulla pariatur.
     <button class="button-success pure-button button-xlarge">
       <i class="fa fa-paper-plane fa-2x"></i>&nbsp;Send</button>
 
-  </form></div>
+  </form>
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
-    <h3><em>Thanks</em> for Contacting Us!
-      We will get back to you soon!</h3>
+    <h5 style='color=red'><em><br>Thanks</em> for Contacting Us!<br>
+      We will get back to you soon!</h5>
   </div>
+</div>
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
@@ -164,14 +161,13 @@ cillum dolore eu fugiat nulla pariatur.
   <!-- <script data-cfasync="false" type="text/javascript"
   src="/form-submission-handler.js"></script> -->
 <!-- END -->
-
-
-
-<br><div class="map">
+<div class="map">
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDizZSS2wE3gGwXNph3Nn05SUUfFApjbbg&callback=initMap"></script>
-<div style="overflow:hidden;height:700px;width:700px;"><div id="gmap_canvas"><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">Happy Food's</a></div></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(13.0450252,77.6245568),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(13.0450252,77.6245568)});infowindow = new google.maps.InfoWindow({content:"<b>Happy Food's</b><br/>Elements Mall<br/>560077 Bangalore" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-
+<div style="overflow:hidden;"><div id="gmap_canvas"><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">Happy Food's</a></div></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(13.0450252,77.6245568),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(13.0450252,77.6245568)});infowindow = new google.maps.InfoWindow({content:"<b>Happy Food's</b><br/>Elements Mall<br/>560077 Bangalore" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 </div>
+
+
+
 
 
 
