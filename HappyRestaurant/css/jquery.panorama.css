@@ -1,6 +1,5 @@
 .panorama-viewport {
 	position:relative;
-	width: 957px!important;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
@@ -8,9 +7,14 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .panorama-viewport {
-    width: 750px!important;
+  	position:relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+    width: 750px;
   }
 }
 
