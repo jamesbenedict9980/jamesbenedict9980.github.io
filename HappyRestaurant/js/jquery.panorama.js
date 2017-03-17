@@ -11,7 +11,6 @@
 	$.fn.panorama = function(options) {
 		this.each(function(){ 
 			var settings = {
-				viewport_width: 600,
 				speed: 20000,
 				direction: 'left',
 				control_display: 'auto',
