@@ -215,6 +215,11 @@ text-align:center;
 
 
 
+
+
+
+
+
 	#page {
 		text-align: center;
 		color: white;
@@ -291,6 +296,8 @@ text-align:center;
 		z-index:100;
     }
 	.circle6 img{width:400px;height:200px;}
+
+
 
 
 
@@ -556,6 +563,7 @@ div.tab button.active {
 }
 
 
+
 /*To Reserve*/
 
 aside {
@@ -594,7 +602,8 @@ button {
 #chef{float:right;}
 
 
-
+.web{float:right;}
+.web a{color:#fbfbfb!important;}
 
 
 .wrapper {  
@@ -696,19 +705,26 @@ border: 2px solid #292c2f;
     	top:12%;
     }
     .imageUpper{height:200px;}
+
+    .navbar-brand img{width:100px; height:60px;}
+    .menuContent{font-size:12px;}
+    .content{font-size:12px;}
+    .content2{font-size:12px;}
+    .circle1 img{width:200px;height:100px;}
+    .circle2 img{width:200px;height:100px;}
+    .circle3 img{width:200px;height:100px;}
+    .circle4 img{width:200px;height:100px;}
+    .circle5 img{width:200px;height:100px;}
+    .circle6 img{width:200px;height:100px;}
+
+
 }
-
-
-
-
 
 @media (max-width: 760px) {
 
 
   .icons .footer-icons{
     right:0;
-    height:auto;
-      width:auto;
       top:6.5%;
     }
     .imageUpper{height:200px;}
