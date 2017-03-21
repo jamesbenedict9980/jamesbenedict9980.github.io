@@ -214,12 +214,6 @@ text-align:center;
   }
 
 
-
-
-
-
-
-
 	#page {
 		text-align: center;
 		color: white;
@@ -617,11 +611,10 @@ button {
   float:left; 
   margin-right:20px;
   width:auto;
-  height:auto;
+  height:1000px;
 }
-.two { 
+.two {
   overflow:hidden;
-  margin:10px;
   min-height:400px;
   width:auto;
   height:auto;
@@ -632,9 +625,10 @@ button {
    .one { 
     float: none;
     margin-right:0;
+    top:100px;
     width:auto;
     border:0;
-    border-bottom:2px solid #000;    
+    border-bottom:2px solid #000; 
   }
 }
 
@@ -730,5 +724,3 @@ border: 2px solid #292c2f;
     }
     .imageUpper{height:200px;}
 }
-
-
