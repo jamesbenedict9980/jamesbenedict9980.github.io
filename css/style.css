@@ -271,7 +271,7 @@ a.experiencelink:hover, a.aboutmelink:hover,a.projectslink:hover, a.skillslink:h
 
 
 @media (max-width: 1500px) {
-#aboutme-page p{font-family: 'Raleway';line-height:150%;padding-left:3%;padding-right:3%; text-align:left; font-size:12px;}
+#aboutme-page p{font-family: 'Raleway';line-height:150%;padding-left:20%;padding-right:20%; text-align:left; font-size:14px;}
 #experience-page li,#projects-page li, #skills-page li {font-family: 'Raleway';line-height:150%;padding-left:2%;padding-right:2%;text-align:left; font-size:12px;}
 header{font-family: 'Raleway';padding-top:10px;text-align:center;font-size:12px;}
 #aboutme-page img{width:75px; height:75px;}
