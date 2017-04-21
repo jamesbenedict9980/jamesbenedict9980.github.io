@@ -222,7 +222,7 @@ padding-left:30%;padding-right:30%;
     background-color: #556B2F;
 	display: none;
 	color:#fff;}
-#education-page h4{color:#bd6b6b;font-family: 'Raleway';padding-left:30%;padding-right:30%;text-align:left; font-size:18px; padding-top:10px;padding-bottom:10px;}
+#education-page h4{color:#bd6b6b;font-family: 'Raleway';padding-left:30%;padding-right:30%;text-align:center; font-size:18px; padding-top:10px;padding-bottom:10px;}
 #education-page header{color:#e7e5ca;padding-top:20px; padding-bottom:10px;}
 #education-page h3{text-align:center;padding-top:10px;}
 #education-page p{text-align:center; font-size:12px;}
@@ -285,8 +285,7 @@ a.experiencelink:hover, a.aboutmelink:hover,a.projectslink:hover, a.skillslink:h
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (min-device-width : 320px)  {
 .coll{color:#fff;text-decoration:none; font-size:11px;}
 #aboutme-page img{width:50px; height:50px;}
 #aboutme-page p{font-family: 'Raleway';line-height:150%;	padding-left:2%;padding-right:2%;text-align:left; font-size:11px;}
@@ -297,9 +296,10 @@ header{font-family: 'Raleway';padding-top:2px;text-align:center;font-size:13px;}
 #education-page ul li {font-family: 'Raleway';line-height:150%;padding-left:10%;padding-right:10%;text-align:center; font-size:12px;}
 #education-page p{text-align:center; font-size:10px;color:#e7e5ca;}
 #education-page header{color:#e7e5ca;padding-top:20px; padding-bottom:5px;font-size:18px;}
+.lang-desc{color:#e7e5ca;}
  h1{font-size:12px;}
  h3{font-size:11px;}
- .soc{padding:10%; margin:0; font-size:16px; }
+ .soc{ margin:0; font-size:16px; }
  a.experiencelink, a.aboutmelink, a.projectslink, a.skillslink, a.educationlink{
     font-family: 'Lato';
     color: #fff;
@@ -432,7 +432,9 @@ header{font-family: 'Raleway';padding-top:2px;text-align:center;font-size:25px;}
 #aboutme-page li{margin-bottom:3px;font-family:'Raleway';padding-left:1%;padding-right:1%;line-height:120%;text-align:center; font-size:20px;}
 #experience-page li,#projects-page li, #skills-page li {margin-bottom:3px;font-family:'Raleway';padding-left:1%;padding-right:1%;line-height:120%;text-align:left; font-size:20px;}
 #education-page ul li {font-family: 'Raleway';line-height:150%;padding-left:10%;padding-right:10%;text-align:center; font-size:20px;}
-#education-page h4{color:#bd6b6b;font-family: 'Raleway';padding-left:30%;padding-right:30%;text-align:center; font-size:25px; padding-top:10px;padding-bottom:10px;}
+#education-page h4{color:#e7e5ca;font-family: 'Raleway';padding-left:30%;padding-right:30%;text-align:center; font-size:25px; padding-top:10px;padding-bottom:10px;}
+#education-page p{text-align:center; font-size:12px;color:#e7e5ca;}
+.lang-desc{color:#e7e5ca;}
  h1{font-size:35px;}
  h3{font-size:23px;}
  .soc{padding:5%; margin:0; font-size:30px; }
@@ -540,7 +542,9 @@ header{font-family: 'Raleway';padding-top:2px;text-align:center;font-size:25px;}
 #aboutme-page li{margin-bottom:3px;font-family:'Raleway';padding-left:1%;padding-right:1%;line-height:120%;text-align:center; font-size:20px;}
 #experience-page li,#projects-page li, #skills-page li {margin-bottom:3px;font-family:'Raleway';padding-left:1%;padding-right:1%;line-height:120%;text-align:left; font-size:20px;}
 #education-page ul li {font-family: 'Raleway';line-height:150%;padding-left:10%;padding-right:10%;text-align:center; font-size:20px;}
-#education-page h4{color:#bd6b6b;font-family: 'Raleway';padding-left:30%;padding-right:30%;text-align:center; font-size:25px; padding-top:10px;padding-bottom:10px;}
+#education-page h4{color:#e7e5ca;font-family: 'Raleway';padding-left:30%;padding-right:30%;text-align:center; font-size:25px; padding-top:10px;padding-bottom:10px;}
+#education-page p{text-align:center; font-size:14px;color:#e7e5ca;}
+.lang-desc{color:#e7e5ca;}
  h1{font-size:35px;}
  h3{font-size:23px;}
  .soc{padding:2%; margin:0; font-size:23px; }
