@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>DOI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<head>
+<script>
+  $(document).ready(function(){
+            var submitIcon = $('.searchbox-icon');
+            var inputBox = $('.searchbox-input');
+            var searchBox = $('.searchbox');
+            var isOpen = false;
+            submitIcon.click(function(){
+                if(isOpen == false){
+                    searchBox.addClass('searchbox-open');
+                    inputBox.focus();
+                    isOpen = true;
+                } else {
+                    searchBox.removeClass('searchbox-open');
+                    inputBox.focusout();
+                    isOpen = false;
+                }
+            });  
+             submitIcon.mouseup(function(){
+                    return false;
+                });
+            searchBox.mouseup(function(){
+                    return false;
+                });
+            $(document).mouseup(function(){
+                    if(isOpen == true){
+                        $('.searchbox-icon').css('display','block');
+                        submitIcon.click();
+                    }
+                });
+        });
+            function buttonUp(){
+                var inputVal = $('.searchbox-input').val();
+                inputVal = $.trim(inputVal).length;
+                if( inputVal !== 0){
+                    $('.searchbox-icon').css('display','none');
+                } else {
+                    $('.searchbox-input').val('');
+                    $('.searchbox-icon').css('display','block');
+                }
+            }
+</script>
+</head>
+<body>
+
+<header>
+<div class="container col">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+  <a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i> Saved stories</a>
+  <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Notification</a>
+  <a href="#"><i class="fa fa-television" aria-hidden="true"></i> Entertainment</a>
+  <a href="#">City</a>
+  <a href="#">India</a>
+  <a href="#">World</a>
+  <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a>
+  <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact us</a>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="sideWrap"><span class="white-col" onclick="openNav()">&nbsp; &#9776;</span> &nbsp; &nbsp; <span id="name"> DOI </span>
+    <form class="searchbox">
+        <input type="search" id="myInput" placeholder="Search......" name="search" class="searchbox-input" onkeyup="myFunction()" required>
+
+    <div class="searchbox-icon">
+		<i class="fa fa-search" aria-hidden="true"></i>
+	</div></div>
+    </form>
+</div>
+  <div class='container tabWrap horzScroll menu vertical-align-middle scroll'>
+  <nav>
+  <button class='nav-item' onclick="openMenu(event, 'topstories')" id="defaultOpen">Top Stories</button>
+  <button class='nav-item' onclick="openMenu(event, 'livetv')">Live TV</button>
+  <button class='nav-item' onclick="openMenu(event, 'videos')">Videos</button>
+  <button class='nav-item' onclick="openMenu(event, 'photos')">Photos</button>
+  <button class='nav-item' onclick="openMenu(event, 'sports')">Sports</button>
+  <button class='nav-item' onclick="openMenu(event, 'livetv')">Live TV</button>
+  <button class='nav-item' onclick="openMenu(event, 'videos')">Videos</button>
+  <button class='nav-item' onclick="openMenu(event, 'photos')">Photos</button>
+  <button class='nav-item' onclick="openMenu(event, 'sports')">Sports</button>
+</nav>
+</header>
+</div>
+</div>
+<script>
+// Create a clone of the menu, right next to original.
+$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+
+scrollIntervalID = setInterval(stickIt, 10);
+
+
+function stickIt() {
+
+  var orgElementPos = $('.original').offset();
+  orgElementTop = orgElementPos.top;
+  if ($(window).scrollTop() >= (orgElementTop)) {
+    // scrolled past the original position; now only show the cloned, sticky element.
+
+    // Cloned element should always have same left position and width as original element.     
+    orgElement = $('.original');
+    coordsOrgElement = orgElement.offset();
+    leftOrgElement = coordsOrgElement.left;  
+    widthOrgElement = orgElement.css('width');
+    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+    $('.original').css('visibility','hidden');
+  } else {
+    // not scrolled past the menu; only show the original menu.
+    $('.cloned').hide();
+    $('.original').css('visibility','visible');
+  }
+}
+</script>
+
+
+<div id="topstories" class="container tabcontent">
+<img src="images/army.jpg" class="img-responsive"><br>
+<h4>Battle Field is Breaking Gaming Market</h4>
+<hr>
+<ul id="myUL">
+<li><img src="images/game1.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></a></li>
+<br>
+<li><img src="images/game2.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></a></li>
+<br>
+<li><img src="images/game1.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></a></li>
+<br>
+<li><img src="images/game2.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></a></li>
+<br>
+<li><img src="images/game1.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></a></li>
+<br>
+<li><img src="images/game2.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></a></li>
+<br>
+<li><img src="images/game1.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></a></li>
+<br>
+<li><img src="images/game2.jpg" class="NewsContent">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<a href="#"><p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></a></li>
+<br>
+</ul>
+</div>
+
+
+<div id="livetv" class="container tabcontent">
+  <h3>LIVE TV</h3>
+
+<div class="video-container">
+<li><iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+
+<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5></li>
+ </div>
+ 
+ 
+ 
+ 
+ 
+<div id="videos" class="container tabcontent">
+<ul id="myUL">
+  <h3>VIDEOS</h3>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></li>
+<hr>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+ <p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></li>
+<hr>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></li>
+<hr>
+<li><div class="video-container">
+    <iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+ <p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></li>
+<hr>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></li>
+<hr>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+ <p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></li>
+<hr>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<p>consectetur adipisicing elit, sed do eiusmod.</p></li>
+<hr>
+<li><div class="video-container">
+<iframe src="https://www.youtube.com/embed/sHTZQKFTu_k" width="497" height="298" seamless=""></iframe>
+</div>
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+ <p>Ut enim ad minim veniam,quis nostrud exercitation ullamco</p></li>
+</div>
+</ul>
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script>
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+<div id="photos" class="container tabcontent">
+  <h3>PHOTOS</h3>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/chickenBriyani.png" title="Chicken Briyani"><img src="images/non-veg/chickenBriyani.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/chickengrill.png"title="Chicken Grill"><img src="images/non-veg/chickengrill.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/chickentandoori.jpg"title="Chicken Tandoori"><img src="images/non-veg/chickentandoori.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/chinese1.jpeg"title="Chinese Noodles"><img src="images/non-veg/chinese1.jpeg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/chinese2.jpg"title="Chinese Soup"><img src="images/non-veg/chinese2.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/Noodles.png"title="Chicken Noodles"><img src="images/non-veg/Noodles.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/thainoodles.jpg"title="Thai Noodles"><img src="images/non-veg/thainoodles.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/egggravy.jpg"title="Egg Gravy"><img src="images/non-veg/egggravy.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/fish.png"title="Fish Fr"><img src="images/non-veg/fish.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/FISHFRY.png"title="Fish Gravy"><img src="images/non-veg/FISHFRY.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/mutton.png"title="Mutton Gravy"><img src="images/non-veg/mutton.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/MuttonKabab.jpg"title="Mutton Kabab"><img src="images/non-veg/MuttonKabab.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/muttonkorma.jpg"title="Mutton Korma"><img src="images/non-veg/muttonkorma.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/non-veg/muttonpaya.jpg"title="Mutton Paya"><img src="images/non-veg/muttonpaya.jpg"></img></a></div></div>
+
+
+
+<div id="sports" class="tabcontent">
+  <h3>SPORTS</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<script>
+function openMenu(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+    document.getElementById("defaultOpen").click()
+</script>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+</body>
+</html> 
