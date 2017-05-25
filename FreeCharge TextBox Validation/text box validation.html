@@ -1,0 +1,101 @@
+<!Doctype html>
+<head>
+<style>
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+	margin-top:300px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.aa{
+	width:300px;
+	height:30px;
+	border-left-style:none;
+}
+.bb{
+width:20px;
+height:30px;
+border-right-style:none;
+left:25px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align:center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left:2px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right:5%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup:hover .popuptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
+</style>
+
+</head>
+<script>
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+	var popup; 
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+		popup.classList.toggle("show");
+    }
+    return true;
+	popup = document.getElementById("myPopup");
+}
+</script>
+<body>
+<div class="popup"><input type="text" class="bb" value="+91" readonly="readonly"><input type="text" class="textfield aa" id="extra7" name="extra7" onkeypress="return isNumber(event)" />
+<span class="popuptext" id="myPopup">The value is required</span>
+</div>
+
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
