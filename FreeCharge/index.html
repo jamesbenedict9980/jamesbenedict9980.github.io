@@ -118,15 +118,15 @@ class=" aa" onclick="myFunction()" maxlength="10" />
 
       <script type="text/javascript">
         function prepaid() { 
-            document.getElementById('area').style.display = 'block'; 
-            document.getElementById('area1').style.display = 'block';
+            document.getElementById('area').style.display = 'inline-block'; 
+            document.getElementById('area1').style.display = 'inline-block';
             document.getElementById('area2').style.display = 'none';
 
         }
         function postpaid() { 
             document.getElementById('area').style.display = 'none'; 
             document.getElementById('area1').style.display = 'none';
-            document.getElementById('area2').style.display = 'block';
+            document.getElementById('area2').style.display = 'inline-block';
     }
       </script>
     </head>
@@ -136,7 +136,8 @@ class=" aa" onclick="myFunction()" maxlength="10" />
         <INPUT TYPE=RADIO NAME="X" VALUE="H" onclick="postpaid();"/>Postpaid
         
 
-
+<br>
+<br>
     <select id="area" style="display: none;">
     <option value="volvo">Operator</option>
     <option value="saab">Airtel</option>
