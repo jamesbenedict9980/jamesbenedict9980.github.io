@@ -61,6 +61,8 @@ left:25px;
     border-radius: 5px;
 }
 
+
+
     </style>
 
      <script>
@@ -96,6 +98,63 @@ class=" aa" onclick="myFunction()" maxlength="10" />
 
 <button type="button" id="myDIV">Proceed</button>
 </div>
+
+
+
+
+<script type="text/javascript">
+        function ShowHideDiv(chkP) {
+            var dv = document.getElementById("dv");
+            var dv1 = document.getElementById("dv1");
+            if(chkP.checked==1)
+            {dv.style.display = chkP.checked ? "block" : "none";}
+            else
+            {dv1.style.display = chkP1.checked ? "block" : "none";}
+
+        }
+    </script>
+
+
+
+      <script type="text/javascript">
+        function show() { document.getElementById('area').style.display = 'block'; 
+                        document.getElementById('area1').style.display = 'block';
+
+        }
+        function hide() { document.getElementById('area1').style.display = 'none'; }
+      </script>
+    </head>
+    <body>        
+      <form name="radios">
+        <INPUT TYPE=RADIO NAME="X" VALUE="L" onclick="show();"/>Prepaid
+        <INPUT TYPE=RADIO NAME="X" VALUE="H" onclick="hide();"/>Postpaid
+        
+
+
+    <select id="area" style="display: none;">
+    <option value="volvo">Operator</option>
+    <option value="saab">Airtel</option>
+    <option value="fiat">Aircel</option>
+    <option value="audi">Vodafone</option>
+  </select>
+
+    <select id="area1" style="display: none;" >
+    <option value="volvo">Circle</option>
+    <option value="saab">Assam</option>
+    <option value="fiat">Bihar</option>
+    <option value="audi">Chennai</option>
+  </select>
+
+      </form>
+
+
+
+
+
+
+
+
+
 </body>
 <script>
 function myFunction() {
