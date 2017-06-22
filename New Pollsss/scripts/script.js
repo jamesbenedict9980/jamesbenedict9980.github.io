@@ -13,7 +13,6 @@ $(document).ready(function() {
         text: "percent"
     }
     var progress_circle = $("#progress-circle").gmpc(options);
-    progress_circle.gmpc('animate', 100, 2000);
-	setTimeout('Redirect()', 2300);
+    progress_circle.gmpc('animate', 100, 2000, setTimeout('Redirect()', 2300));
 });
 
