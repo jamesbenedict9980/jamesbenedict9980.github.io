@@ -26,7 +26,7 @@
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
+<canvas id="canvas"></canvas>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top navbar-inverse bg-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -230,33 +230,7 @@ Our passion, integrity and work ethics set us apart and make us a preferred sale
         </div>
     </div>
 </div>
-<!--<div id="googleMap"></div>-->
 
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:12,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 <!-- Footer -->
 <footer class="text-center">
@@ -330,6 +304,6 @@ $(document).ready(function() {
 });
 </script>
 
-
+<script src="js/index.js"></script>
 </body>
 </html>
