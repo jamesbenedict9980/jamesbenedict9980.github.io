@@ -25,105 +25,38 @@
 	<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<canvas id="canvas"></canvas>
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Ferns</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#services">OUR SERVICES</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<script>
-$(document).ready(function() {
-	var step = 2;
-	$('.cube').addClass('step1');
-	$('.step1-img1').addClass('slideRight').css('display','block');
-	$('.step1-img2').addClass('slideLeft').css('display','block');
-	setInterval(function(){
-		if (step == 5) {
-			step = 1;
-			$('.cube').removeClass('step4');
-		}
-		if (step == 1) {
-			setTimeout(function() {
-				$('.step1-img1').addClass('slideRight').css('display','block');
-				$('.step1-img2').addClass('slideLeft').css('display','block');
-			}, 1000);
-			setTimeout(function() {
-				$('.step2-img1').removeClass('slideDown').css('display','none');
-				$('.step2-img2').removeClass('fadeIn').css('display','none');
-			}, 2000);
-		}
-		if (step == 2) {
-			setTimeout(function() {
-				$('.step2-img2').addClass('fadeIn').css('display','block');
-			}, 500);
-			setTimeout(function() {
-				$('.step2-img1').addClass('slideDown').css('display','block');
-			}, 2000);
-			$('.step3-img1').removeClass('fadeIn').css('display','none');
-			$('.step3-img2').removeClass('slideUp').css('display','none');
-		}
-		if (step == 3) {
-			setTimeout(function() {
-				$('.step3-img1').addClass('fadeIn').css('display','block');
-			}, 500);
-			setTimeout(function() {
-				$('.step3-img2').addClass('slideUp').css('display','block');
-			}, 2000);
-			$('.step4-img1').removeClass('slideLeft').css('display','none');
-			$('.step4-img2').removeClass('fadeIn').css('display','none');
-			$('.step4-img3').removeClass('slideRight').css('display','none');
-			$('.step4-img4').removeClass('slideUp').css('display','none');
-		}
-		if (step == 4) {
-			setTimeout(function() {
-				$('.step4-img1').addClass('slideLeft').css('display','block');
-				$('.step4-img2').addClass('fadeIn').css('display','block');
-				$('.step4-img3').addClass('slideRight').css('display','block');
-			}, 500);
-			setTimeout(function() {
-				$('.step4-img4').addClass('slideUp').css('display','block');
-			}, 2000);
-			$('.step1-img1').removeClass('slideRight').css('display','none');
-			$('.step1-img2').removeClass('slideLeft').css('display','none');
-		}
-		$('.cube').addClass('step'+step).removeClass('step'+(step-1));
-		step++;
-	}, 4000);
-});
-</script>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"> 
  
+ <div class="container-fluid">
+	<div class="logo">FERNS</div>
+		<canvas id="canvas"></canvas>
+<div class="parent2">
+  <div class="test1"><a href="#contact"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></div>
+  <div class="test2"><a href="#services"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></a></div>
+  <div class="test3"><a href="#about"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></div>
+  <div class="test4"><a href="#home"><i class="fa fa-home fa-2x"></i></a></div>
+  <div class="mask2"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></div>
+</div>
+
+
+ 
+
+<!-- Container (The Band Section) -->
+<div id="home" class="container text-center">
+<marquee behavior="scroll" align="middle" direction="" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
+<a href="#">Hiring Now 200 posts </a>! &nbsp;
+<a href="#">Customer Care Representative 150 Nos</a>&nbsp; / &nbsp;
+<a href="#">Team Managers 25 Nos</a>&nbsp; / &nbsp;
+<a href="#">Field Executives 25 Nos</a></marquee>
+
+
 <div class="cube-wrap example4">
     <div id="cube" class="cube">
         <div class="cube-front">
             <a href="#">
             <img class="step1-img1" src="images/clients/hdfc/cc1.png" alt="" />
             <img class="step1-img2" src="images/clients/hdfc/cc2.png" alt="" />
+			<img class="step1-img3" src="images/clients/hdfc/cc3.png" alt="" />
             </a>
         </div>
         <div class="cube-back">
@@ -150,14 +83,8 @@ $(document).ready(function() {
         <div class="cube-right"> </div>
     </div>
 </div>
-  
-<!-- Container (The Band Section) -->
-<div id="home" class="container text-center">
-<marquee behavior="scroll" align="middle" direction="" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
-<a href="#">Hiring Now 200 posts </a>! &nbsp;
-<a href="#">Customer Care Representative 150 Nos</a>&nbsp; / &nbsp;
-<a href="#">Team Managers 25 Nos</a>&nbsp; / &nbsp;
-<a href="#">Field Executives 25 Nos</a></marquee>
+
+
   <h3>Welcome to Frens</h3>
  
   <p style="text-align:left">Frens HR Services is leading recruitment process outsourcing and consulting organization. The company is managed by an experienced team of professionals who have served leading organizations. Established in 2014, Frens HR Services has helped more clients in finding the right talent and helped more than 500 candidates to find their dream jobs since inception. Working across Industry Verticals and Functional Areas, we are trusted to deliver fast, efficient and caring service to clients and candidates alike.
@@ -242,11 +169,11 @@ Our passion, integrity and work ethics set us apart and make us a preferred sale
        </p><br>
 	   <p class="text-center line">Our Clients are:</p>
 	   <hr>
-<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/hdfc.png" title="HDFC"><img src="images/clients/hdfc.png"><b><p>HDFC BANK</p></img></a></div>
-<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/citibank.png"title="CITIBANK"><img src="images/clients/citibank.png"><p>CITIBANK</p></img></a></div>
-<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/yes.png"title="YES"><img src="images/clients/yes.png"><p>YES BANK</p></img></a></div>
-<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/icici.jpg"title="ICICI"><img src="images/clients/icici.jpg"><p>ICICI BANK</p></img></a></div>
-<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/rbl.png"title="RBL"><img src="images/clients/rbl.png"><p>RBL BANK</p></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/hdfc.png" title="HDFC"><img src="images/clients/hdfc.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/citibank.png"title="CITIBANK"><img src="images/clients/citibank.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/yes.png"title="YES"><img src="images/clients/yes.png"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/icici.jpg"title="ICICI"><img src="images/clients/icici.jpg"></img></a></div>
+<div class="gall"><a class="fancybox" rel="gall1" href="images/clients/rbl.png"title="RBL"><img src="images/clients/rbl.png"></img></a></div>
 	   
      </div>
    </div>
@@ -340,62 +267,8 @@ Our passion, integrity and work ethics set us apart and make us a preferred sale
                     </ul>
 </div>
 </footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
-<script>
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,1],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        margin:10,
-        pagination:false,
-        navigation:true,
-        navigationText:["",""],
-        autoPlay:true
-    });
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".fancybox").fancybox({
-		openEffect	: 'none',
-		closeEffect	: 'none'
-	});
-});
-</script>
-
 <script src="js/index.js"></script>
+<script src="js/main.js"></script>
 </body>
+</div>
 </html>
