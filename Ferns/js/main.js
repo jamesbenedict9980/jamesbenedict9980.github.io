@@ -42,75 +42,24 @@ $(document).ready(function(){
     });
 });
  
-
-$(document).ready(function() {
-	$(".fancybox").fancybox({
-		openEffect	: 'none',
-		closeEffect	: 'none'
-	});
+$(".main-slider").click({
+  slidesToShow   : 3,
+  slidesToScroll : 3,
+  infinite   : true,
+  dots       : false,
+  arrows     : false,
+  responsive : [
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
+
  
-
-
-$(document).ready(function() {
-	var step = 2;
-	$('.cube').addClass('step1');
-	$('.step1-img1').addClass('slideRight').css('display','block');
-	$('.step1-img2').addClass('fadeIn').css('display','block');
-	setInterval(function(){
-		if (step == 5) {
-			step = 1;
-			$('.cube').removeClass('step4');
-		}
-		if (step == 1) {
-			setTimeout(function() {
-				$('.step1-img1').addClass('slideRight').css('display','block');
-				$('.step1-img2').addClass('slideLeft').css('display','none');
-			}, 1000);
-			setTimeout(function() {
-				$('.step2-img1').removeClass('slideDown').css('display','none');
-				$('.step2-img2').removeClass('fadeIn').css('display','none');
-			}, 2000);
-		}
-		if (step == 2) {
-			setTimeout(function() {
-				$('.step2-img2').addClass('fadeIn').css('display','block');
-			}, 500);
-			setTimeout(function() {
-				$('.step2-img1').addClass('slideDown').css('display','block');
-			}, 2000);
-			$('.step3-img1').removeClass('fadeIn').css('display','none');
-			$('.step3-img2').removeClass('slideUp').css('display','none');
-		}
-		if (step == 3) {
-			setTimeout(function() {
-				$('.step3-img1').addClass('fadeIn').css('display','block');
-			}, 500);
-			setTimeout(function() {
-				$('.step3-img2').addClass('slideUp').css('display','block');
-			}, 2000);
-			$('.step4-img1').removeClass('slideLeft').css('display','none');
-			$('.step4-img2').removeClass('fadeIn').css('display','none');
-			$('.step4-img3').removeClass('slideRight').css('display','none');
-			$('.step4-img4').removeClass('slideUp').css('display','none');
-		}
-		if (step == 4) {
-			setTimeout(function() {
-				$('.step4-img1').addClass('slideLeft').css('display','block');
-				$('.step4-img2').addClass('fadeIn').css('display','block');
-				$('.step4-img3').addClass('slideRight').css('display','block');
-			}, 500);
-			setTimeout(function() {
-				$('.step4-img4').addClass('slideUp').css('display','block');
-			}, 2000);
-			$('.step1-img1').removeClass('slideRight').css('display','none');
-			$('.step1-img2').removeClass('slideLeft').css('display','none');
-		}
-		$('.cube').addClass('step'+step).removeClass('step'+(step-1));
-		step++;
-	}, 4000);
-});
-
 
 $(document).ready(function() {
 
@@ -121,13 +70,13 @@ $(document).ready(function() {
 
     $('.parent2').on('mousedown touchstart', function() {
     
-    if (!active1) $(this).find('.test1').css({'background-color': 'gray', 'transform': 'translate(0px,125px)'});
+    if (!active1) $(this).find('.test1').css({'background-color': 'gray', 'transform': 'translate(-125px,-0px)'});
     else $(this).find('.test1').css({'background-color': 'dimGray', 'transform': 'none'}); 
-     if (!active2) $(this).find('.test2').css({'background-color': 'gray', 'transform': 'translate(-60px,105px)'});
+     if (!active2) $(this).find('.test2').css({'background-color': 'gray', 'transform': 'translate(-105px,-60px)'});
     else $(this).find('.test2').css({'background-color': 'darkGray', 'transform': 'none'});
-      if (!active3) $(this).find('.test3').css({'background-color': 'gray', 'transform': 'translate(-105px,60px)'});
+      if (!active3) $(this).find('.test3').css({'background-color': 'gray', 'transform': 'translate(-60px,-105px)'});
     else $(this).find('.test3').css({'background-color': 'silver', 'transform': 'none'});
-      if (!active4) $(this).find('.test4').css({'background-color': 'gray', 'transform': 'translate(-125px,0px)'});
+      if (!active4) $(this).find('.test4').css({'background-color': 'gray', 'transform': 'translate(-0px,-125px)'});
     else $(this).find('.test4').css({'background-color': 'silver', 'transform': 'none'});
     active1 = !active1;
     active2 = !active2;
