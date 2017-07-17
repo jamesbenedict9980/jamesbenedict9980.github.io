@@ -743,13 +743,12 @@ position:absolute;
   padding:20px;
 }
 
-#boxes a {color:#333; text-decoration:none}
-#boxes a:hover {color:#ccc; text-decoration:none}
+
 
 
 #boxes #dialog {
-  width:375px; 
-  height:203px;
+  width:500px; 
+  height:250px;
   padding:10px;
   background-color:#ffffff;
 } 
