@@ -1,5 +1,7 @@
-html {
-  height: 100%;
+html,header,body {
+      background-image: url("../images/bodybg.jpg");
+    center top repeat-y;
+    background-size: 100% auto;
 }
 @font-face {
 	font-family: 'Conv_concielianlight';
