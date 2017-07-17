@@ -635,62 +635,7 @@ color:#fff;
 }
 
 
-@media only screen and (max-width: 1900px) {
-  .slide-img {
-    width: 42% !important;
-    right: 0%;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .slide-img {
-    width: 50% !important;
-    right: 0%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .slide-tablecell .slide-text h2 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
 
-@media only screen and (max-width: 991px) {
-  .slide-img, .owl-carousel .owl-item img {
-    display: none;
-  }
-  .slider-preloader-wrap,
-  .item {
-    height: 700px;
-  }
-  .slide-text {
-    text-align: center;
-  }
-  .carousel-inner p {
-    font-size:13px;
-}
-@media only screen and (max-width: 450px) {
-#quote-carousel .carousel-indicators .active {
-    background: #333333;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    border-color: #9b59b6;
-    opacity: 1;
-    overflow: hidden;
-}
-}
-}
-}
-@media only screen and (max-width: 991px) {
-  .slider-preloader-wrap,
-  .item {
-    height: 600px;
-  }
-  .slide-tablecell .slide-text h2 {
-      font-size: 40px;
-      line-height: 50px;
-  }
-}
 
 
 
@@ -752,4 +697,67 @@ position:absolute;
   padding:10px;
   background-color:#ffffff;
 } 
- 
+
+
+
+@media only screen and (max-width: 1900px) {
+  .slide-img {
+    width: 42% !important;
+    right: 0%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .slide-img {
+    width: 50% !important;
+    right: 0%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .slide-tablecell .slide-text h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .slide-img, .owl-carousel .owl-item img {
+    display: none;
+  }
+  .slider-preloader-wrap,
+  .item {
+    height: 700px;
+  }
+  .slide-text {
+    text-align: center;
+  }
+  .carousel-inner p {
+    font-size:13px;
+}
+@media only screen and (max-width: 450px) {
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-color: #9b59b6;
+    opacity: 1;
+    overflow: hidden;
+}
+#boxes #dialog {
+  width:300px; 
+  height:220px;
+} 
+
+}
+}
+}
+@media only screen and (max-width: 991px) {
+  .slider-preloader-wrap,
+  .item {
+    height: 600px;
+  }
+  .slide-tablecell .slide-text h2 {
+      font-size: 40px;
+      line-height: 50px;
+  }
+}
