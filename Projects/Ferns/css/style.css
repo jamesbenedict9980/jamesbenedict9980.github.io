@@ -1,7 +1,11 @@
-html,header,body {
+body{
       background-image: url("../images/bodybg.jpg");
     center top repeat-y;
     background-size: 100% auto;
+		color: #777;
+	  	margin: 0;
+		padding: 0;
+ 
 }
 @font-face {
 	font-family: 'Conv_concielianlight';
@@ -11,7 +15,7 @@ html,header,body {
 	font-style: normal;
 }
 
-
+header{background:#fff;}
 
   .logo {
     position:absolute;
@@ -24,17 +28,11 @@ html,header,body {
 }
 
 .left{
-margin-left:20%;
-margin-right:20%
+margin-left:10%;
+margin-right:10%
 }
 
-body {
 
-		color: #777;
-	  	margin: 0;
-		padding: 0;
-		height: 100%;
-  }
   .line{
     margin: 10px 0 30px 0;
       font-size: 20px;
@@ -160,11 +158,13 @@ body {
   }
 .card{
 background-color: #2d2d30;
+border-radius:100px;
 color: white;
-    text-align: center;
+text-align: center;
 padding-top:50px;
 padding-bottom:50px;
 margin-top:25px;
+border: 2px solid #9b59b6;
 
 }
 .card:hover{
@@ -176,6 +176,7 @@ margin-top:25px;
   -o-transform: rotate(-8deg);
   -ms-transform: rotate(-8deg);
   transform: rotate(-8deg);
+  border: 2px solid #d35400;
 }
 .card1{
 background-color: white;
