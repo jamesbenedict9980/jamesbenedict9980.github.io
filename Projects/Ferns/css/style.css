@@ -38,10 +38,15 @@ body {
       font-size: 20px;
       color: white;
   }
-  h3, h4 {
+  h3 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;
       font-size: 20px;
+      color: #111;
+  }
+  
+  h4{
+        font-size: 30px;
       color: #111;
   }
 .container {
@@ -109,8 +114,7 @@ body {
       color: #000;
   }
   .modal-header, h4, .close {
-      background-color: #333;
-      color: #fff !important;
+      color: #000 !important;
       text-align: center;
       font-size: 30px;
   }
@@ -300,12 +304,7 @@ margin-top:25px;
   
 
 
-marquee{
-color:red;
-}
 
-marquee a{color:red;}
-marquee a:hover{color:green;}
 
 div.gall{
 position:relative;
@@ -714,3 +713,42 @@ position:absolute;
     margin-right:auto;
   }
   }
+  
+  
+
+
+
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+#boxes .window {
+  position:absolute;
+  border-radius:20px;
+  border: 4px solid #d35400;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#boxes a {color:#333; text-decoration:none}
+#boxes a:hover {color:#ccc; text-decoration:none}
+
+
+#boxes #dialog {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+} 
+ 
