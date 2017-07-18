@@ -16,7 +16,9 @@ body{
 }
 
 header{background:#fff;}
-
+p{
+text-align:justify;
+}
   .logo {
     position:absolute;
     font-size: 40px;
@@ -749,6 +751,10 @@ position:absolute;
 } 
   .logo {
 	margin-left:30%;
+}
+p{text-align:justify;}
+.left{
+margin-left:0;
 }
 }
 }
