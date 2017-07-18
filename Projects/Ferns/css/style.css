@@ -15,7 +15,6 @@ body{
 	font-style: normal;
 }
 
-header{background:#fff;}
 p{
 text-align:justify;
 }
@@ -29,8 +28,11 @@ text-align:justify;
 	color: #8e44ad !important;
 }
 
+
+
 .left{
 margin-left:10%;
+margin-right:10%;
 }
 
 
@@ -458,7 +460,7 @@ color:#fff;
 .slider-preloader-wrap,
 .item {
   height:500px;
- margin-top:50px;
+
 }
 .item {
   background-size: cover;
@@ -752,10 +754,13 @@ position:absolute;
   .logo {
 	margin-left:30%;
 }
+
 p{text-align:justify;}
 .left{
 margin-left:0;
+margin-right:0;
 }
+
 }
 }
 }
