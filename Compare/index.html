@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="css/md.css">
+<style>
+    .wrapper {
+  max-width: 300px;
+  text-align: center;
+}
+
+input#toggle {
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+}
+
+input#toggle + label {
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0 0 0px 1px #d5d5d5;
+  text-indent: -5000px;
+  height: 30px;
+  width: 50px;
+  border-radius: 15px;
+  top: 8px;
+}
+
+input#toggle + label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background: rgba(19, 191, 17, 0);
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+input#toggle + label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+input#toggle:checked + label:before {
+  width: 50px;
+  background: #13bf11;
+}
+
+input#toggle:checked + label:after {
+  left: 20px;
+  box-shadow: inset 0 0 0 1px #13bf11, 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+<body>
+    <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+<div class="w3-container" style="text-align: center;">
+    <div>
+          <h2 style="width: 70%;display: inline-block;">Compare Files</h2>
+            <div class="wrapper" style="display: inline-block;">
+                <h5 style="display: inline-block;">Standard</h5>
+                <input type="checkbox" name="toggle" id="toggle">
+                <label for="toggle"></label>
+            </div>
+    </div>
+  <div class="w3-card-4" style="width:49%;display: inline-block;">
+    <header class="w3-container w3-light-grey">
+      <h3>Original</h3>
+    </header>
+    <div class="w3-container">
+      <p>1 new friend request</p>
+      <hr>
+      <p style="text-align: left;">CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+    </div>
+    <button class="w3-button w3-block w3-dark-grey">Chose File</button>
+  </div>
+
+  <div class="w3-card-4" style="width:49%;display: inline-block;">
+    <header class="w3-container w3-light-grey">
+      <h3>Changed</h3>
+    </header>
+    <div class="w3-container">
+      <p>1 new friend request</p>
+      <hr>
+      <p style="text-align: left;">CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+    </div>
+    <button class="w3-button w3-block w3-dark-grey">Choose File</button>
+  </div>
+</div>
+<div class="w3-container">
+<table class="w3-table-all w3-card-4" style="margin-top: 30px;">
+    <thead>
+      <tr class="w3-light-grey w3-hover-red">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tr class="w3-hover-green">
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr class="w3-hover-blue">
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr class="w3-hover-black">
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+    </tr>
+    <tr class="w3-hover-text-green">
+      <td>Bo</td>
+      <td>Nilson</td>
+      <td>35</td>
+    </tr>
+  </table>
+</div>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
