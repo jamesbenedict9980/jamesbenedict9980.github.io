@@ -47,7 +47,6 @@ background-color:#BBBBBB}
 #index-banner{
 min-height:200px;max-height:400px;
 }
-
 }
 
 input,textarea{border-bottom:1px solid #fff}nav a
@@ -58,7 +57,63 @@ input,textarea{border-bottom:1px solid #fff}nav a
 .card .card-content p, .card .card-content1 p{margin:15px 0px}
 .card-avatar .card-content i, .card-avatar .card-content1 i{font-size:1.5rem}
 .card-avatar .card-content .card-title, .card-avatar .card-content1.card-title{line-height:30px !important}
-.parallax-container{max-height:250px}footer.page-footer{margin-top:0px !important}
+.parallax-container{max-height:300px}footer.page-footer{margin-top:0px !important}
 .brand-logo img{margin-top:7px;}
 a.footerAn{color:#ffffff; text-decoration:none;}
-.card-content1 p{text-align: justify;}
+.card-reveal p{font-size:14px!important;}
+.card-reveal ul{text-align:center; font-size:12px;}
+
+
+
+	.testimonial > h2 {
+		position: absolute;
+		text-align: center;
+		margin: -55px 0 0 0;
+		font-size: 16px;
+		font-weight:500;
+		color: #565656;
+	}
+
+.main-gallery {
+  background: #fff;
+
+
+}
+
+.gallery-cell {
+  width: 100%;
+}
+
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 35px auto 20px auto;
+}
+
+.testimonial-avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-quote {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.testimonial-author {
+  display: block;
+  font-weight: 800;
+  color: #575757;
+}
+
+.flickity-page-dots {
+  bottom: 25px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: #575757;
+}
+
+
