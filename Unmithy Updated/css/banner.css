@@ -51,6 +51,13 @@
   font-size: 3.0rem;
   margin: 10px 0;
 }
+
+@media only screen and (max-width: 480px){
+.slide .slide__content--headings h2 {
+  font-size: 18px;
+}
+
+}
 .slide .slide__content--headings .animated {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
