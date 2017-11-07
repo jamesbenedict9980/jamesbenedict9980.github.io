@@ -6,7 +6,7 @@
   font-style: normal;
 }
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family:verdana;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -367,7 +367,7 @@ body {
   }
 }
 #fh5co-hero .fh5co-intro > div .fh5co-center-position {
-  width: 65%; 
+  width: 65%;
   text-align: center;
   margin: 0 auto;
 }
