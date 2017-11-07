@@ -89,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #0070c0;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #99cc53 !important;
-  border-color: #99cc53 !important;
+  background: #a8abae!important;
+  border-color:#a8abae!important;
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #0070c0;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #0070c0;
+  background: #a8abae;
   color: #fff;
 }
 
