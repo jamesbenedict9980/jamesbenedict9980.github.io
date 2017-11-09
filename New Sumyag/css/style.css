@@ -5,8 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  font-family:verdana;
+
+body,html {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -202,15 +203,6 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   box-shadow: none;
   border-color: #0070c0;
-}
-
-body {
-  background: #efefef url(../images/white_wave.png) repeat;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body {
-    background: #efefef url(../images/white_wave_@2X.png) repeat;
-  }
 }
 
 .boxed #fh5co-page {
@@ -509,7 +501,7 @@ body {
 #fh5co-faqs,
 #fh5co-footer {
   background-color: #fff;
-  padding: 7em 0;
+  padding: 5em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-features,
@@ -1437,3 +1429,74 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+.fa-spin {
+	-webkit-animation: fa-spin 2s infinite linear;
+	animation: fa-spin 2s infinite linear
+}
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+  -webkit-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+}
+
+.grid-testimonials
+{
+  overflow: hidden;
+  padding-top: 3.125em
+}
+.grid-testimonials li
+{
+  float: left;
+  list-style-type: none;
+  padding-bottom: 3.125em
+}
+.grid-testimonials p
+{
+  line-height: 1.5em;
+  margin: 0
+}
+.grid-testimonials-citation
+{
+  color: #656262;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: center
+}
+.grid-testimonials li div
+{
+  border: 10px solid #ebebeb;
+  padding: 2.125em 7.638888888888889%;
+  position: relative
+}
+.grid-testimonials .quote-arrow
+{
+	background: #0070c1;
+	border-right:10px solid #ebebeb;
+	border-bottom:10px solid #ebebeb;
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -32px;
+	left: 50%;
+	margin-left: -25px;
+	width: 40px;
+	height: 40px;
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+@media screen and (min-width: 50em) 
+{
+	.grid-testimonials li
+  {
+    margin-right: 5%;
+    width: 30%
+  }
+	.grid-testimonials li:nth-child(3n)
+  {
+    margin-right: 0
+  }
+}
