@@ -730,7 +730,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 992px) {
   #fh5co-features-2 .fh5co-feature-image img, #fh5co-features-3 .fh5co-feature-image img, #fh5co-features-4 .fh5co-feature-image img {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
 
