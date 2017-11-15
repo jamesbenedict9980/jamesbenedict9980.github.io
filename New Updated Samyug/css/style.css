@@ -255,6 +255,10 @@ h1, h2, h3, h4, h5, h6 {
   top: -12px;
   z-index: 1;
 }
+#fh5co-logo img{
+margin-top: -5px;
+}
+
 #fh5co-header #fh5co-logo a {
   font-size: 30px;
   font-weight: 500;
