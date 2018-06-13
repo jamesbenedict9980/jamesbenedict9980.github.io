@@ -21,8 +21,8 @@ h5,p{font-family: 'Open Sans', sans-serif;}
 
 
 
-.pad-top{padding-top:30%;}
 
+.pad-top{padding-top:35px;}
 
 .row-eq-height{
 	padding: 0;
@@ -54,7 +54,7 @@ h5,p{font-family: 'Open Sans', sans-serif;}
 	width:100%;
 	height:100%;
 }
-
+.jumbotron{padding:20px!important;}
 .jumbotron h2{
 	color: #8b6f4e;
 }
@@ -461,3 +461,9 @@ figcaption{font-size:12px;
 height:435px;}
 
 }
+
+
+.panel-heading a{
+	text-decoration:none!important;
+}
+.panel-title{padding:15px;}
