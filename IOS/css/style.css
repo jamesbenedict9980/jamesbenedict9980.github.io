@@ -1708,7 +1708,7 @@ hr{visibility: hidden;}
 
 @media only screen and (max-device-width:375px) {
 .bulb {
-    bottom: 380px;
+    bottom: 200px;
     right: 15px;
 }
 }
@@ -1737,7 +1737,7 @@ hr{visibility: hidden;}
 	line-height: 40px;
 }
 .bulb {
-    bottom: 455px;
+    bottom: 70px;
     right:5px;
 }
 }
