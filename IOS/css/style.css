@@ -374,6 +374,7 @@ background-color:transparent;}
     border-top: solid 40px #d6b2a0;
     border-left: solid 40px transparent;
 	border-bottom-right-radius:8px;
+	z-index:999;
 }
 .modal-open {
    overflow:visible;
