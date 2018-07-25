@@ -1419,7 +1419,7 @@ blockquote:after {
     font-weight: bold;
 }
 .clickable {
-cursor: pointer!important;}
+cursor: pointer!important;z-index:999;}
 
 @media only screen and (max-width : 1700px) {
 .navbar-centered-nav .navbar-nav>li>a {
