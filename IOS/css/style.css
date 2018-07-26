@@ -347,7 +347,7 @@ background-color:transparent;}
 .bulb{
 	position: absolute;
 bottom: 0;
-right: 0;
+right:100px;
     width: 150px;
     background: #d6b2a0;
     border-radius: 15px;
@@ -1160,10 +1160,11 @@ right: 0;
     float:none;
     display:inline-block;
     zoom:1;
+	font-size:10px;
 }
 
 .nav-tabs > li>a:hover {
-    border-bottom:transparent!important;
+    border-bottom:none!important;
 }
 
 
@@ -1314,7 +1315,7 @@ h6.first {
 
 
 /*End Porcelain styles*/
-@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+
 blockquote {
     position: relative;
     margin: 0.5em;
@@ -1517,7 +1518,8 @@ cursor: pointer!important;z-index:999;}
 
 
 @media only screen and (min-width:990px) {
-	.modal-dialog{max-width:600px;float:right!important; right:100px;top:180px;}    
+	.modal-dialog{max-width:600px;float:right!important; right:100px;top:180px;} 
+
 }
 
 
@@ -1525,7 +1527,8 @@ cursor: pointer!important;z-index:999;}
 .dropdown-toggle{height:40px;!important;}
 .mySlides, .mySlides-2,.mySlides-3, .mySlides-4{padding-top:0;padding-bottom:100px;}
 .modal-dialog{top:180px;}    
-
+.modal-body{padding:0;}	
+.mySlides-6{padding-top:50px;padding-bottom:10%;}
 }
 
 @media only screen and (max-width:920px) {
@@ -1593,7 +1596,14 @@ hr{visibility: hidden;}
 .bulb {
     bottom: -70px;
 }
-
+.nav-tabs>li>a{font-size:14px;padding: 10px 0px;}
+.lftRgt{
+    position: absolute;
+    margin-left: -14px!important;
+    margin-right:0px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+}
 }
 
 
@@ -1689,6 +1699,14 @@ hr{visibility: hidden;}
 .bulb {
     bottom: 140px;
     right: 15px;
+}
+.nav-tabs>li>a{font-size:14px;padding: 10px 0px;}
+.lftRgt{
+    position: absolute;
+    margin-left: -14px!important;
+    margin-right:0px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
 }
 }
 
