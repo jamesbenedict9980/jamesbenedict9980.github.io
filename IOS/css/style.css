@@ -1194,6 +1194,9 @@ right:100px;
   -moz-flex-flow: row wrap;
   flex-flow: row wrap;
 }
+.row-eq-height:before, .row-eq-height:after{
+   display: none;
+}
 .row-1{position:absolute;margin-right:100px;margin-top: -245px;}
 .row-2{position:absolute;margin-left:100px;}
 .row-3{position:absolute;margin-top: -245px;}
@@ -1757,7 +1760,7 @@ hr{visibility: hidden;}
 	line-height: 40px;
 }
 .bulb {
-    bottom: 70px;
+    bottom:50px;
     right:5px;
 }
 }
