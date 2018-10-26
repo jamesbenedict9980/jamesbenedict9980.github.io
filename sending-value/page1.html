@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+		
+        <!--<img src="" />-->
+         <!--http://i.imgur.com/Mmfl8.png Images/ExcelLogo.gif-->
+			<img id="catImage" src="http://i.imgur.com/Mmfl8.png" width="100px" value="42" />
+	
+		
+		
+			<script>
+			    var catImage = document.getElementById("catImage");
+			    catImage.onclick = function () {
+			        var tempVar = '';
+			        tempVar = "Value=" + catImage.getAttribute("value");
+			        window.location.href = 'page2.html?' + tempVar;
+		};
+		</script>	
+    </body>
+</html>

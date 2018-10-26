@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body> 
+<h1>Recevied value</h1>
+<div id="data"></div>
+<script>
+function processForm(){
+
+ var parameters = location.search.substring(1).split("&");
+ var temp = parameters[0].split("=");
+	k = unescape(temp[1]);
+	document.getElementById("data").innerHTML = k;
+}
+processForm();
+</script>
+
+</body>
