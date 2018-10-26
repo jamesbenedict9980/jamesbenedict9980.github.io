@@ -5,7 +5,8 @@
 		
         <!--<img src="" />-->
          <!--http://i.imgur.com/Mmfl8.png Images/ExcelLogo.gif-->
-			<img id="catImage" src="http://i.imgur.com/Mmfl8.png" width="100px" value="42" />
+			<img id="catImage" src="http://i.imgur.com/Mmfl8.png" width="100px" value="11" />
+			<img id="cImage" src="http://i.imgur.com/Mmfl8.png" width="100px" value="22" />
 	
 		
 		
@@ -16,6 +17,14 @@
 			        tempVar = "Value=" + catImage.getAttribute("value");
 			        window.location.href = 'page2.html?' + tempVar;
 		};
-		</script>	
+		</script>
+		
+	<script>
+	var cImage = document.getElementById("cImage");
+	cImage.onclick = function () {
+	var tempVar = '';
+	tempVar = "Value=" + cImage.getAttribute("value");
+	window.location.href = 'page2.html?' + tempVar;};
+	</script>
     </body>
 </html>

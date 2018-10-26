@@ -15,5 +15,22 @@ function processForm(){
 }
 processForm();
 </script>
+<img id="aImage" src="http://i.imgur.com/Mmfl8.png" width="100px" value="aa" />
+<img id="bImage" src="http://i.imgur.com/Mmfl8.png" width="100px" value="bb" />
+
+<script>
+	var aImage = document.getElementById("aImage");
+	aImage.onclick = function () {
+	var tempVar = '';
+	tempVar = "Value=" + aImage.getAttribute("value");
+	window.location.href = 'finalpage.html?' + tempVar;};
+</script>
+<script>
+	var bImage = document.getElementById("bImage");
+	bImage.onclick = function () {
+	var tempVar = '';
+	tempVar = "Value=" + bImage.getAttribute("value");
+	window.location.href = 'finalpage.html?' + tempVar;};
+</script>
 
 </body>
