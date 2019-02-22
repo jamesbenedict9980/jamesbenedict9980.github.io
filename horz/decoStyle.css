@@ -333,6 +333,24 @@ img.seventh,h6.seventh {
 
 
 
+.age-radios{
+	display: flex;
+		  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+	justify-content: center;
+	width:100%;
+}
+.age-opts{
+	max-width:30.333333%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  z-index:-1!important;
+}
+
 
 .lines{
 	background-color: #000;
@@ -351,9 +369,32 @@ img.seventh,h6.seventh {
     margin-right: 50%;
 }
 
+.dds{
+  font-size:20px;
+  line-height:39px;
+  color:#fff;
+}
 
 
+.circles {
+  margin:auto;
+  display: inline-block;
+  padding:auto;
+  text-align: center;
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.circles a {
+  text-decoration: none;
+  color: #000;
+}
 
+
+.circles h2 small {
+  color: #1d2087;
+}
 
 .pulsate {
     -webkit-animation: pulsate 3s ease-out;
