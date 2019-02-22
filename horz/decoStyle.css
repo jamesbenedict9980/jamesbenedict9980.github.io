@@ -348,6 +348,7 @@ img.seventh,h6.seventh {
   align-items: center;
   text-align: center;
   width: 100%;
+	z-index:-1!important;
 }
 .age-opts span{
 	position: inherit !important;
