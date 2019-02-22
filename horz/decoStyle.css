@@ -343,28 +343,6 @@ img.seventh,h6.seventh {
 	justify-content: center;
 	width:100%;
 }
-.age-opts{
-	max-width:30.333333%;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-	z-index:-1!important;
-}
-.age-opts span{
-	position: inherit !important;
-	margin: auto !important;
-}
-.age-opts span:after{
-	content: "";
-    position: relative;
-    display: block;
-    left:50%;
-    height:30px;
-	width:0px;
-    background-color: #CCC;
-    border: 1px solid #000;
-
-}
 
 .lines{
 	background-color: #000;
