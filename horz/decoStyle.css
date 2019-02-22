@@ -264,6 +264,13 @@ img.seventh,h6.seventh {
 	display: flex;
   justify-content: center;
   width: 80%;
+  	padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 .age-opt{
 	max-width: 33.3333333%;
