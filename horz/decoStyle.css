@@ -335,6 +335,11 @@ img.seventh,h6.seventh {
 
 .age-radios{
 	display: flex;
+		  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 	justify-content: center;
 	width:100%;
 }
