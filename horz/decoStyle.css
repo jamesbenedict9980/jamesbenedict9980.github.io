@@ -371,6 +371,7 @@ img.seventh,h6.seventh {
     width: 100%;
     height:1%;
     top:72px;
+	    z-index: 999;
 }
 .lines.first{
 	width: 50%;
