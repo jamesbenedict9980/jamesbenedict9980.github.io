@@ -97,6 +97,7 @@ var slideInd = 1;
 showDiv(slideInd);
 
 function plusDiv(m) {
+	alert(slideInd);
   showDiv(slideInd += m);
 }
 
@@ -105,13 +106,13 @@ function currentDivs(m) {
 }
 
 function showDiv(m) {
+	alert(m);
 var j;
 var y = document.getElementsByClassName("mySlides");
-  if(m > y.length){$('#out').html('1' +' of 8');} 
- else if( m>=1) {$('#out').html(m +' of 8');}
- else if( m < 1){$('#out').html(y.length +' of 8');}
+  if(m > y.length){document.getElementById('out').innerHTML='1' +' of 8';} 
+ else if( m >= 1){document.getElementById('out').innerHTML= m +' of 8';}
+ else if( m < 1){document.getElementById('out').innerHTML= y.length +' of 8';}
   
-  var dots = document.getElementsByClassName("demo");
   if (m > y.length) {slideInd = 1}    
   if (m < 1) {slideInd = y.length}
   for (j = 0; j < y.length; j++) {
@@ -119,6 +120,7 @@ var y = document.getElementsByClassName("mySlides");
   }
   y[slideInd-1].style.display = "block"; 
 }
+
 
 
 
