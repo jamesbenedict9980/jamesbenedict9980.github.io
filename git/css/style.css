@@ -401,11 +401,11 @@ h4{font-weight:bold; font-family: 'Playfair Display', serif;margin-top:0;}
 .arrow-left{right: 123px;position: absolute;}
 .arrow-span{
 	position: absolute;
-	right: 63px;
+	right:55px;
     bottom: -5px;
 	color: #8b6f4e;
 	font-weight:bold;
-	width:90%;
+	width:100%;
 }
 
 
