@@ -1,4 +1,8 @@
-$(document).ready(function(){
+
+
+
+/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
+$(document).ready(function() {
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
   
@@ -24,12 +28,7 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
-  });
-})
-
-
-/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
-$(document).ready(function() {
+  });	
 
   //window and animation items
   var animation_elements = $.find('.animation-element');
