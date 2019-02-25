@@ -121,7 +121,6 @@ var y = document.getElementsByClassName("mySlides");
 
 
 
-
 //inside slider
 
 var slideIn = 1;
@@ -205,13 +204,10 @@ function currentDivs2(m2) {
 function showDiv2(m2) {
 var j2;
 var y2 = document.getElementsByClassName("mySlides-2");
-  if(m2 > y2.length){$('#out-2').html('1' +' of 8');} 
- else if( m2>=1) {$('#out-2').html(m2 +' of 8');}
- else if( m2 < 1){$('#out-2').html(y2.length +' of 8');}
-  
-  var dots = document.getElementsByClassName("demo");
-  if (m2 > y2.length) {slideInd2 = 1}    
-  if (m2 < 1) {slideInd2 = y2.length}
+  if(m2 > y2.length){$('#out-2').html('1' +' of 8');slideInd2 = 1} 
+ else if( m2 < 1){$('#out-2').html(y2.length +' of 8');slideInd2 = y2.length}
+ else if( m2 >= 1) {$('#out-2').html(m2 +' of 8');}
+
   for (j2 = 0; j2 < y2.length; j2++) {
     y2[j2].style.display = "none";  
   }
