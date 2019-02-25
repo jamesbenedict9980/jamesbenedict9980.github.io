@@ -97,7 +97,6 @@ var slideInd = 1;
 showDiv(slideInd);
 
 function plusDiv(m) {
-	alert(slideInd);
   showDiv(slideInd += m);
 }
 
@@ -106,11 +105,10 @@ function currentDivs(m) {
 }
 
 function showDiv(m) {
-	alert(m);
 var j;
 var y = document.getElementsByClassName("mySlides");
   if(m > y.length){document.getElementById('out').innerHTML='1' +' of 8';} 
- else if( m >= 1){document.getElementById('out').innerHTML= m +' of 8';}
+ else if( m >= 1){document.getElementById('out').innerHTML= slideInd +' of 8';}
  else if( m < 1){document.getElementById('out').innerHTML= y.length +' of 8';}
   
   if (m > y.length) {slideInd = 1}    
