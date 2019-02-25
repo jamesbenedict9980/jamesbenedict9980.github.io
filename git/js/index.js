@@ -91,31 +91,36 @@ $(window).on("load",function() {
 });
 
 
- //Main-slider-1
+//main-slider-1
 
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideInd = 1;
+showDiv(slideInd);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusDiv(m) {
+  showDiv(slideInd += m);
 }
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+function currentDivs(m) {
+  showDiv(slideInd = m);
 }
 
-function showDivs(n) {
-var i;
-var x = document.getElementsByClassName("mySlides");
-  if(n > x.length){document.getElementById('out').innerHTML='1' +' of 8';slideIndex = 1} 
- else if( n>=1) {document.getElementById('out').innerHTML= n +' of 8';}
- else if( n < 1){document.getElementById('out').innerHTML= x.length +' of 8';slideIndex = x.length}
- 
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+function showDiv(m) {
+var j;
+var y = document.getElementsByClassName("mySlides");
+  if(m > y.length){$('#out').html('1' +' of 8');} 
+ else if( m>=1) {$('#out').html(m +' of 8');}
+ else if( m < 1){$('#out').html(y.length +' of 8');}
+  
+  var dots = document.getElementsByClassName("demo");
+  if (m > y.length) {slideInd = 1}    
+  if (m < 1) {slideInd = y.length}
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block"; 
+  y[slideInd-1].style.display = "block"; 
 }
+
+
 
 //inside slider
 
@@ -186,32 +191,33 @@ function shows(j) {
 
 //main-slider-2
 
-var slideInd = 1;
-showDiv(slideInd);
+var slideInd2 = 1;
+showDiv2(slideInd2);
 
-function plusDiv(m) {
-  showDiv(slideInd += m);
+function plusDiv2(m2) {
+  showDiv2(slideInd2 += m2);
 }
 
-function currentDivs(m) {
-  showDiv(slideInd = m);
+function currentDivs2(m2) {
+  showDiv2(slideInd2 = m2);
 }
 
-function showDiv(m) {
-var j;
-var y = document.getElementsByClassName("mySlides-2");
-  if(m > y.length){$('#out-2').html('1' +' of 8');} 
- else if( m>=1) {$('#out-2').html(m +' of 8');}
- else if( m < 1){$('#out-2').html(y.length +' of 8');}
+function showDiv2(m2) {
+var j2;
+var y2 = document.getElementsByClassName("mySlides-2");
+  if(m2 > y2.length){$('#out-2').html('1' +' of 8');} 
+ else if( m2>=1) {$('#out-2').html(m2 +' of 8');}
+ else if( m2 < 1){$('#out-2').html(y2.length +' of 8');}
   
   var dots = document.getElementsByClassName("demo");
-  if (m > y.length) {slideInd = 1}    
-  if (m < 1) {slideInd = y.length}
-  for (j = 0; j < y.length; j++) {
-    y[j].style.display = "none";  
+  if (m2 > y2.length) {slideInd2 = 1}    
+  if (m2 < 1) {slideInd2 = y2.length}
+  for (j2 = 0; j2 < y2.length; j2++) {
+    y2[j2].style.display = "none";  
   }
-  y[slideInd-1].style.display = "block"; 
+  y2[slideInd2-1].style.display = "block"; 
 }
+
 
 
 //main-slider-2 - inside slider-1
