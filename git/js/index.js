@@ -106,17 +106,16 @@ function currentDivs(m) {
 
 function showDiv(m) {
 var j;
-var y = document.getElementsByClassName("mySlides");
-  if(m > y.length){document.getElementById('out').innerHTML='1' +' of 8';} 
- else if( m >= 1){document.getElementById('out').innerHTML= slideInd +' of 8';}
- else if( m < 1){document.getElementById('out').innerHTML= y.length +' of 8';}
-  
+var y = document.getElementsByClassName("mySlides");  
   if (m > y.length) {slideInd = 1}    
   if (m < 1) {slideInd = y.length}
   for (j = 0; j < y.length; j++) {
     y[j].style.display = "none";  
   }
   y[slideInd-1].style.display = "block"; 
+    if(m > y.length){document.getElementById('out').innerHTML='1' +' of 8';} 
+  else if( m < 1){document.getElementById('out').innerHTML= y.length +' of 8';}
+ else if( m >= 1){document.getElementById('out').innerHTML= slideInd +' of 8';}
 }
 
 
