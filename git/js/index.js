@@ -93,7 +93,7 @@ $(window).on("load",function() {
 
 //main-slider-1
 
-var slideInd = 1;
+/* var slideInd = 1;
 showDiv(slideInd);
 
 function plusDiv(m) {
@@ -106,17 +106,47 @@ function currentDivs(m) {
 
 function showDiv(m) {
 var j;
-var y = document.getElementsByClassName("mySlides");  
+var y = document.getElementsByClassName("mySlides");
+  if(m > y.length){document.getElementById('out').innerHTML='1' +' of 8';} 
+  else if( m < 1){document.getElementById('out').innerHTML= y.length +' of 8';}
+ else if( m >= 1){document.getElementById('out').innerHTML= slideInd +' of 8';}
+  
   if (m > y.length) {slideInd = 1}    
   if (m < 1) {slideInd = y.length}
   for (j = 0; j < y.length; j++) {
     y[j].style.display = "none";  
   }
   y[slideInd-1].style.display = "block"; 
-    if(m > y.length){document.getElementById('out').innerHTML='1' +' of 8';} 
-  else if( m < 1){document.getElementById('out').innerHTML= y.length +' of 8';}
- else if( m >= 1){document.getElementById('out').innerHTML= slideInd +' of 8';}
+} */
+
+
+var slideInd1 = 1;
+showDiv1(slideInd1);
+
+function plusDiv1(m1) {
+  showDiv1(slideInd1 += m1);
 }
+
+function currentDivs1(m1) {
+  showDiv1(slideInd1 = m1);
+}
+
+function showDiv1(m1) {
+var j1;
+var y1 = document.getElementsByClassName("mySlides");
+  if(m1 > y1.length){$('#out').html('1' +' of 8');} 
+ else if( m1 >= 1) {$('#out').html(m1 +' of 8');}
+ else if( m1 < 1){$('#out').html(y1.length +' of 8');}
+  
+  var dots = document.getElementsByClassName("demo");
+  if (m1 > y1.length) {slideInd1 = 1}    
+  if (m1 < 1) {slideInd1 = y1.length}
+  for (j1 = 0; j1 < y1.length; j1++) {
+    y1[j1].style.display = "none";  
+  }
+  y1[slideInd1-1].style.display = "block"; 
+}
+
 
 
 
