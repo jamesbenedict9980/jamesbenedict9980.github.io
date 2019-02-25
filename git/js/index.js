@@ -107,18 +107,16 @@ function currentDiv(n) {
 function showDivs(n) {
 var i;
 var x = document.getElementsByClassName("mySlides");
-  if(n > x.length){document.getElementById('out').innerHTML='1' +' of 8';} 
+  if(n > x.length){document.getElementById('out').innerHTML='1' +' of 8';slideIndex = 1} 
  else if( n>=1) {document.getElementById('out').innerHTML= n +' of 8';}
- else if( n < 1){document.getElementById('out').innerHTML= x.length +' of 8';}
-  
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
+ else if( n < 1){document.getElementById('out').innerHTML= x.length +' of 8';slideIndex = x.length}
+ 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block"; 
 }
+
 //inside slider
 
 var slideIn = 1;
