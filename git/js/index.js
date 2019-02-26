@@ -99,6 +99,7 @@ var y = document.getElementsByClassName("mySlides");
 
 var slideInd1 = 1;
 showDiv1(slideInd1);
+var m1=0;
 
 function plusDiv1(m1) {
   showDiv1(slideInd1 += m1);
