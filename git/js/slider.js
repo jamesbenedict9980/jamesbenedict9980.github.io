@@ -40,7 +40,8 @@ function currentDivs1(m1) {
 
 function showDiv1(m1) {
 var j1;
-var newval=slideInd1.toString();
+var newval=0;
+newval=slideInd1.toString();
 var y1 = document.getElementsByClassName("mySlides");
   if(slideInd1 > y1.length){$('#out').html('1' +' of 8');} 
  else if( slideInd1 >= 1) {$('#out').html(newval +' of 8');}
