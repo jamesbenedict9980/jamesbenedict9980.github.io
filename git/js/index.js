@@ -111,7 +111,7 @@ function currentDivs1(m1) {
 
 function showDiv1(m1) {
 var j1;
-console.log(m1);
+console.log(out);
 var y1 = document.getElementsByClassName("mySlides");
   if(m1 > y1.length){$('#out').html('1' +' of 8');} 
  else if( m1 >= 1) {$('#out').html(m1 +' of 8');}
