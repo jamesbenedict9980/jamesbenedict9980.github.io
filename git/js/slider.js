@@ -40,18 +40,20 @@ function currentDivs1(m1) {
 
 function showDiv1(m1) {
 var j1;
+var newval=slideInd1.toString();
 var y1 = document.getElementsByClassName("mySlides");
   if(slideInd1 > y1.length){$('#out').html('1' +' of 8');} 
- else if( slideInd1 >= 1) {$('#out').html(slideInd1 +' of 8');}
+ else if( slideInd1 >= 1) {$('#out').html(newval +' of 8');}
  else if( slideInd1 < 1){$('#out').html(y1.length +' of 8');}
   
-  var dots = document.getElementsByClassName("demo");
+
   if (m1 > y1.length) {slideInd1 = 1}    
   if (m1 < 1) {slideInd1 = y1.length}
   for (j1 = 0; j1 < y1.length; j1++) {
     y1[j1].style.display = "none";  
   }
   y1[slideInd1-1].style.display = "block"; 
+
 }
 
 
@@ -307,7 +309,7 @@ var y3 = document.getElementsByClassName("mySlides-3");
  else if( m3>=1) {$('#out-3').html(m3 +' of 8');}
  else if( m3 < 1){$('#out-3').html(y3.length +' of 8');}
   
-  var dots = document.getElementsByClassName("demo");
+
   if (m3 > y3.length) {slideInd3 = 1}    
   if (m3 < 1) {slideInd3 = y3.length}
   for (j3 = 0; j3 < y3.length; j3++) {
@@ -474,7 +476,7 @@ var y4 = document.getElementsByClassName("mySlides-4");
  else if( m4>=1) {$('#out-4').html(m4 +' of 6');}
  else if( m4 < 1){$('#out-4').html(y4.length +' of 6');}
   
-  var dots = document.getElementsByClassName("demo");
+
   if (m4 > y4.length) {slideInd4 = 1}    
   if (m4 < 1) {slideInd4 = y4.length}
   for (j4 = 0; j4 < y4.length; j4++) {
@@ -606,7 +608,7 @@ var y5 = document.getElementsByClassName("mySlides-5");
  else if( m5>=1) {$('#out-5').html(m5 +' of 7');}
  else if( m5 < 1){$('#out-5').html(y5.length +' of 7');}
   
-  var dots = document.getElementsByClassName("demo");
+
   if (m5 > y5.length) {slideInd5 = 1}    
   if (m5 < 1) {slideInd5 = y5.length}
   for (j5 = 0; j5 < y5.length; j5++) {
