@@ -118,6 +118,7 @@ var y1 = document.getElementsByClassName("mySlides");
  else if( m1 >= 1) {$('#out').text(m1 +' of 8');}
  else if( m1 < 1){$('#out').text(y1.length +' of 8');}
   
+  document.getElementById("sl").innerHTML=m1;
   
   if (m1 > y1.length) {slideInd1 = 1}    
   if (m1 < 1) {slideInd1 = y1.length}

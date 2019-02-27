@@ -1,7 +1,7 @@
 html,body {
 		-webkit-overflow-scrolling: touch;
 }
-.mySlides{display:none;}
+#sl{display:none;}
 .bg{
 	background-image: url(https://cdn.msisurfaces.com/images/lookbook/bathroom-0239.jpg);
     background-repeat: no-repeat;
