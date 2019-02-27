@@ -98,10 +98,9 @@ var y = document.getElementsByClassName("mySlides");
 
 
 var slideInd1 = 1;
+
 showDiv1(slideInd1);
 var m1=0;
-
-
 
 function plusDiv1(m1) {
   showDiv1(slideInd1 += m1);
@@ -115,19 +114,20 @@ function showDiv1(m1) {
 var j1;
 
 var y1 = document.getElementsByClassName("mySlides");
-  if(m1 > y1.length){$('#out').html('1' +' of 8');} 
- else if( m1 >= 1) {$('#out').html(m1 +' of 8');}
- else if( m1 < 1){$('#out').html(y1.length +' of 8');}
-  console.log(m1 +' of 8');
-
+	if(m1 > y1.length){$('#out').text('1' +' of 8');} 
+ else if( m1 >= 1) {$('#out').text(m1 +' of 8');}
+ else if( m1 < 1){$('#out').text(y1.length +' of 8');}
+  
+  document.getElementById("sl").innerHTML=m1;
+  
   if (m1 > y1.length) {slideInd1 = 1}    
   if (m1 < 1) {slideInd1 = y1.length}
   for (j1 = 0; j1 < y1.length; j1++) {
     y1[j1].style.display = "none";  
   }
   y1[slideInd1-1].style.display = "block"; 
-console.log(m1 +' of 8');
-}
+} 
+
 
 
 
