@@ -215,9 +215,9 @@ function currentDivs2(m2) {
 function showDiv2(m2) {
 var j2;
 var y2 = document.getElementsByClassName("mySlides-2");
-  if(m2 > y2.length){$('#out-2').html('1' +' of 8');slideInd2 = 1} 
- else if( m2 < 1){$('#out-2').html(y2.length +' of 8');slideInd2 = y2.length}
- else if( m2 >= 1) {$('#out-2').html(m2 +' of 8');}
+  if(m2 > y2.length){$('#out-2').text('1' +' of 8');slideInd2 = 1} 
+ else if( m2 < 1){$('#out-2').text(y2.length +' of 8');slideInd2 = y2.length}
+ else if( m2 >= 1) {$('#out-2').text(m2 +' of 8');}
    document.getElementById("sl2").innerHTML=m2;
 
   for (j2 = 0; j2 < y2.length; j2++) {
@@ -379,9 +379,9 @@ function currentDivs3(m3) {
 function showDiv3(m3) {
 var j3;
 var y3 = document.getElementsByClassName("mySlides-3");
-  if(m3 > y3.length){$('#out-3').html('1' +' of 8');} 
- else if( m3>=1) {$('#out-3').html(m3 +' of 8');}
- else if( m3 < 1){$('#out-3').html(y3.length +' of 8');}
+  if(m3 > y3.length){$('#out-3').text('1' +' of 8');} 
+ else if( m3>=1) {$('#out-3').text(m3 +' of 8');}
+ else if( m3 < 1){$('#out-3').text(y3.length +' of 8');}
   document.getElementById("sl3").innerHTML=m3;
 
   if (m3 > y3.length) {slideInd3 = 1}    
@@ -546,9 +546,9 @@ function currentDivs4(m4) {
 function showDiv4(m4) {
 var j4;
 var y4 = document.getElementsByClassName("mySlides-4");
-  if(m4 > y4.length){$('#out-4').html('1' +' of 6');} 
- else if( m4>=1) {$('#out-4').html(m4 +' of 6');}
- else if( m4 < 1){$('#out-4').html(y4.length +' of 6');}
+  if(m4 > y4.length){$('#out-4').text('1' +' of 6');} 
+ else if( m4>=1) {$('#out-4').text(m4 +' of 6');}
+ else if( m4 < 1){$('#out-4').text(y4.length +' of 6');}
   document.getElementById("sl4").innerHTML=m4;
 
   if (m4 > y4.length) {slideInd4 = 1}    
@@ -678,9 +678,9 @@ function currentDivs5(m5) {
 function showDiv5(m5) {
 var j5;
 var y5 = document.getElementsByClassName("mySlides-5");
-  if(m5 > y5.length){$('#out-5').html('1' +' of 7');} 
- else if( m5>=1) {$('#out-5').html(m5 +' of 7');}
- else if( m5 < 1){$('#out-5').html(y5.length +' of 7');}
+  if(m5 > y5.length){$('#out-5').text('1' +' of 7');} 
+ else if( m5>=1) {$('#out-5').text(m5 +' of 7');}
+ else if( m5 < 1){$('#out-5').text(y5.length +' of 7');}
   document.getElementById("sl5").innerHTML=m5;
 
   if (m5 > y5.length) {slideInd5 = 1}    
