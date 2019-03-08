@@ -285,7 +285,6 @@ p {
   opacity:1;
   animation-name: rightFadeIn;
   animation-duration: 5s;
-	    width: 100%;
 }
 
 .first-text h1 {
@@ -588,7 +587,7 @@ top:10%;
 }
 .first-text {
     top:150%;
-    right: -65%;
+    right: -55%;
 }
 
 .first-text h1{
