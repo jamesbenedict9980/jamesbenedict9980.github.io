@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Countertop Quiz</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-M2KXQ3');</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="visible-lg col-lg-12">
+			<!--<img id="bg" src="https://cdn.msisurfaces.com/images/countertop-quiz/kitchen-146-v2-full-large.jpg" alt="kitchen">-->
+			<img id="bg" src="https://cdn.msisurfaces.com/images/countertop-quiz/kitchen-0290-full-large.jpg" alt="kitchen">
+			
+		</div>
+		<div class="hidden-xs hidden-lg col-md-12">
+			<!--<img class="thumbnail img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/kitchen-146-v2-full.jpg" alt="kitchen">-->
+			<img class="thumbnail img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/kitchen-0290-full.jpg" alt="kitchen">
+		</div>
+
+	</div>
+	<div class="hidden-xs grad-md">
+		<div class="caption-md text-center">
+			<div class="first-text row">
+			
+				<img class="logo" src="https://cdn.msisurfaces.com/images/countertop-quiz/msi_logo_with_tagline.png" width="150" height="90" alt="logo">
+					<p style="font-size:3vw;"> YOUR KITCHEN</p>
+					<p class="space-top-minus" style="font-size:3.5vw;"><b>COUNTERTOP SOULMATE</b></p>
+			</div>
+			<div class="item i01 row second-text">
+				<p style="font-size:1.5vw; width: 85%;" class="">Love the urban chic, classic colonial, or laid-back bungalow look? Only know what you like when you see it?</p>
+				<p style="font-size:1.5vw; width: 85%;" class="space-top">Take our 60-second quiz to discover countertop ideas that best fit your decorating style.</p>
+			</div>
+			<div class="item i02 row third-text">
+				<a href="pages/decorating.html"><span class='  pulse-button'>Start</span></a>
+			</div>
+		</div>
+	</div>
+		<div class="visible-xs">
+			<div class="row">
+				<!--<img id="kitchn" class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/kitchen-146-v2-small.jpg" alt="kitchen">-->
+				<img id="kitchn" class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/kitchen-0290-small.jpg" alt="kitchen">
+					<div class="grad-xs">
+						<div class="caption-xs text-center">
+							<img class="logo" src="https://cdn.msisurfaces.com/images/countertop-quiz/msi_logo_with_tagline.png" alt="logo">
+								<div class="first-textS">
+									<p style="font-size:5.5vw;">YOUR KITCHEN</p>
+								</div>
+								<div class="first-text">
+									<p class="" style="font-size:7vw;"><b>COUNTERTOP</b></p>
+									<p class="space-top-minus-2" style="font-size:7vw;"><b>SOULMATE</b></p>
+								</div>
+								<div class="item i01 second-textS ">
+									<p style="font-size:4vw;">Take our 60-second quiz to discover countertop ideas that best fit your decorating style.</p>
+								</div>
+								<div class="item i02 third-text">
+									<a href="pages/decorating.html"><span class='pulse-button'>Start</span></a>
+								</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2KXQ3"
+height="0" width="0" class="iframe_Home"></iframe></noscript>
+<script>
+$(window).load(function() {    
+
+        var theWindow        = $(window),
+            $bg              = $("#bg"),
+            aspectRatio      = $bg.width() / $bg.height();
+
+        function resizeBg() {
+
+                if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                    $bg
+                        .removeClass()
+                        .addClass('bgheight');
+                } else {
+                    $bg
+                        .removeClass()
+                        .addClass('bgwidth');
+                }
+
+        }
+
+        theWindow.resize(resizeBg).trigger("resize");
+
+});
+</script>
+
+
+</div>
+</body>
+</html>
+
+
