@@ -1,0 +1,59 @@
+.nav-item>a{color:#333;}
+
+.carousel-caption{text-align:left;left:50px;}
+.y-box{width:30%;border-top:10px solid #fecc00;opacity:0.6;    z-index: -1;}
+.y-box>h3{color:#fff;background:#fecc00; text-align:center;padding:10px;}
+
+/**
+ * Change animation duration
+ */
+.animated {
+  -webkit-animation-duration:1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInLeft{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-200px,100px, 0);
+    transform: translate3d(-200px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-200px, 0, 0);
+    transform: translate3d(-200px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+footer{
+position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;}
+@media (max-width: 768px) {
+	.carousel-caption{text-align:center;}
+	.y-box{width:100%;border-top:0px solid #fecc00;}
+}
+@media (max-width: 480px) {
+	
+}
