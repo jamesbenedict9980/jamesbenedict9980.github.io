@@ -3,6 +3,14 @@
 .carousel-caption{text-align:left;left:50px;}
 .y-box{width:30%;border-top:10px solid #fecc00;opacity:0.6;    z-index: -1;}
 .y-box>h3{color:#fff;background:#fecc00; text-align:center;padding:10px;}
+.jumbotron{text-align:center;}
+.jumbotron p{padding-left: 20%;
+    padding-right: 20%;
+}
+.jumbotron h1,.jumbotron h4{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 
 /**
  * Change animation duration
@@ -46,13 +54,50 @@
 }
 
 footer{
-position: absolute;
+position: relative;
   bottom: 0;
   width: 100%;
   height: 50px;}
-@media (max-width: 768px) {
+.row-eq-height{padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flex-box;
+    display: -webkit-flex;
+    display: flex;
+    display: flexbox;
+	}
+	
+	
+.fa-spin-hover:hover {
+   -webkit-animation: spin 2s;
+   -moz-animation: spin 2s;
+   -o-animation: spin 2s;
+   animation: spin 2s;
+   cursor:pointer;
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@media (max-width: 1599px) {
+	.y-box{width:50%;}
+}
+@media (max-width:990px) {
 	.carousel-caption{text-align:center;}
 	.y-box{width:100%;border-top:0px solid #fecc00;}
+	.jumbotron p{padding-left:0;padding-right: 0;}
+}
+@media (max-width: 768px) {
+
 }
 @media (max-width: 480px) {
 	
