@@ -67,7 +67,12 @@ position: relative;
     display: flex;
     display: flexbox;
 	}
+<<<<<<< HEAD
 .bg{background-color:#e9ecef;}
+=======
+	
+	
+>>>>>>> fc7fda0e369ada3b99974e5b9352933965e04be4
 .fa-spin-hover:hover {
    -webkit-animation: spin 2s;
    -moz-animation: spin 2s;
@@ -75,7 +80,10 @@ position: relative;
    animation: spin 2s;
    cursor:pointer;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fc7fda0e369ada3b99974e5b9352933965e04be4
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
@@ -88,6 +96,7 @@ position: relative;
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+<<<<<<< HEAD
 
 .brandLogo{
     opacity: 1.0;
@@ -121,6 +130,8 @@ a{text-decoration:none!important;}
 	background:#000;
 }
 .lr{margin-left:5%;margin-right:5%;}
+=======
+>>>>>>> fc7fda0e369ada3b99974e5b9352933965e04be4
 @media (max-width: 1599px) {
 	.y-box{width:50%;}
 }
