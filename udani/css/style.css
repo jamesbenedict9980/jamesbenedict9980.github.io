@@ -121,6 +121,7 @@ a{text-decoration:none!important;}
 	background:#000;
 }
 .lr{margin-left:5%;margin-right:5%;}
+.carousel-control-prev-icon{color:#000;}
 @media (max-width: 1599px) {
 	.y-box{width:50%;}
 }
