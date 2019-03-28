@@ -120,8 +120,19 @@ a{text-decoration:none!important;}
 	color:#fff;
 	background:#000;
 }
-.lr{margin-left:5%;margin-right:5%;}
+.lr{margin-top:5%;margin-left:5%;margin-right:5%;}
 .carousel-control-prev-icon{color:#000;}
+.row-eq-height{
+	    display: -webkit-box!important;
+    display: -moz-box!important;
+    display: -ms-flexbox!important;
+    display: -webkit-flex!important;
+    display: -webkit-flex!important;
+    -webkit-flex-wrap: wrap!important;
+    display: flex!important;
+    flex-wrap: wrap!important;
+}
+
 @media (max-width: 1599px) {
 	.y-box{width:50%;}
 }
