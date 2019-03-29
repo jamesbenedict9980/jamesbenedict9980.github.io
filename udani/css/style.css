@@ -1,5 +1,30 @@
 .nav-item>a{color:#333;}
-
+.logo-img{width:100px; height:100px;}
+.carousel-img{
+	width: 100%;
+    vertical-align: middle;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-top: 38%;
+    display: block;
+    height: 0;
+	height:535px;
+}
+.carousel-img-vision{
+	width: 100%;
+    vertical-align: middle;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 0;
+	height:435px;
+}
 .carousel-caption{text-align:left;left:50px;}
 .y-box{width:30%;border-top:10px solid #fecc00;opacity:0.6;    z-index: -1;}
 .y-box>h3{color:#fff;background:#fecc00; text-align:center;padding:10px;}
@@ -90,11 +115,8 @@ position: relative;
 .brandLogo{
     opacity: 1.0;
     padding: 10px;
-    width: 100%;
-    height: 120px;
-    width: 100%;
-    min-height: 100%;
-	box-shadow: 3px 3px 3px 3px #e9ecef;
+	    border-radius: 50px;
+	    box-shadow: 3px 3px 3px 3px #e9ecef;
 }
 .button {
     display: inline-block;
@@ -130,6 +152,111 @@ a{text-decoration:none!important;}
     display: flex!important;
     flex-wrap: wrap!important;
 }
+.fa{cursor:pointer;}
+a{color:#000;}
+a:hover{color:#000;}
+
+
+
+.object {
+    -webkit-animation:  MoveUpDown 10s linear infinite;
+    -moz-animation:     MoveUpDown 10s linear infinite;
+    -o-animation:       MoveUpDown 10s linear infinite;
+    -ms-transition:     MoveUpDown 10s linear infinite;
+    animation:          MoveUpDown 10s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+@-moz-keyframes bounce {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+@-o-keyframes bounce {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+@-ms-keyframes bounce {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+.object1 {
+    -webkit-animation:  md 10s linear infinite;
+    -moz-animation:     md 10s linear infinite;
+    -o-animation:       md 10s linear infinite;
+    -ms-transition:     md 10s linear infinite;
+    animation:          md 10s linear infinite;
+}
+
+@keyframes md {
+  0%, 100% {
+    top:0;
+  }
+  50% {
+    top: 20px;
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    top:0;
+  }
+  50% {
+    top: 20px;
+  }
+}
+@-moz-keyframes bounce {
+  0%, 100% {
+    top:0;
+  }
+  50% {
+    top: 20px;
+  }
+}
+@-o-keyframes bounce {
+  0%, 100% {
+    top:0;
+  }
+  50% {
+    top: 20px;
+  }
+}
+@-ms-keyframes bounce {
+  0%, 100% {
+    top:0;
+  }
+  50% {
+    top: 20px;
+  }
+}
+
+
 @media (min-width: 1990px) {
 .jumbotron p{padding-left: 20%;padding-right: 20%;}
 }
@@ -143,7 +270,7 @@ a{text-decoration:none!important;}
 	.jumbotron p{padding-left:0;padding-right: 0;}
 }
 @media (max-width: 768px) {
-
+.logo-img{width:70px; height:70px;}
 }
 @media (min-width: 576px){
 .jumbotron {
@@ -151,5 +278,6 @@ a{text-decoration:none!important;}
 }
 }
 @media (max-width: 480px) {
-	
+.carousel-img{
+height:435px;}
 }
