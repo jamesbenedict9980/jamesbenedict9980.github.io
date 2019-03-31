@@ -266,11 +266,14 @@ a:hover{color:#000;}
 }
 @media (max-width:990px) {
 	.carousel-caption{text-align:center;}
-	.y-box{width:100%;border-top:0px solid #fecc00;}
+	.y-box{width:100%;}
 	.jumbotron p{padding-left:0;padding-right: 0;}
+	  .navbar-nav{text-align:center!important;}
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
 .logo-img{width:70px; height:70px;}
+.y-box{border-top:0px solid #fecc00;}
 }
 @media (min-width: 576px){
 .jumbotron {
@@ -278,6 +281,6 @@ a:hover{color:#000;}
 }
 }
 @media (max-width: 480px) {
-.carousel-img{
-height:435px;}
+.carousel-img{height:435px;}
+.y-box>h3{font-size:5vw;}
 }
