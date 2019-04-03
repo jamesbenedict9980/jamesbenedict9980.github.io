@@ -283,5 +283,5 @@ a:hover{color:#000;}
 }
 @media (max-width: 480px) {
 .carousel-img{height:435px;}
-.y-box>h3{font-size:5vw;}
+.y-box>h3{font-size:4vw;}
 }
