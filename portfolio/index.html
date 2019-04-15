@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>James Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="shortcut icon" href="img/j.png">
+<!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">    
+</head>
+<body>
+<div class="container-wrapper">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">sfdsfdsf</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+      <div class="navbar-nav ">
+        <a onclick="openNav()" class="nav-item nav-link active mobile-menu-trig" href="#">Work<span class="sr-only">(current)</span></a>
+        <a onclick="openNav2()" class="nav-item nav-link mobile-menu-trig" href="#">Projects</a>
+        <a onclick="openNav3()" class="nav-item nav-link mobile-menu-trig" href="#">Awards</a>
+        <a onclick="openNav4()" class="nav-item nav-link mobile-menu-trig" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container centered">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 mar-top">
+            <h1 class="text-center">ABCDDDDDDDD</h1>
+        </div>
+    </div>
+        <br>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 class="text-center">"
+                <span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='[ "html5", "css3", "javascript","jquery","bootstrap","android apps","adobe photoshop","adobe XD","adobe illustrator"]'>
+                </span>
+            "</h4>
+        </div>    
+    </div>
+    <br>
+    <br>
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h5 class="text-center">Passionate about Computers , Obsessed with web Designing and Developing. . .</h5>
+    </div>    
+</div>
+</div>
+
+<!-- ADD IMEDIATLY AFTER OPENING BODY -->
+<!-- start mobile menu overlay -->
+<div id="myNav" class="overlay">
+  	<!-- Button to close the overlay navigation -->
+  	<a href="javascript:void(0)" class="closebtn rotate" onclick="closeNav()">&times;</a>
+
+  	<!-- Overlay content -->
+  	<div class="overlay-content">
+    	<h1 class="text-center">Work</h1>
+  	</div>   
+</div>
+    
+    
+<div id="myNav2" class="overlay2">
+  	<!-- Button to close the overlay navigation -->
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+
+  	<!-- Overlay content -->
+  	<div class="overlay-content">
+    	<h1 class="text-center">Projects</h1>
+  	</div>   
+</div>
+
+<div id="myNav3" class="overlay3">
+  	<!-- Button to close the overlay navigation -->
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+
+  	<!-- Overlay content -->
+  	<div class="overlay-content">
+    	<h1 class="text-center">Awards</h1>
+  	</div>   
+</div>
+
+<div id="myNav4" class="overlay4">
+  	<!-- Button to close the overlay navigation -->
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+
+  	<!-- Overlay content -->
+  	<div class="overlay-content">
+    	<h1 class="text-center">Contact</h1>
+  	</div>   
+</div>    
+<!-- end mobile menu overlay -->    
+    
+    
+<footer>
+    
+<div class="container-wrapper">
+    <div class="left-center">
+        <ul id="menu">
+            <li><a href="tel:+919980445348" class="fa fa-phone"></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=+919980445348"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="mailto:jamesbenedict.9980@gmail.com" class="fa fa-envelope-o"></a></li>            
+            <li><a href="https://github.com/jamesbenedict9980/jamesbenedict9980.github.io" class="fa fa-github" target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/james-benedict-67457675/" class="fa fa-linkedin" target="_blank"></a></li>
+            <li><a href="#" class="fa fa-facebook" target="_blank"></a></li>
+        </ul>
+    </div>
+    <img class="w-100 bottom" src="img/bg.jpg" alt="bg"/>
+</div>
+    
+</footer>
+<!-- JS -->
+<script>
+$(".rotate").click(function(){
+ $(this).toggleClass("down"); 
+})   
+</script>    
+<script>
+function openNav() {
+ 	  document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+  	document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav2").style.height = "0%";
+}
+function openNav2() {
+ 	  document.getElementById("myNav2").style.height = "100%";
+}
+function closeNav2() {
+    document.getElementById("myNav").style.height = "0%";
+  	document.getElementById("myNav2").style.height = "0%";
+}
+function openNav3() {
+ 	  document.getElementById("myNav3").style.width = "100%";
+}
+function closeNav3() {
+    document.getElementById("myNav").style.height = "0%";
+  	document.getElementById("myNav2").style.height = "0%";
+    document.getElementById("myNav3").style.width = "0%";
+}
+function openNav4() {
+ 	  document.getElementById("myNav4").style.width = "100%";
+}
+function closeNav4() {
+    document.getElementById("myNav").style.height = "0%";
+  	document.getElementById("myNav2").style.height = "0%";
+    document.getElementById("myNav3").style.width = "0%";
+    document.getElementById("myNav4").style.width = "0%";
+}    
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
