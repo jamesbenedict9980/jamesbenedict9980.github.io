@@ -729,7 +729,7 @@ p {
     }
     .first-text {
         right: -60%;
-        width: 200%
+        width: 300%
     }
     .first-text h1 {
         padding-top: 5%
@@ -1001,8 +1001,7 @@ p {
     }
     .first-text {
         top: 140%;
-		left: -160px;
-		width: 400px;
+        right: -110%;
     }
     .second-textS {
         top: 210%;
