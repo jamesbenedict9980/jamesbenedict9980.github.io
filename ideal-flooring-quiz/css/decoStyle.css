@@ -918,12 +918,25 @@ position: absolute;
 
 
 .animated-tada {
+    -moz-animation:tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada;
+	-moz-animation-delay: 5s, 10s, 15s, 20s, 25s, 30s, 35s, 40s, 45s, 50s, 55s, 60s, 65s, 70s, 75s, 80s, 85s, 90s, 95s, 100s;
+	-moz-animation-duration: 2s;
+	
+	-o-animation:tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada;
+	-o-animation-delay: 5s, 10s, 15s, 20s, 25s, 30s, 35s, 40s, 45s, 50s, 55s, 60s, 65s, 70s, 75s, 80s, 85s, 90s, 95s, 100s;
+	-o-animation-duration: 2s;
+	
+	-ms-animation:tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada;
+	-ms-animation-delay: 5s, 10s, 15s, 20s, 25s, 30s, 35s, 40s, 45s, 50s, 55s, 60s, 65s, 70s, 75s, 80s, 85s, 90s, 95s, 100s;
+	-ms-animation-duration: 2s;
+	
 	-webkit-animation: tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada;
-	animation-duration: 2s;
     -webkit-animation-delay: 5s, 10s, 15s, 20s, 25s, 30s, 35s, 40s, 45s, 50s, 55s, 60s, 65s, 70s, 75s, 80s, 85s, 90s, 95s, 100s;
-	 animation: tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada;
-  animation-delay: 5s, 10s, 15s, 20s, 25s, 30s, 35s, 40s, 45s, 50s, 55s, 60s, 65s, 70s, 75s, 80s, 85s, 90s, 95s, 100s;
-  animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	
+	animation: tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada, tada;
+	animation-delay: 5s, 10s, 15s, 20s, 25s, 30s, 35s, 40s, 45s, 50s, 55s, 60s, 65s, 70s, 75s, 80s, 85s, 90s, 95s, 100s;
+	animation-duration: 2s;
 }
 
 
@@ -959,39 +972,44 @@ position: absolute;
 
 @keyframes tada {
   0% {
+	-moz-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
   10%, 20% {
+	-moz-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    -o-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);  
     -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
     -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
   }
 
   30%, 50%, 70%, 90% {
+	-moz-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -o-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);	  
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
 
   40%, 60%, 80% {
+	-moz-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -o-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);	  
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
 
   100% {
+	-moz-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);	  
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-}
-
-.tada {
-  -webkit-animation-name: tada;
-  animation-name: tada;
 }
 
 

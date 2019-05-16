@@ -98,7 +98,7 @@ body {
     -webkit-animation: pulse 2.5s infinite;
     -moz-animation: pulse 2.5s infinite;
     -o-animation: pulse 2.5s infinite;
-    -ms-transition: pulse 2.5s infinite;
+    -ms-animation: pulse 2.5s infinite;
     animation: pulse 2.5s infinite
 }
 
