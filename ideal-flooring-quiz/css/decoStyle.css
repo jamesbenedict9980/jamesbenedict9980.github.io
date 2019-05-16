@@ -1004,8 +1004,11 @@ position: absolute;
         margin-top: 2%;
     }
     .mar-chck{margin-top: 0px;}
-    .mar-easy,.mar-c{margin-top: -6px;}
+    
     .alert {margin-top: 15px;}
+}
+@media only screen and (max-width:767px) {
+	.mar-easy,.mar-c{margin-top: -6px;}
 }
 
 @media only screen and (max-width:720px) {
