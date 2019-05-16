@@ -1000,15 +1000,14 @@ position: absolute;
 }
 
 @media only screen and (max-width:768px) {
-    .space-top-xs {
-        margin-top: 2%;
-    }
+
     .mar-chck{margin-top: 0px;}
     
     .alert {margin-top: 15px;}
 }
 @media only screen and (max-width:767px) {
 	.mar-easy,.mar-c{margin-top: -6px;}
+    .space-top-xs {margin-top: 2%;}	
 }
 
 @media only screen and (max-width:720px) {
