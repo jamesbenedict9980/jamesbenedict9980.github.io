@@ -392,9 +392,9 @@ p {
         left: 0px
     }
     .third-text {
-        left: 13%;
-        opacity: 0;
-        top: 90rem
+    left: 10%;
+    opacity: 0;
+    top: 80rem;
     }
 }
 
