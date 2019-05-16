@@ -1001,8 +1001,8 @@ p {
     }
     .first-text {
         top: 140%;
-        right: -70%;
-        width:300%;
+		right: -160%;
+		width: 400%;
     }
     .second-textS {
         top: 210%;
