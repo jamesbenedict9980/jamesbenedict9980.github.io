@@ -25,6 +25,7 @@
     height: 0;
 	height:435px;
 }
+.hgt{height:500px!important;}
 .carousel-caption{text-align:left;left:50px;}
 .y-box{padding-top: 15px;width:30%;border-top:10px solid #fecc00;opacity:0.6;    z-index: -1;}
 .y-box>h3{color:#fff;background:#fecc00; text-align:center;padding:10px;}
