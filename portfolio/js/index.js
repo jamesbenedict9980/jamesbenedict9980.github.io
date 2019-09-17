@@ -54,3 +54,11 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right:none; }";
   document.body.appendChild(css);
 };
+
+
+
+
+
+
+
+
