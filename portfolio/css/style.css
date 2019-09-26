@@ -121,7 +121,7 @@ z-index: 9999;
 
 .navbar{font-family: 'Lobster Two', sans-serif;background:#000!important;top:50px;}
 .navbar a{color:#fff!important;margin-left:10%!important;}
-.navbar-brand{font-family: 'Sacramento', cursive; font-size:4rem; margin-left:10%;}
+.navbar-brand{font-family: 'Sacramento', cursive; font-size:2rem; margin-left:10%;}
 .navbar-brand:before,
 .navbar-brand:after {
   height: 20px;
@@ -214,7 +214,7 @@ h4{font-family: 'Lobster Two', sans-serif;}
 h1,h4{color:#f1c40f;}
 h5{color:#fff;}
 h1,h5{font-family: 'Josefin Sans', sans-serif;}
-h1{font-size:5rem;}
+h1{font-size:3rem;}
 .centered{
     position: absolute;
     top: 50%;
