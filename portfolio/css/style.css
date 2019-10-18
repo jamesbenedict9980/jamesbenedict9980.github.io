@@ -3,7 +3,7 @@ body {
 cursor:url(https://www.123cursors.com/freecursors/1055.gif);
 
 }
-html,body{background:#000;}
+html,body{background:#000!important;}
 #loading {
 position: fixed;
 width: 100%;
@@ -861,9 +861,6 @@ h1 {font-size: 3rem;}
   border-bottom: 15px solid transparent;
 }
 .spacer{margin-top: 1rem;}
-body { 
-  margin: 0; background: #131212;  
-} 
 
 div#masonry img {  
   transition: .8s opacity;
