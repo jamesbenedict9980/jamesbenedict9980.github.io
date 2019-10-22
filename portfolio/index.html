@@ -100,9 +100,9 @@ $(document).ready(function() {
   	<a href="javascript:void(0)" class="closebtn modal-form" onclick="closeNav3()"><span class="close-btn"></span></a>
 
   	<div class="overlay-content ml-5">
-	
+<div class="container">
 <div class="row">
-	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
 		<div  class="row bor">
 			<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 cont">
 				<img src="img/look-book.png" class="img-fluid image">
@@ -170,7 +170,12 @@ $(document).ready(function() {
 				</div>				
 				</div>
 				</div>
-			</div>		
+			</div>
+				<svg class="arrows">
+					<path class="a1" d="M0 0 L30 32 L60 0"></path>
+					<path class="a2" d="M0 20 L30 52 L60 20"></path>
+					<path class="a3" d="M0 40 L30 72 L60 40"></path>
+				</svg>			
 		</div>
 		<br>
 <!-- 		<div class="row">
@@ -218,7 +223,9 @@ $(document).ready(function() {
 			</div>			
 		</div>	 -->	
 	</div>
-	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+	</div>
+<div class="row mt-5">
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 	<ul class="list-ic vertical">
     <li>
 	<div class="row offset-md-1">
@@ -278,9 +285,8 @@ $(document).ready(function() {
     </li>	
 	
 </ul>
-</div>		
-
 </div>
+</diiv>
 </div>	
 </div>
 </div>   
@@ -335,7 +341,7 @@ $(document).ready(function() {
     
       <div class="direct-contact-container">
 
-        <ul class="contact-list">
+        <ul class="contact-list text-left">
           <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bangalore | INDIA</span></i></li>
           
           <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+919980445348</a></span></i></li>
@@ -346,17 +352,17 @@ $(document).ready(function() {
 
         <hr>
         <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
+          <li><a href="https://github.com/jamesbenedict9980/jamesbenedict9980.github.io" target="_blank" class="contact-icon">
             <i class="fa fa-github" aria-hidden="true"></i></a>
           </li>
           <li><a href="#" target="_blank" class="contact-icon">
             <i class="fa fa-twitter" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <li><a href="https://www.linkedin.com/in/james-benedict-67457675/" target="_blank" class="contact-icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <li><a href="https://www.facebook.com/Jamesbendict" target="_blank" class="contact-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
           </li>
         </ul>
         <hr>
@@ -373,26 +379,6 @@ $(document).ready(function() {
   	</div>   
 </div>
 
-
-    
-    
-<footer>
-    
-<div class="container-wrapper">
-    <div class="right-center">
-        <ul id="menu">
-<!--             <li><a href="tel:+919980445348" class="fa fa-phone"></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=+919980445348"><i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="mailto:jamesbenedict.9980@gmail.com" class="fa fa-envelope-o"></a></li>             -->
-            <li><a href="https://github.com/jamesbenedict9980/jamesbenedict9980.github.io" class="fa fa-github fa-2x" target="_blank"></a></li>
-            <li><a href="https://www.linkedin.com/in/james-benedict-67457675/" class="fa fa-linkedin fa-2x" target="_blank"></a></li>
-            <li><a href="https://www.facebook.com/Jamesbendict" class="fa fa-facebook fa-2x" target="_blank"></a></li>
-        </ul>
-    </div>
-    <img class="w-100 bottom" src="img/bg.jpg" alt="bg"/>
-</div>
-    
-</footer>
 <!-- JS -->  
 <script>
     function openNav3() {
@@ -411,9 +397,24 @@ $(document).ready(function() {
 </script>
 
 <script>
-    
+$(window).scroll(function () {
+    $('[id^="box"]').each(function () {
+        if (($(this).offset().top - $(window).scrollTop()) < -100) {
+            $(this).stop().fadeTo('fast', 0);
+        } else {
+            $(this).stop().fadeTo('fast', 1);
+        }
+    });
+});
 </script>
-
+<script>
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 
