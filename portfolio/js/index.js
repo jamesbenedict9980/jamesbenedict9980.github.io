@@ -90,8 +90,8 @@ Particle.prototype.update = function() {
 Particle.prototype.render = function() {
   ctx.save();
   ctx.beginPath();
-  ctx.fillStyle = '#fff';
-  ctx.strokeStyle = '#fff';
+  ctx.fillStyle = '#000';
+  ctx.strokeStyle = '#3498db';
   ctx.arc(this.x, this.y, this.size / 2, 0, 2 * Math.PI);
   ctx.fill();
   ctx.stroke();
