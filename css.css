@@ -28,8 +28,14 @@ main {
     margin-bottom: 20px;
 }
 
+@media (width: 768px) {
+    main {margin-top: 0px;}
+}
+
 /* Link: active, hover 
 *------------------------- */
+
+/*
 a {
     -webkit-text-decoration-skip: objects;
     color: #007bff;
@@ -42,6 +48,12 @@ a:hover {
     color: #0f6ecd;
     text-decoration: underline;
 }
+*/
+
+
+
+
+
 
 
 /* Headings 
@@ -263,6 +275,16 @@ small {
 .black-text,
 .black {color: #000 !important;}
 
+.swatch {
+    width: 200px;
+    padding: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 
 /* MSI backgrounds and borders
 -------------------------*/
@@ -353,20 +375,37 @@ small {
 *---------------------------------------------------*/
 .badge {
     display: inline-block !important;
-    padding: .25em .4em !important;
-    font-size: 85% !important;
-    font-weight: 700 !important;
+    font-size: 100% !important;
+    font-weight: 500 !important;
     line-height: 1 !important;
     text-align: center !important;
     white-space: nowrap !important;
     vertical-align: baseline !important;
-    border-radius: 0.25rem !important;
+    border-radius: 50% !important;
+    height: 30px;
+    width: 30px;
+    display: inline-block !important;
 }
+
+.msi-badge {
+    display: inline-block !important;
+    padding: .4em .4em !important;
+    font-size: 85% !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: baseline !important;
+    border-radius: 4px !important;
+    letter-spacing: 0px !important;
+}
+
 .badge-purple {
     background-color: #563d7c !important;
     border: 2px solid #563d7c !important;
     color: #fff !important;
 }
+
 .badge-post-it {
     margin-left: 1em;
     color: #ffffff;
@@ -375,6 +414,7 @@ small {
 .badge-danger {
     background-color: #CC0001 !important;
     border: 1px solid #CC0001 !important;
+    color: #fff !important;
 }
 
 /* Push Notification Badge */
@@ -431,11 +471,19 @@ small {
     border: 1px solid #b2b2b2;
 }
 
+.badge-dark {
+    color: #fff !important;
+    background-color: #303a40 !important;
+    border: 1px solid #303a40;
+}
+
 /* Post it Note Colors Only */
 .badge-silver {
     background-color:#BDC0C0;
     border: 1px solid #BDC0C0;
 }
+
+
 
 .bg-short-long-description {
     background-color: #dfdfdf;
@@ -448,7 +496,7 @@ small {
 *-------------------------*/
 .btn {
     /* display: inline-block !important; */
-	font-size: 1rem!important;
+	
     height: calc(1.5em + .75em + 2px);
     border-radius: 0 !important;
     text-transform: uppercase;
@@ -513,30 +561,95 @@ small {
     background-color: #2b2b2b;
 }
 
+/* Collapse Button 
+--------------------*/
+
+.btn {font-size:16px !important;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0 auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+    color: #212529 !important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    color: #fff !important;
+}
+
+.btn-outline-light.focus, .btn-outline-light:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);
+    outline: 0;
+}
+
+.btn-outline-light:hover {
+    color: #212529 !important;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+
+
+
+
+/* ----------*/
+
+::selection {
+    background-color: #A6A099 !important;
+    color: #fff !important;
+}
+
+::-moz-selection {
+    background-color: #A6A099 !important;
+    color: #fff !important;
+}
+
+
 /* Nav: Navbar
 *-------------------------*/
 
-/* .dropdown, */
-.navbar {padding: 0 !important;}
+a {
+    color: #9b7c57;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-/* Navbar Brand White 
-*/
-.navbar-brand-special a {
+.trans {
+    color: #9b7c57;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.trans:focus, .trans:hover {
+    color: rgb(118, 117, 117);
+    text-decoration: underline;
+}
+
+
+a:focus, a:hover {
+    color:#b2b2b2;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    color: rgb(118, 117, 117);
+}
+
+.navbar-inverse .navbar-nav>li>a {
     color: #fff;
 }
 
-.navbar-brand-special a:hover {
-    color: rgb(118, 117, 117) !important;
-    text-decoration: none !important;
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover {    
+    color:#b2b2b2;
+    text-decoration: none;
 }
 
-.navbar-brand-special a:focus {
-    color: rgb(118, 117, 117) !important;
-    text-decoration: none !important;
-}
-
-.navbar-brand-special a:active {
-    color: rgb(118, 117, 117) !important;
+/* .dropdown, */
+.navbar {
+    padding: 0 !important;
+    min-height: 40px !important;
 }
 
 .navbar-brand-special {
@@ -544,6 +657,29 @@ small {
     font-size: 1.7em;
     color: #fff !important;
     font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.navbar-brand-special:active {
+    color:#b2b2b2 !important;
+}
+
+.navbar-brand-special:focus {
+    color:#b2b2b2 !important;
+}
+
+.navbar-brand-special:hover {
+    color:#b2b2b2 !important;
+    text-decoration: none !important;
+}
+
+.navbar-brand-special:active {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.navbar-brand-special:focus {
+    color: rgb(118, 117, 117) !important;
+    text-decoration: none !important;
 }
 
 /* Navbar Brand Special Dark Text 
@@ -576,6 +712,11 @@ small {
 
 .nav-tabs {
     border-bottom: 0px solid #dee2e6 !important;
+}
+
+
+.border {
+    border: 1px solid #2b2b2b;
 }
 
 /* UTILITIES */
@@ -960,6 +1101,12 @@ small {
 /* Use to highlight html within a paragraph of text example below */
 /* <span class="inlineIndicator htmlVer">&lt;head&gt;</span> */
 
+.code-copy-header {
+    letter-spacing: 0px !important;
+    color: #2b2b2b !important;
+    font-weight: 600 !important; 
+}
+
 .inlineIndicator {
     font-family: Consolas, "courier new";
     display: inline-block;
@@ -992,6 +1139,14 @@ small {
     word-wrap: break-word
 }
 pre {background-color:#fff !important;}
+
+pre {
+    overflow: auto;
+    line-height: 20px;
+    white-space: pre;
+    background-color: #fff;
+    font-size: 87.5% !important;
+}
 
 /* keeps the code copy icon visible */
 .codecopy .codecopy-btn {
@@ -1089,18 +1244,6 @@ pre {background-color:#fff !important;}
     margin-left: 0 !important;
 }
 
-.msi-outline-this-element-in-pink-align-left {
-    max-width: 100% !important;
-    text-align: left;
-    border: 2px dashed #f80876;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-}
-
 .msi-outline-this-element-in-pink-half {
     max-width: 100% !important;
     text-align: right;
@@ -1133,7 +1276,7 @@ pre {background-color:#fff !important;}
 }
 /* Modifies left & right padding to match Jumbotron */
 .card-body {
-padding: 1.25em 2em;
+padding: 1.25em 2em !important;
 }
 .msi-custom-card {
     padding: 2em 0 5em 0 !important;
@@ -1237,11 +1380,77 @@ padding: 1.25em 2em;
     align-self: center!important;
 }
 .msi-card-body {
-padding: 1.25em 2em !important;
+padding: 1.25em 0 !important;
 }
 .msi-m-1{margin:.18em!important}
 .msi-m-2{margin:.4em!important}
 
+
+/* jQuery Date Picker
+*-------------------------*/
+.ui-widget {
+    font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 1em;
+}
+
+.ui-widget-header {
+    background-color: #B6ADA5 !important;
+    color:#2b2b2b !important;
+    border: 1px solid #796E65 !important;
+}
+
+.ui-widget-header a {
+    color: #fff !important;
+}
+
+.ui-widget-content a {
+    color: #2b2b2b !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #796E65 !important;
+    background-color: #B6ADA5 !important;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #dad55e;
+    background: #FDE391 !important;
+}
+
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    background-color: #fff !important;
+    color: #333333 !important;
+}
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 0px !important;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 0px !important;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 0px !important;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    border-bottom-right-radius: 0px !important;
+}
 
 /* Inputs
 *-------------------------*/
@@ -1286,13 +1495,13 @@ input[type="tel"],
 input[type="color"],
 .form-control {
     padding: .2em;
-    height: calc(1.5em + .75em + 2px);
     display: inline-block;
     border: 1px solid #2b2b2b;
     box-sizing: border-box;
-    font-weight: 500 !important;
-    color: #000;
+    font-weight: 100;
+    color: #2b2b2b7a !important;
     font-size: 1em;
+    height: 40px;
     font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -1319,19 +1528,19 @@ input[type="color"]:focus,
 }
 
 input[type="search"] {
-    color: #000;
+    color: #2b2b2b7a;
     font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1em !important;
-    font-weight: 500 !important;
+    font-weight: 100 !important;
     text-transform: none !important;
 }
 
 input::placeholder {
-    height: calc(3em + 2px) !important;
+    color: #2b2b2b7a !important;
     text-transform: uppercase;
     font-size: 1em;
     padding: .2em;
-    font-weight:500 !important;
+    font-weight: 100 !important;
     font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -1425,7 +1634,7 @@ th label {
 }
 
 /* Checkbox container Only */
-.msi-container {
+.container {
     display: block;
     position: relative;
     padding-left: 35px !important;
@@ -1439,7 +1648,7 @@ th label {
 }
 
 /* Hide the browser's default checkbox */
-.msi-container input {
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -1458,13 +1667,13 @@ th label {
     border: 1px solid #2b2b2b;
 }
 /* On mouse-over, add a grey background color */
-.msi-container:hover input~.checkmark {
+.container:hover input~.checkmark {
     border: dashed 1px #8B572A;
     background-color: rgb(231, 231, 231);
 }
 
 /* When the checkbox is checked, add a MSI Copper */
-.msi-container input:checked~.checkmark {
+.container input:checked~.checkmark {
     background-color: #8A6E49;
 }
 
@@ -1476,12 +1685,12 @@ th label {
 }
 
 /* Show the checkmark when checked */
-.msi-container input:checked~.checkmark:after {
+.container input:checked~.checkmark:after {
     display: block;
 }
 
 /* Style the checkmark/indicator */
-.msi-container .checkmark:after {
+.container .checkmark:after {
     left: 9px;
     top: 3px;
     width: 8px;
@@ -1493,13 +1702,18 @@ th label {
     transform: rotate(45deg);
 }
 
+/* Used for both inputs, radio buttons and checkboxes */ 
 
-/* DatePicker https://gijgo.com/
-*-------------------------*/
-.gj-datepicker-bootstrap span[role=right-icon].input-group-addon {
-    background: #8b6f4e;
-	color:#fff;
+label {
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 500 !important;
+    color: #2b2b2b;
+    display: inline-block;
+    margin-left: 5px;
 }
+
+
 
 /*custom form*/
 .form-control {
@@ -1507,6 +1721,24 @@ th label {
 }
 
 /*Basic Table*/
+table {
+    font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    width: 100%;
+}
+th {
+    border: 1px solid #2b2b2b;
+    text-align: left!important;
+    padding: 8px!important;
+    background-color: #8b6f4e;
+    color: white;
+}
+tr td {
+    border: 1px solid #2b2b2b;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #F1F1F2;
+}
 .msi-border {
     border: 1px solid #dee2e6!important;
 }
@@ -1523,330 +1755,24 @@ th label {
     display: -ms-flexbox!important;
     display: flex!important;
 }
-.msi-figure {
-    display: inline-block;
-	margin: 0 0 1rem;
-}
-.msi-figure-img {
-    margin-bottom: .5rem;
-    line-height: 1;
-}
-.font-weight-bold {
-    font-weight: 700!important;
-}
-
-
-/* Nav: Pills
-*-------------------------*/
-
-.nav-link {
-    padding: .7em .7em !important; 
-}
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: #8B6F4E !important;
-	font-weight:bold;
-	padding: .7em !important;
-}
-.nav-pills>li>a:hover{background-color: #2B2B31 !important;}
-
-
-/* Inactive nav-pills */
-.nav-justified .nav-item {
-    background-color: #2B2B31;
-}
-
-/* Inactive nav-pills */
-.nav-justified .nav-item a {
-    color:#fff !important;
-}
-
-/* Inactive nav-pills */
-.nav-justified .nav-item a:hover {
-    color:rgb(174, 174, 174) !important;
-}
-
-.nav-pills .nav-link {
-    border-radius: .0em !important;
-}
-
-.bd-navbar .navbar-nav .nav-link {
-color: #2b2b2b !important;
-}
-/* Radio Button 0
-*-------------------------*/
-
-/* The Container */
-.container-radio {
-display: block;
-position: relative;
-padding-left: 25px;
-margin-right: 35px;
-margin-bottom: 12px;
-cursor: pointer;
-font-size: 14px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
-
-/* Hide the browser's default radio button */
-.container-radio input {
-position: absolute;
-opacity: 0;
-cursor: pointer;
-height: 0;
-width: 0;
-}
-
-/* Create a custom radio button */
-.checkmark-radio {
-position: absolute;
-top: 0;
-left: 0;
-height: 18px;
-width: 18px;
-background-color: rgb(255, 255, 255);
-border: 1px solid #d3d3d3;
-border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container-radio:hover input~.checkmark-radio {
-    border: dashed 1px #8B572A;
-    background-color: rgb(231, 231, 231);
-}
-
-/* When the radio button is checked, add a blue background */
-.container-radio input:checked~.checkmark-radio {
-    background-color: #8A6E49;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark-radio:after {
-content: "";
-position: absolute;
-display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container-radio input:checked~.checkmark-radio:after {
-    display: block;
-}
-    
-/* Style the indicator (dot/circle) */
-.container-radio .checkmark-radio:after {
-    top: 5px;
-    left: 5px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-}
-/*Table Styles*/
-.swatch {
-    width: 200px;
-    padding: 0;
-    margin-bottom: 0;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.msi-table-header, .msi-table-header-copper, .thead-primary, .navbar-custom-copper {
-    background-color: #8b6f4e;
-    border: 1px dotted rgba(122, 101, 76, 0.242);
-    border-bottom: 1px dotted rgba(122, 101, 76, 0.242);
-}
-.msi-table-header-copper, .thead-dark, .navbar-custom-dark-grey {
-    background-color: #161617;
-    border: 1px dotted rgba(122, 101, 76, 0.242);
-    border-bottom: 1px dotted rgba(122, 101, 76, 0.242);
-}
-
-/*Data Table Styles*/
-
-.table .thead-dark th {
-    color: #fff;
-    background-color: #212529;
-    border-color: #32383e;
-}
-table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
-    height: 40px;
-    vertical-align: middle;
-}
-table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
-    padding-right: 30px;
-}
-table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
-    cursor: pointer;
-    position: relative;
-}
-
-table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after {
-    position: absolute;
-    bottom: 0.9em;
-    display: block;
-    opacity: 0.3;
-}
-label{
-    text-transform: uppercase;
-    font-size: 80%;
-    font-weight: 500 !important;
-    margin-bottom: .5em !important;
-    color: #2b2b2b;
-}
-div.dataTables_wrapper div.dataTables_filter {
-    text-align: right;
-}
-div.dataTables_wrapper div.dataTables_filter label {
-    font-weight: normal;
-    white-space: nowrap;
-    text-align: left;
-}
-div.dataTables_wrapper div.dataTables_filter input {
-    margin-left: 0.5em;
-    display: inline-block;
-    width: auto;
-	border: 2px solid #ccc !important;
-}
-table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after {
-    opacity: 1;
-}
-div.dataTables_wrapper div.dataTables_length select {
-    width: auto;
-    display: inline-block;
-}
-div.dataTables_wrapper div.dataTables_info {
-    margin-top: 1.2rem !important;
-    white-space: nowrap;
-}
-div.dataTables_wrapper div.dataTables_paginate {
-    margin: 0;
-    white-space: nowrap;
-    text-align: right;
-    margin-top: 1.2rem !important;
-}
-div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-    margin: 2px 0;
-    white-space: nowrap;
-    justify-content: flex-end;
-}
-.page-item.disabled .page-link {
-    color: #6c757d;
-    pointer-events: none;
-    cursor: auto;
-    background-color: #fff;
-    border-color: #dee2e6;
-    /* padding: 23px !important; */
-    margin: 3px !important;
-}
-.page-item:first-child .page-link {
-    margin-left: 0;
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
-}
-.page-link {
-    position: relative;
-    display: block;
-    padding: .5rem 1rem !important;
-    margin-left: -1px;
-    line-height: 1.25;
-    color: #2b2b2b !important;
-    background-color: #fff;
-    border: 2px solid #ccc !important;
-    margin: 3px !important;
-}
-
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    background-color: #555 !important;
-    border-color: #555 !important;
-    color: #fff !important;
-}
-
-/*Auto Complete Styles*/
-/* .ui-menu{position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    top: 100%;
-	float:left;
-    left:18.2%!important;
-    right: 0!important;
-	width:18.8%;}
-.ui-menu-item{
-list-style-type: none;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    border-bottom: 1px solid #d4d4d4;
-	margin-left:-40px;
-} */
-
-.ui-menu {
-	    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-        list-style:none;
-        padding: 10px;
-        margin: 0;
-        display:block;
-        width:228px;
-		z-index: 99;
-}
-.ui-menu .ui-menu {
-        margin-top: -3px;
-}
-.ui-menu .ui-menu-item {
-        margin:0;
-        padding:10px!important;
-        width: 200px;
-		border-bottom: 1px solid #d4d4d4;
-		background-color: #fff;
-}
-.ui-menu .ui-menu-item a { `
-        text-decoration:none;
-        display:block;
-}
-
-.ui-menu .ui-menu-item a.ui-state-hover,
-.ui-menu .ui-menu-item a.ui-state-active {
-        margin: -1px;
-		padding:10px!important;
-}
-
-.ui-menu-item:hover{background:#efefef;cursor:pointer;}
-
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-state-active.ui-button:hover 
-{
-  border: transparent!important;
-  background:none!important;
-  color:#333333!important;
-}
-
-.d-flex {
-    display: -ms-flexbox!important;
-    display: flex!important;
-}
-.bd-search {
-    position: relative;
-    /* padding: 1rem 15px; */
-    /* padding: 0 15px 0 15px; */
-    margin-right: -15px;
-    margin-left: -15px;
-    /* border-bottom: 1px solid rgba(0, 0, 0, .05); */
-}
 @media (min-width: 768px) {
 .navbar {border-radius: 0px!important;}
 }
 
 
 @media (min-width: 576px){
-
+.form-inline,.form-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
 }
-
+}
 
 
 
