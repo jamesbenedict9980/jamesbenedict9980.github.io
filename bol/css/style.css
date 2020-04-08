@@ -1,0 +1,110 @@
+.label-top{    position: relative;
+    margin-top: 15px;}
+.fa-right{margin-right:-15px;}
+.txtar.form-control {
+    height: auto;
+    border: 1px dashed #b2b2b2;
+}
+textarea:focus{
+    border-color: #8B572A !important;
+    border: dashed 1px #8B572A !important;
+    outline: 0 none !important;
+    background-color: rgba(78, 101, 122, 0.11) !important; 
+}
+
+.txtfont{font-size: 14px;padding-top: 10px;}
+
+.card-body {padding: 0.5em 0em !important;}
+.sample-img{width:124px;height:124px;}
+.mt-close{margin-top: 1.9rem!important;}
+.fa{cursor:pointer;}
+
+.p-main{padding:0.8rem!important;}
+.p-purch{padding: 3.79rem!important;}
+.p-add{padding: 0.6rem!important;}
+
+.msi-custom-card{padding:0!important;}
+footer {
+  height: 50px;
+  flex-shrink: 0;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner{color:#000!important;}
+
+.modal-table td, .modal-table th{padding:0 10px;cursor:pointer}
+.mt-uom{margin-top:-50px;}
+.table td, .table th {
+padding: .30rem;}
+.offset-internal {margin-left: 3.333333%;}
+
+
+.chk-cnt{
+	top: 50%;
+    left: 50%;
+    transform: translate(18%, 12%);
+    width: 1px;}
+/* input[type=checkbox] {
+    margin: 0 auto;
+    display: block;
+	    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255)!important;
+    border: 1px solid #2b2b2b;
+} */
+.form-control{line-height: 1.7!important;}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer-button {
+  position: fixed;
+  right: 20px;
+  bottom:100px;
+}
+label{text-transform:none!important;}
+
+.cont{cursor:pointer;width: 124px;}
+.overlay {
+    position: absolute;
+    /* top: 0; */
+    bottom: 16px;
+    left: 26px;
+    right: 0;
+    height: 65px;
+    width: 124px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+	z-index:999;
+}
+.cont:hover .overlay {
+  opacity: .5;
+}
+
+.text {
+  font-size: 1rem;
+  color:#fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.arow-lft-rgt{    top: 6px;
+    position: relative;}
+    #checkbox {
+      position:relative;
+      left:-90px;
+      top:7px;
+  }    
+@media only screen and (max-width : 990px) {
+footer,.footer-button {position:relative;bottom:0;}
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    width: 435px!important;
+    height:100px!important;
+}
+.select2-search__field{width:100%!important;}
