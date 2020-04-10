@@ -1,0 +1,22 @@
+Before you start the new project or updating the existing project with new UI kits please let me know I will provide the wireframe for that and also once you completed the project please send the test link to me for the review and correction. 
+1)Please use local file both the custom NEXTGEN stylesheet and Bootstrap 4.4.
+We will update you when the new updates are added in the NEXTGEN CSS files
+2)Please check the below over lapping border class and do the needful
+Three Options: 
+
+Delete “outline-fieldset” and add “border”. 
+
+Option One: default Bootstrap’s “border” + “msi-bg-silver”
+Option Two: no background + default Bootstrap’s “border”
+OR. Option Three:
+Add this to your stylesheet:
+.outline-fieldset-dark {border: 1px solid #2b2b2b !important; }
+
+3)If there is 3 buttons in your application please follow the below color formation 
+4)If there is sub menu with the main navigation menu in your application then please use the below arrangement
+5)3)	If you have horizontal table format please follow the below given class in the table header
+6)There is a confusion using company ID or the flag in your application, please find the below response from KUSH and do the needful
+Let me know if you have any questions
+
+Kush’s Response:
+The flag control should only be used in situations where we operate in one company at a time similar to Sage 500. For reports/applications that span multiple companies can use radio buttons/checkbox lists. I don’t think drop down is a good UI/UX control for something less than 5 options.
