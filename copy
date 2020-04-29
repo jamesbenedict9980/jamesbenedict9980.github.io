@@ -1,1 +1,474 @@
-https://xd.adobe.com/view/10ce10d9-7b75-4d80-4b51-cbf025d5acb1-66ff/
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Radio Buttons - NEXTGEN.wf </title>
+    <link rel="icon" src="NEXTGEN--FAV.ico" sizes="16x16 32x32" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/NEXTGEN-UIKIT-v3-3-2020.css">
+
+    <!-- Side Navigation -->
+    <link href="css/docs.min.css" rel="stylesheet">
+
+    <!-- CodeCopy Vanilla/UMD bundle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- Top Navbar and Side Menu.js -->
+    <script type="text/javascript" src="js/NEXTGEN-Side-Top-Footer.js"></script>
+
+    <!-- CodeCopy clipboard.js -->
+    <script src="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.js"></script>
+
+    <!-- clipboard.js  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function (event) {
+            codecopy('pre');
+        });
+    </script>
+
+    <!-- 'RETURN TO TOP' BUTTON JAVASCRIPT  -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="common-top-navbar"></div>
+        <div class="container-fluid no-gutters">
+            <div class="row flex-xl-nowrap">
+                <div class="col-12 col-md-3 col-xl-2" id="common-sidebar"></div>
+                    <main class="col-12 col-md-9 col-xl-10 py-md-3 px-md-3 pl-md-3" role="main">
+                        <div class="col-12">
+
+                        <!-- Breadcrumb Navigation -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb pl-0">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="nextgen-getting-started.html">NEXTGEN<span class="fw-700">.wf</span></a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Radio Button</li>
+                            </ol>
+                        </nav>
+
+                        <h1 class="fw-900 danger">NEXTGEN. <span class="fw-300"><i>wf</i></span></h1>
+                        <h2>Radio Buttons <small>with Visual Studio 2017 Instructions</small></h2>
+                        <p class="lead">Radio Buttons display a set of mutually exclusive options from which a user may select exactly one.</p>
+
+                        <div class="b-line"></div>
+                        <!-- COMPONENT NAVIGATION -->
+                        <h5 class="my-2">
+                            <a href="#radioDefaultWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Default Width)</span></a>
+                            <a href="#radioSmallWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Small Width)</span></a>
+                            <a href="#radioMediumWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Medium Width)</span></a>
+                            <a href="#radioLargeWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Large Width)</span></a>
+                        </h5>
+                        <div class="b-line"></div>
+                        <div class="spacer"></div>
+
+                        <!-- Type Two (WARNING) -->
+                        <div class="alert p-0 alert-dismissible fade show w-100 mb-4" role="alert">
+                            <div class="media bg-warning-reverse">
+                                <i class="fas fa-exclamation-triangle warning align-self-center justify-content-center fa-fw fa-2x m-3 "></i>
+                                <div class="media-body msi-bg-warning p-3">
+                                    <!-- What the issue? -->
+                                    <h4 class="white fw-900 ">Radio Buttons must render as an unordered list</h4>
+                                    <!-- How to resolve. -->
+                                    <span class="white lead fw-500">Radio button requires RepeatLayout with value of "UnorderedList" or it will not style as expected.</span>
+                                </div>
+                            </div>
+                        </div>
+
+<!-- STANDARD RADIO BUTTON SET (Default Width)  -->
+<h2 id="radioDefaultWidth" class="mt-4">Radio Button <small>Default Width</small></h2>
+<p class="lead">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> Default label width allow roughly <span class="fw-900 danger">24</span> to <span class="fw-900 danger">26</span> characters (including spaces).</p>
+
+<div class="msi-panel">
+<div class="msi-code htmlHigh notranwf-date">
+<h6>ASP.NET snippet</h6>
+<pre>
+&lt;div class="wf-radio outline-fieldset-copper p-4"&gt;
+    &lt;asp:RadioButtonList ID="DefaultRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;/div&gt;
+</pre>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
+</div>
+</div>
+
+<div class="spacer"></div>
+
+<h3 class="fw-600">Visual Studio 2017 Instructions</h3>
+<ol>
+    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
+    <li>To increase or decrease the length of the radio button label, include an additional class to the <span class="inlineIndicator-slim info htmlVer--lite">div</span> container</li>
+    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
+    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
+</ol>
+
+<!-- Example (Default Width)-->
+<h6 class="fw-700 mt-4">Example (Default Width)</h6>
+<div class="wf-radio outline-fieldset-copper p-4">
+    <div class="radioButtonList">
+        <ul id="RadioButtonList">
+            <li>
+                <input id="RadioButtonList2_0" type="radio" name="RadioButtonList2" value="Selected" checked="checked"/>
+                <label for="RadioButtonList2_0">Selected</label>
+            </li>
+            <li>
+                <input id="RadioButtonList2_1" type="radio" name="RadioButtonList2" value="Unselected" />
+                <label for="RadioButtonList2_1">Unselected</label>
+            </li>
+            <li>
+                <input id="RadioButtonList2_2" type="radio" name="RadioButtonList2" value="Disabled" disabled="disabled" />
+                <label for="RadioButtonList2_2">Disabled</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Default label width allows roughly <span class="fw-900 danger">24</span> to <span class="fw-900 danger">26</span> characters before breaking. </span>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> <i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
+
+<!-- Return to top -->
+<div class="msi-custom-card roll mt-2">
+    <div class="card-body b-line">
+        <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="return to top"><i
+                class="fas fa-angle-double-up"></i> Return to Top</button>
+    </div>
+</div>
+
+
+<!-- Multiple Radio (Small Width) -->
+<h2 id="radioSmallWidth" class="mt-4">Multiple Radio Button <small>(Small Width)</small></h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-radio-button-small-width</mark></code> to reduce the label width down to <span class="danger fw-900">5</span> to <span class="danger fw-900">7</span> characters (including spaces).</p>
+<i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
+<div class="spacer"></div>
+
+<!-- Multiple Radio Buttons .ASP (small width) -->
+<div class="msi-panel">
+<div class="msi-code htmlHigh notranwf-date">
+<h6>ASP.NET snippet</h6>
+<pre>
+&lt;div class="wf-radio wf-radio-button-small-width outline-fieldset-copper p-4"&gt;
+    &lt;asp:RadioButtonList ID="SmallRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;/div&gt;
+</pre>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
+</div>
+</div>
+
+<div class="spacer"></div>
+
+<h3 class="fw-700">Visual Studio 2017 Instructions</h3>
+<ol>
+    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
+    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio-button-small-width</span></li>
+    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
+    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
+</ol>
+
+<!-- Multiple Radio Buttons Example (small width) -->
+<h6 class="fw-700 mt-4">Example (Small Width)</h6>
+<div class="wf-radio wf-radio-small-width outline-fieldset-copper p-4">
+    <div class="radioButtonList">
+        <ul id="RadioButtonList22">
+            <li>
+                <input id="RadioButtonList22_0" type="radio" name="RadioButtonList22" value="Selected"/>
+                <label for="RadioButtonList22_0">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_1" type="radio" name="RadioButtonList22" value="Selected" />
+                <label for="RadioButtonList22_1">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_2" type="radio" name="RadioButtonList22" value="Selected" />
+                <label for="RadioButtonList22_2">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_3" type="radio" name="RadioButtonList22" value="Selected" />
+                <label for="RadioButtonList22_3">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_4" type="radio" name="RadioButtonList22" value="Selected"/>
+                <label for="RadioButtonList22_4">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_5" type="radio" name="RadioButtonList22" value="Selected" />
+                <label for="RadioButtonList22_5">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_6" type="radio" name="RadioButtonList22" value="Selected" />
+                <label for="RadioButtonList22_6">123456</label>
+            </li>
+            <li>
+                <input id="RadioButtonList22_3" type="radio" name="RadioButtonList22" value="Selected" />
+                <label for="RadioButtonList22_3">123456</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<h6 class="my-2">
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> <i class="fas fa-asterisk fa-xs danger"></i> Example contains two optional classes: <span class="htmlVer--lite"><span class="inlineIndicator-slim info"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span></span> and <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span></span></h6>
+
+<!-- Return to top -->
+<div class="msi-custom-card roll mt-2">
+    <div class="card-body b-line">
+        <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="return to top"><i
+                class="fas fa-angle-double-up"></i> Return to Top</button>
+    </div>
+</div>
+
+
+<!-- Multiple Radio ButtonsES (Medium Width) -->
+<h2 id="radioMediumWidth" class="mt-4"> Multiple Radio Buttons <small>(Medium Width)</small></h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-radio-button-medium-width</mark></code> to reduce the label width down to <span class="danger fw-900">15</span> to <span class="danger fw-900">18</span> characters (including spaces).</p>
+<i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
+<div class="spacer"></div>
+
+<!-- Radio Buttons .ASP (Medium Width) -->
+<div class="msi-panel">
+<div class="msi-code htmlHigh notranwf-date">
+<h6>Multiple Radio Button Example (Medium Width Label)</h6>
+<pre>
+&lt;div class="wf-radio wf-radio-button-medium-width outline-fieldset-copper p-4"&gt;
+    &lt;asp:RadioButtonList ID="MediumRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;/div&gt;
+</pre>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
+</div>
+</div>
+
+<div class="spacer"></div>
+
+<h3 class="fw-700">Visual Studio 2017 Instructions</h3>
+<ol>
+    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
+    <li>To increase or decrease the length of the radio button label, include an additional class to the <span class="inlineIndicator-slim info htmlVer--lite">div</span> container</li>
+    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio-button-medium-width</span></li>
+    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
+    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
+</ol>
+
+<!-- Multiple Radio Buttons Example (Medium Width) -->
+
+<h6 class="fw-700 mt-4">Example (Medium Width)</h6>
+<div class="wf-radio wf-radio-button-medium-label outline-fieldset-copper p-4">
+    <div class="radioButtonList">
+        <ul id="RadioButtonList">
+            <li>
+                <input id="RadioButtonList222_0" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_0">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_1" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_1">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_2" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_2">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_3" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_3">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_4" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_4">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_5" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_5">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_6" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_6">1234567891011121314</label>
+            </li>
+            <li>
+                <input id="RadioButtonList222_7" type="radio" name="RadioButtonList222" value="Selected" />
+                <label for="RadioButtonList222_7">1234567891011121314</label>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Multiple Radio Buttons Notes Below (Medium Width) -->
+<h6 class="my-2">
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and
+        default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap
+            4 typography</a>.</span>
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i><i
+            class="fas fa-asterisk fa-xs danger"></i>Example contains two optional classes:<span
+            class="htmlVer--lite"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span>
+        and
+        <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span>
+</h6>
+
+
+<!-- Return to top -->
+<div class="msi-custom-card roll mt-2">
+    <div class="card-body b-line">
+        <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="return to top"><i
+                class="fas fa-angle-double-up"></i> Return to Top</button>
+    </div>
+</div>
+
+
+<!-- Multiple Radio Buttons (Large Width) -->
+<h2 id="radioLargeWidth" class="mt-4">Multiple Radio Buttons (Large Width)</h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-radio-button-large-width</mark></code> to reduce the label width down to <span class="danger fw-900">30</span> to <span class="danger fw-900">35</span> characters (including spaces).</p>
+<i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
+<div class="spacer"></div>
+
+<!-- Radio Buttons .ASP (Large Width) -->
+<div class="msi-panel">
+<div class="msi-code htmlHigh notranwf-date">
+<h6>Multiple Radio Buttons Example (Large Width Label)</h6>
+<pre>
+&lt;div class="wf-radio wf-radio-button-large-width outline-fieldset-copper p-4"&gt;
+    &lt;asp:RadioButtonList ID="LargeRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;/div&gt;
+</pre>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
+</div>
+</div>
+
+<!-- Radio Buttons Visual Studio 2017 Instructions (Large Width) -->
+<h3 class="fw-700">Visual Studio 2017 Instructions</h3>
+<ol>
+    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
+    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio-button-large-width</span></li>
+    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
+    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
+</ol>
+
+<div class="spacer"></div>
+
+<!-- Multiple Radio Buttons (Large Width) -->
+<h6 class="fw-700 mt-4">Example (Large Width)</h6>
+<div class="wf-radio wf-radio-button-large-width outline-fieldset-copper p-4">
+    <div class="radioButtonList">
+        <ul id="RadioButtonList">
+            <li>
+                <input id="RadioButtonList99_0" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_0">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_1" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_1">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_2" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_2">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_3" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_3">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_4" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_4">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_5" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_5">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_6" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_6">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_7" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_7">12345678910111213141516171819202122</label>
+            </li>
+            <li>
+                <input id="RadioButtonList99_8" type="radio" name="RadioButtonList99" value="Selected" />
+                <label for="RadioButtonList99_8">12345678910111213141516171819202122</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Notes below (Large Width) -->
+<h6 class="my-2">
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Example contains two optional classes: <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span> and <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span></span>
+</h6>
+
+
+                <!-- Return to top -->
+                <div class="msi-custom-card roll mt-2">
+                    <div class="card-body b-line">
+                        <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="return to top"><i
+                                class="fas fa-angle-double-up"></i> Return to Top</button>
+                    </div>
+                </div>
+
+
+
+                    </div>
+     
+            </div>
+        </div>
+
+    <!-- w3codecolor.js -->
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+
+    <script>
+        w3CodeColor();
+    </script>
+
+
+</body>
+<footer>
+<!-- Common Footer -->
+
+</footer>
+</html>
