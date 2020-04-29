@@ -1,0 +1,404 @@
+/* wf-table TABLES - ASP.NET 4.5 WEB FORM COMPLIANT **
+--------------------------------- */
+.wf-table {
+    position: relative;
+}
+
+.wf-table table {
+    margin-top: 1em;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.wf-table table th {
+    background-color: #8b6f4e;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wf-table * thead {
+    height: 50px !important;
+} 
+
+.wf-table table tr th label {
+    color: #fff;
+    font-size: 95%;
+}
+
+.wf-table tr th input {
+    vertical-align: middle !important;
+}
+
+.wf-table table thead th {
+    height: 50px !important;
+    vertical-align: middle;
+}
+
+.wf-table table tr th input {
+    vertical-align: middle;
+}
+
+/* wf-gridview customizes the  */
+.wf-table table tr th input[type="checkbox"]:checked:after {
+    background: #8B6F4E !important;
+}
+
+.wf-table table tr th label, 
+.wf-table table tr th {
+    font-size: 100% !important;
+    font-weight: 700 !important;
+    margin-bottom: .25rem !important;
+}
+/* Default Table Column Alignment for Table Header
+----------------------------------------------------*/ 
+/* text-align: center; except first colum */
+/*.wf-table * th:not(:first-child){ */
+/*   text-align: center; */
+/*} */
+
+.wf-table table, th, td {
+    border-collapse: collapse !important;
+    padding: 10px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.wf-table * label {
+    margin-left: 15px !important;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+.wf-table * label, 
+.wf-table * tr td {
+    text-transform: uppercase;
+    font-size: 95%;
+    font-weight: 500 !important;
+    color: #2b2b2b;
+    margin-left: 0px;
+    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
+}
+
+/* Table row background every-other */
+.wf-table * tr:nth-child(2n+0) {
+    background-color: rgba(231, 231, 231, 0.7);
+}
+
+
+/* Default Table Column Alignment for Table Data
+----------------------------------------------------*/ 
+/* text-align: center; except first colum */
+/* .wf-table * td:not(:first-child){ */
+/*     text-align: center; */
+/* } */
+
+.wf-table caption {
+    font-weight: 700;
+    font-size: 1.75em;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* wf-button TABLE PAGINATION 
+------------------------------------------ */
+
+
+.wf-table * td[colspan] {
+    background-color: #fff !important;
+}
+
+.wf-table table tr td[colspan] table tr {
+    float: right;
+    margin-top: 1em;
+}
+
+.wf-table table tr td[colspan] table tbody tr td {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 !important;
+    font-size: 100%;
+    height: 50px;
+    border-bottom: 0px solid transparent;
+}
+
+.wf-table table tr td[colspan] table tbody tr td a {
+    background-color: transparent;
+    border: 1px solid rgb(128, 128, 128);
+    color: #2b2b2b;
+    padding: 13px 18px;
+    white-space: inherit;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+.wf-table table tr td[colspan] table tbody tr td a:hover,
+.wf-table table tr td[colspan] table tbody tr td a:active {
+    background-color:#A6A099;
+}
+
+.wf-table table tr td[colspan] table tbody tr td a:focus {
+    background-color: rgb(118, 117, 117);
+    color: #fff;
+}
+
+.wf-table table tr td[colspan] table tbody tr td span {
+    background-color: #5A4E47;
+    border: 1px solid #5A4E47;
+    color: #fff;
+    padding: 13px 18px;
+    white-space: inherit;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+.wf-table table tr td[colspan] table tbody tr td span:hover,
+.wf-table table tr td[colspan] table tbody tr td span:active {
+    background-color: #A6A099;
+    color: #2b2b2b !important;
+}
+
+.wf-table table tr td[colspan] table tbody tr td span:focus {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+
+
+/* wf-button BUTTONS 
+------------------------------------------ */
+.wf-button .primary input{
+    border: solid 1px #8b6f4e;
+    background-color: #8b6f4e;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    height: 40px;
+    width: 120px;
+    font-size: 1em;
+    letter-spacing: -0.25px;
+    cursor: pointer;
+}
+
+div.wf-button .secondary input {
+    border: solid 1px #555555;
+    background-color: #555555 !important;
+    color: #fff;
+    margin: 5px;
+    padding: 5px ;
+    text-transform: uppercase;
+    height: 40px;
+    width: 120px;
+    font-size: 1em;
+    letter-spacing: -0.25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* .wf-date .wf-date-time .wf-email .wf-password .wf-number
+------------------------------------------ */
+.wf-date input[type="date"],
+.wf-date-time input[type="datetime-local"],
+.wf-email input[type="email"], 
+.wf-password input[type="password"],
+.wf-number input[type="number"]{width: 300px;}
+
+
+
+
+/* wf-buttons for Email, Password, Number
+------------------------------------------ */
+.wf-email input[type="submit"],
+.wf-password input[type="submit"],
+.wf-number input[type="submit"]{
+    border: solid 1px #8b6f4e;
+    background-color: #8b6f4e;
+    color: #fff;
+    margin: 5px 5px 5px 0;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    height: 40px;
+    width: 120px;
+    font-size: 1em;
+    letter-spacing: -0.25px;
+    cursor: pointer;
+}
+
+/* UNORDERED LISTS USED FOR RADIO BUTTONS & CHECKBOXES | REMOVES BULLETS  
+------------------------------------------------------------------------ */
+.wf-checkbox ul, .wf-radio ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* !! Adjust the width based on character length !! */
+.wf-checkbox ul li, .wf-radio ul li {
+    display: inline-block;
+    width: 260px;
+    vertical-align: middle;
+}
+/* Label set to 90px wide */
+.wf-checkbox.wf-checkbox-small-width > ul li, 
+.wf-radio.wf-radio-small-width * ul li  {
+    width: 90px !important;
+}
+
+/* Label set to 180px wide */
+.wf-checkbox.wf-checkbox-medium-width > ul li {
+    width: 180px !important;
+}
+
+/* Label set to 180px wide */
+.wf-radio.wf-radio-button-medium-width > ul li {
+    width: 180px !important;
+}
+
+/* Checkbox Label set to 330px wide */
+.wf-checkbox.wf-checkbox-large-width > ul li {
+    width: 325px !important;
+}
+
+/* Radio Button Label set to 330px wide */
+.wf-radio.wf-radio-button-large-width * ul li {
+    width: 325px !important;
+}
+/* CHECKBOXES */
+.wf-checkbox * input[type="checkbox"], 
+[type="checkbox"]{
+    -webkit-appearance: none;
+    /* Hides the default checkbox style */
+    -moz-appearance: none;
+    /* Hides the default checkbox style */
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    vertical-align: middle;
+    border: 1px solid #2b2b2b;
+}
+
+.wf-checkbox label,
+.wf-radio label {
+    margin-left: 10px;
+}
+
+/* Checkbox Hover Effect */
+.wf-checkbox * input[type="checkbox"]:hover, 
+input[type="checkbox"]:hover {
+    border: dashed 1px #8B572A;
+    background-color: rgb(231, 231, 231);
+}
+
+.wf-checkbox * input[type="checkbox"]:checked, 
+input[type="checkbox"]:checked {
+    background-color: #8b6f4e;
+}
+
+.wf-checkbox * input[type="checkbox"]:checked:after, 
+input[type="checkbox"]:checked:after {
+    content: '';
+    position: absolute;
+    width: .9em;
+    height: .5em;
+    background: rgba(0, 0, 0, 0);
+    top: 0.2em !important;
+    left: 0.2em !important;
+    border: 3px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.wf-checkbox * input[type="checkbox"]:before,
+.wf-checkbox * input[type="checkbox"]:checked:before, 
+input[type="checkbox"]:before, 
+input[type="checkbox"]:checked:before {
+    position: absolute;
+    top: .3em;
+    left: .4em;
+    font-size: .8em;
+    line-height: 0.8;
+    text-align: center;
+}
+
+/*
+.wf-checkbox * input[type="checkbox"]:checked:before, 
+input[type="checkbox"]:checked:before {
+    position: absolute;
+    top: .2em;
+    left: .2em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #fff;
+    transition: all .2s;
+}
+*/
+
+/* RADIO BUTTONS - ASP.NET 4.5 WEB FORM COMPLIANT **
+---------------------------------------------------- */
+/* RADIO BUTTONS */
+div.wf-radio * input[type="radio"],
+input[type="radio"] {
+    -webkit-appearance: none;
+    /* Hides the default checkbox style */
+    -moz-appearance: none;
+    /* Hides the default checkbox style */
+    /* appearance: none; */
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    vertical-align:middle;
+}
+
+ /* On mouse-over, add a grey background color */
+div.wf-radio * input[type="radio"]:hover, 
+input[type="radio"]:hover {
+    border: dashed 1px #8B572A;
+    background-color: rgb(231, 231, 231);
+}
+
+/* Background color when checked */
+div.wf-radio * input[type="radio"]:checked,
+input[type="radio"]:checked {
+    background-color: #8B6F50;
+    border: 1px solid #2b2b2b;
+}
+
+div.wf-radio * input[type="radio"]:checked:after,
+input[type="radio"]:after {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .2s;
+}
+
+div.wf-radio * input[type="radio"]:after,
+input[type="radio"]:after {
+    content: "";
+    position: absolute;
+}
