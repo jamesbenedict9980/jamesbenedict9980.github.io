@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Radio Buttons - NEXTGEN.wf </title>
+    <title>Checkboxes- NEXTGEN.wf </title>
     <link rel="icon" src="NEXTGEN--FAV.ico" sizes="16x16 32x32" type="image/x-icon">
 
 
@@ -84,24 +84,29 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb pl-0">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="nextgen-getting-started.html">NEXTGEN<span class="fw-700">.wf</span></a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Radio Button</li>
+                                <li class="breadcrumb-item"><a href="nextgen-getting-started.html">NEXTGEN.<span class="fw-300"><i>wf</i></span></a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Checkboxes</li>
                             </ol>
                         </nav>
 
                         <h1 class="fw-900 danger">NEXTGEN. <span class="fw-300"><i>wf</i></span></h1>
-                        <h2>Radio Buttons <small>with Visual Studio 2017 Instructions</small></h2>
-                        <p class="lead">Radio Buttons display a set of mutually exclusive options from which a user may select exactly one.</p>
+
+                        <h2>Checkboxes <small>with Visual Studio 2017 Instructions</small></h2>
+                        <p class="lead">Checkboxes allow users to select one or more options. To improve visibility, Legacy checkboxes have been styled with left aligned labels, are slightly larger, and include hover effects.</p>
 
                         <div class="b-line"></div>
+
                         <!-- COMPONENT NAVIGATION -->
                         <h5 class="my-2">
-                            <a href="#radioDefaultWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Default Width)</span></a>
-                            <a href="#radioSmallWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Small Width)</span></a>
-                            <a href="#radioMediumWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Medium Width)</span></a>
-                            <a href="#radioLargeWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Radio Button (Large Width)</span></a>
+                            <a href="#checkbox" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Single Checkbox</span></a>
+                            <a href="#defaultWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Multiple Checkboxes (Default Width)</span></a>
+                            <a href="#smallWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Multiple Checkboxes (Small Width)</span></a>
+                            <a href="#mediumWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Multiple Checkboxes (Medium Width)</span></a>
+                            <a href="#largeWidth" class="my-2 flex-fill"><span class="badge badge-danger mb-2 p-1">Multiple Checkboxes (Large Width)</span></a>
                         </h5>
+
                         <div class="b-line"></div>
+
                         <div class="spacer"></div>
 
                         <!-- Type Two (WARNING) -->
@@ -110,64 +115,39 @@
                                 <i class="fas fa-exclamation-triangle warning align-self-center justify-content-center fa-fw fa-2x m-3 "></i>
                                 <div class="media-body msi-bg-warning p-3">
                                     <!-- What the issue? -->
-                                    <h4 class="white fw-900 ">Radio Buttons must render as an unordered list</h4>
+                                    <h4 class="white fw-900 ">Checkboxes must render as an unordered list</h4>
                                     <!-- How to resolve. -->
-                                    <span class="white lead fw-500">Radio button requires RepeatLayout with value of "UnorderedList" or it will not style as expected.</span>
+                                    <span class="white lead fw-500">Checkbox lists needs property RepeatLayout with value of "UnorderedList" or it will not style as expected</span>
                                 </div>
                             </div>
                         </div>
 
-<!-- STANDARD RADIO BUTTON SET (Default Width)  -->
-<h2 id="radioDefaultWidth" class="mt-4">Radio Button <small>Default Width</small></h2>
-<p class="lead">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> Default label width allow roughly <span class="fw-900 danger">24</span> to <span class="fw-900 danger">26</span> characters (including spaces).</p>
+<!-- SINGLE CHECKBOX  -->
+<h2 id="checkbox" class="fw-800 mt-4">Single Checkbox</h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-checkbox&nbsp;</mark></code></p>
 
 <div class="msi-panel">
 <div class="msi-code htmlHigh notranwf-date">
-<h6>ASP.NET snippet</h6>
+<h6>Wrap an ASP.NET component with:</h6>
 <pre>
-&lt;div class="wf-radio outline-fieldset-copper p-4"&gt;
-    &lt;asp:RadioButtonList ID="DefaultRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;div class=".wf-checkbox outline-fieldset-copper p-4"&gt;
+    &lt;asp: ID="SingleCheckboxExample" runat=”server” Text="Single Checkbox" /&gt;
 &lt;/div&gt;
 </pre>
-<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
 </div>
 </div>
 
-<div class="spacer"></div>
-
-<h3 class="fw-600">Visual Studio 2017 Instructions</h3>
-<ol>
-    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
-    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
-    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
-    <li>To increase or decrease the length of the radio button label, include an additional class to the <span class="inlineIndicator-slim info htmlVer--lite">div</span> container</li>
-    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
-    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
-</ol>
-
-<!-- Example (Default Width)-->
-<h6 class="fw-700 mt-4">Example (Default Width)</h6>
+<h6 class="fw-700 mt-4">Example</h6>
 <div class="wf-radio outline-fieldset-copper p-4">
-    <div class="radioButtonList">
-        <ul id="RadioButtonList">
-            <li>
-                <input id="RadioButtonList2_0" type="radio" name="RadioButtonList2" value="Selected" checked="checked"/>
-                <label for="RadioButtonList2_0">Selected</label>
-            </li>
-            <li>
-                <input id="RadioButtonList2_1" type="radio" name="RadioButtonList2" value="Unselected" />
-                <label for="RadioButtonList2_1">Unselected</label>
-            </li>
-            <li>
-                <input id="RadioButtonList2_2" type="radio" name="RadioButtonList2" value="Disabled" disabled="disabled" />
-                <label for="RadioButtonList2_2">Disabled</label>
-            </li>
-        </ul>
-    </div>
+    <ul id="CheckBoxList4">
+        <li>
+            <input id="CheckBoxList4_0" type="checkbox" name="CheckBoxList4$0" value="Single Checkbox" checked />
+            <label for="CheckBoxList4_0">Single Checkbox</label>
+        </li>
+    </ul>
 </div>
 <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Default label width allows roughly <span class="fw-900 danger">24</span> to <span class="fw-900 danger">26</span> characters before breaking. </span>
 <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> <i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
-
 
 <!-- Return to top -->
 <div class="msi-custom-card roll mt-2">
@@ -177,21 +157,118 @@
     </div>
 </div>
 
-
-<!-- Multiple Radio (Small Width) -->
-<h2 id="radioSmallWidth" class="mt-4">Multiple Radio Button <small>(Small Width)</small></h2>
-<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-radio-button-small-width</mark></code> to reduce the label width down to <span class="danger fw-900">5</span> to <span class="danger fw-900">7</span> characters (including spaces).</p>
+<!-- SINGLE CHECKBOXES (default width) -->
+<h2 id="defaultWidth" class="fw-800 mt-4">Multiple Checkboxes <small>(Default Width)</small></h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-checkbox&nbsp;</mark></code> default width allows for<span class="danger fw-900"> 15</span> to <span class="danger fw-900">18</span> characters (including spaces).</p>
 <i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
+<div class="msi-panel">
+<div class="msi-code htmlHigh notranwf-date">
+<h6>Multiple Checkboxes (Default Width)</h6>
+<pre>
+&lt;div class="wf-checkbox outline-fieldset-copper p-4"&gt; 
+    &lt;asp:CheckBoxList ID="DefaultCheckboxListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:CheckBoxList&gt;
+&lt;/div&gt;
+</pre>
+<span class="fs-12 fw-600"> <i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
+</div>
+</div>
+<h6 class="my-2">
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> <i class="fas fa-asterisk fa-xs danger"></i> Example contains two optional classes: <span class="htmlVer--lite"><span class="inlineIndicator-slim info"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span></span> and <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span></span></h6>
 
 <div class="spacer"></div>
 
-<!-- Multiple Radio Buttons .ASP (small width) -->
+<h3 class="fw-600">Visual Studio 2017 Instructions</h3>
+<ol>
+    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span></li>
+    <li>To increase or decrease the length of the checkbox label, include an additional class to the <span class="inlineIndicator-slim info htmlVer--lite">div</span> container</li>
+    <li>No additional class is necessary for the (default width)</li>
+    <li>The default label width allows roughly <span class="fw-800 danger">15</span> to <span class="fw-800 danger">18</span> characters</li>
+    <li>Example assumes use of a <span class="danger">14px</span> font</li>
+</ol>
+
+<div class="spacer"></div>
+
+<h6 class="fw-700 mt-4">Example (Default Width)</h6>
+<div class="wf-checkbox outline-fieldset-copper p-4">
+    <ul id="CheckBoxList8">
+        <li>
+            <input id="CheckBoxList8_0" type="checkbox" name="CheckBoxList8$0" value="12345678910111213141516171819202" checked />
+            <label for="CheckBoxList8_0">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_1" type="checkbox" name="CheckBoxList8$1"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_1">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_2" type="checkbox" name="CheckBoxList8$2"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_2">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_3" type="checkbox" name="CheckBoxList8$3"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_3">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_4" type="checkbox" name="CheckBoxList8$4"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_4">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_5" type="checkbox" name="CheckBoxList8$5"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_5">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_6" type="checkbox" name="CheckBoxList8$6"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_6">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList8_7" type="checkbox" name="CheckBoxList8$7"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList8_7">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3_8" type="checkbox" name="CheckBoxList3$8"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList3_8">123456789101112131415161718</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3_9" type="checkbox" name="CheckBoxList3$9"
+                value="12345678910111213141516171819202" />
+            <label for="CheckBoxList3_9">123456789101112131415161718</label>
+        </li>
+    </ul>
+</div>
+<h6 class="my-2">
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+<span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> <i class="fas fa-asterisk fa-xs danger"></i> Example contains two optional classes: <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.outline-fieldset-copper</span></span> and <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span></h6>
+
+<!-- Return to top -->
+<div class="msi-custom-card roll mt-2">
+    <div class="card-body b-line">
+        <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="return to top"><i
+                class="fas fa-angle-double-up"></i> Return to Top</button>
+    </div>
+</div>
+
+<!-- MULTIPLE CHECKBOXES (Small Width) -->
+<h2 id="smallWidth" class="mt-4">Multiple Checkbox <small>(Small Width)</small></h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-checkbox&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-checkbox-small-width</mark></code> to reduce the label width down to <span class="danger fw-900">3</span> to <span class="danger fw-900">5</span> characters (including spaces).</p>
+<i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
 <div class="msi-panel">
 <div class="msi-code htmlHigh notranwf-date">
-<h6>ASP.NET snippet</h6>
+<h6>Multiple Checkboxes (Small Width)</h6>
 <pre>
-&lt;div class="wf-radio wf-radio-button-small-width outline-fieldset-copper p-4"&gt;
-    &lt;asp:RadioButtonList ID="SmallRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;div class="wf-checkbox wf-checkbox-small-width outline-fieldset-copper p-4"&gt;
+    &lt;asp:CheckBoxList ID="SmallCheckboxListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:CheckBoxList&gt;
 &lt;/div&gt;
 </pre>
 <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
@@ -200,55 +277,60 @@
 
 <div class="spacer"></div>
 
-<h3 class="fw-700">Visual Studio 2017 Instructions</h3>
-<ol>
-    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
-    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
-    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
-    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio-button-small-width</span></li>
-    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
-    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
+<!-- MULTIPLE CHECKBOXES (small width) Instructions -->
+<h3 class="fw-600">Visual Studio 2017 Instructions</h3>
+<ol class="">
+    <li>Change the <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=</span> property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">UnorderedList</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span></li>
+    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox-small-width</span></li>
 </ol>
 
-<!-- Multiple Radio Buttons Example (small width) -->
+<!-- MULTIPLE CHECKBOXES (Small Width) Example -->
 <h6 class="fw-700 mt-4">Example (Small Width)</h6>
-<div class="wf-radio wf-radio-small-width outline-fieldset-copper p-4">
-    <div class="radioButtonList">
-        <ul id="RadioButtonList22">
-            <li>
-                <input id="RadioButtonList22_0" type="radio" name="RadioButtonList22" value="Selected"/>
-                <label for="RadioButtonList22_0">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_1" type="radio" name="RadioButtonList22" value="Selected" />
-                <label for="RadioButtonList22_1">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_2" type="radio" name="RadioButtonList22" value="Selected" />
-                <label for="RadioButtonList22_2">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_3" type="radio" name="RadioButtonList22" value="Selected" />
-                <label for="RadioButtonList22_3">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_4" type="radio" name="RadioButtonList22" value="Selected"/>
-                <label for="RadioButtonList22_4">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_5" type="radio" name="RadioButtonList22" value="Selected" />
-                <label for="RadioButtonList22_5">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_6" type="radio" name="RadioButtonList22" value="Selected" />
-                <label for="RadioButtonList22_6">123456</label>
-            </li>
-            <li>
-                <input id="RadioButtonList22_3" type="radio" name="RadioButtonList22" value="Selected" />
-                <label for="RadioButtonList22_3">123456</label>
-            </li>
-        </ul>
-    </div>
+<div class="wf-checkbox wf-checkbox-small-width outline-fieldset-copper p-4">
+    <ul id="CheckBoxList39">
+        <li>
+            <input id="CheckBoxList39_0" type="checkbox" name="CheckBoxList39$0" value="123456" checked />
+            <label for="CheckBoxList39_0">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_1" type="checkbox" name="CheckBoxList39$1" value="123456" />
+            <label for="CheckBoxList39_1">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_2" type="checkbox" name="CheckBoxList39$2" value="123456" />
+            <label for="CheckBoxList39_2">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_3" type="checkbox" name="CheckBoxList39$3" value="123456" />
+            <label for="CheckBoxList39_3">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_4" type="checkbox" name="CheckBoxList39$4" value="123456" />
+            <label for="CheckBoxList39_4">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_5" type="checkbox" name="CheckBoxList39$5" value="123456" />
+            <label for="CheckBoxList39_5">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_6" type="checkbox" name="CheckBoxList39$6" value="123456" />
+            <label for="CheckBoxList39_6">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_7" type="checkbox" name="CheckBoxList39$7" value="123456" />
+            <label for="CheckBoxList39_7">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_8" type="checkbox" name="CheckBoxList39$8" value="123456" />
+            <label for="CheckBoxList39_8">12345</label>
+        </li>
+        <li>
+            <input id="CheckBoxList39_9" type="checkbox" name="CheckBoxList39$9" value="123456" />
+            <label for="CheckBoxList39_9">12345</label>
+        </li>
+    </ul>
 </div>
 <h6 class="my-2">
     <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
@@ -263,20 +345,18 @@
 </div>
 
 
-<!-- Multiple Radio ButtonsES (Medium Width) -->
-<h2 id="radioMediumWidth" class="mt-4"> Multiple Radio Buttons <small>(Medium Width)</small></h2>
-<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-radio-button-medium-width</mark></code> to reduce the label width down to <span class="danger fw-900">15</span> to <span class="danger fw-900">18</span> characters (including spaces).</p>
+<!-- MULTIPLE CHECKBOXES (medium width) -->
+<h2 id="mediumWidth" class="mt-4"> Multiple Checkbox <small>(Medium Width)</small></h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-checkbox&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-checkbox-medium-width</mark></code> to reduce the label width down to <span class="danger fw-900">15</span> to <span class="danger fw-900">18</span> characters (including spaces).</p>
 <i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
 
-<div class="spacer"></div>
-
-<!-- Radio Buttons .ASP (Medium Width) -->
+<!-- MULTIPLE CHECKBOX (medium width code example) -->
 <div class="msi-panel">
 <div class="msi-code htmlHigh notranwf-date">
-<h6>Multiple Radio Button Example (Medium Width Label)</h6>
+<h6>Multiple Checkbox Example (Medium Width Label)</h6>
 <pre>
-&lt;div class="wf-radio wf-radio-button-medium-width outline-fieldset-copper p-4"&gt;
-    &lt;asp:RadioButtonList ID="MediumRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;div class="wf-checkbox wf-checkbox-medium-width outline-fieldset-copper p-4"&gt; 
+    &lt;asp:CheckBoxList ID="MediumCheckboxListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:CheckBoxList&gt;
 &lt;/div&gt;
 </pre>
 <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
@@ -285,71 +365,66 @@
 
 <div class="spacer"></div>
 
-<h3 class="fw-700">Visual Studio 2017 Instructions</h3>
-<ol>
-    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
-    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
-    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
-    <li>To increase or decrease the length of the radio button label, include an additional class to the <span class="inlineIndicator-slim info htmlVer--lite">div</span> container</li>
-    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio-button-medium-width</span></li>
-    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
-    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
+<!-- MULTIPLE CHECKBOXES (medium width) Instructions -->
+<h3 class="fw-9800">Visual Studio 2017 Instructions</h3>
+<ol class="">
+    <li>Change the <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=</span> property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">UnorderedList</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span></li>
+    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox-medium-width</span></li>
 </ol>
 
-<!-- Multiple Radio Buttons Example (Medium Width) -->
-
 <h6 class="fw-700 mt-4">Example (Medium Width)</h6>
-<div class="wf-radio wf-radio-button-medium-label outline-fieldset-copper p-4">
-    <div class="radioButtonList">
-        <ul id="RadioButtonList">
-            <li>
-                <input id="RadioButtonList222_0" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_0">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_1" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_1">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_2" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_2">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_3" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_3">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_4" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_4">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_5" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_5">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_6" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_6">1234567891011121314</label>
-            </li>
-            <li>
-                <input id="RadioButtonList222_7" type="radio" name="RadioButtonList222" value="Selected" />
-                <label for="RadioButtonList222_7">1234567891011121314</label>
-            </li>
-        </ul>
-    </div>
+<div class="wf-checkbox wf-checkbox-medium-width outline-fieldset-copper p-4">
+    <ul id="CheckBoxList">
+        <li>
+            <input id="CheckBoxList35_0" type="checkbox" name="" value="123456789101112" checked />
+            <label for="CheckBoxList35_0">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_1" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_1">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_2" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_2">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_3" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_3">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_4" type="checkbox" name="" value="123456789101112"/>
+            <label for="CheckBoxList35_4">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_5" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_5">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_6" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_6">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_7" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_7">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_8" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_8">123456789101112</label>
+        </li>
+        <li>
+            <input id="CheckBoxList35_9" type="checkbox" name="" value="123456789101112" />
+            <label for="CheckBoxList35_9">123456789101112</label>
+        </li>
+    </ul>
 </div>
 
-<!-- Multiple Radio Buttons Notes Below (Medium Width) -->
 <h6 class="my-2">
-    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and
-        default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap
-            4 typography</a>.</span>
-    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i><i
-            class="fas fa-asterisk fa-xs danger"></i>Example contains two optional classes:<span
-            class="htmlVer--lite"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span>
-        and
-        <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span>
-</h6>
-
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i><i class="fas fa-asterisk fa-xs danger"></i> Example contains two optional classes: 
+        <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span> 
+        and <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span></h6>
 
 <!-- Return to top -->
 <div class="msi-custom-card roll mt-2">
@@ -359,88 +434,89 @@
     </div>
 </div>
 
-
-<!-- Multiple Radio Buttons (Large Width) -->
-<h2 id="radioLargeWidth" class="mt-4">Multiple Radio Buttons (Large Width)</h2>
-<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-radio&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-radio-button-large-width</mark></code> to reduce the label width down to <span class="danger fw-900">30</span> to <span class="danger fw-900">35</span> characters (including spaces).</p>
+<!-- MULTIPLE CHECKBOXES (Large width) -->
+<h2 id="largeWidth" class="mt-4">Multiple Checkbox <small>(Large Width)</small></h2>
+<p class="lead mb-1">Wrap the ASP.NET component with <code class="info fw-600"><mark>.wf-checkbox&nbsp;</mark></code> <i class="fas fa-plus"></i> <code class="info fw-600"><mark>.wf-checkbox-large-width</mark></code> to reduce the label width down to <span class="danger fw-900">30</span> to <span class="danger fw-900">34</span> characters (including spaces).</p>
 <i class="fas fa-asterisk fa-xs danger"></i> Assumes use of a 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
 
-<div class="spacer"></div>
-
-<!-- Radio Buttons .ASP (Large Width) -->
+<!-- MULTIPLE CHECKBOX (Large width) -->
 <div class="msi-panel">
 <div class="msi-code htmlHigh notranwf-date">
-<h6>Multiple Radio Buttons Example (Large Width Label)</h6>
+<h6>Multiple Checkbox Example (Large Width Label)</h6>
 <pre>
-&lt;div class="wf-radio wf-radio-button-large-width outline-fieldset-copper p-4"&gt;
-    &lt;asp:RadioButtonList ID="LargeRadioButtonListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:RadioButtonList&gt;
+&lt;div class="wf-checkbox wf-checkbox-large-width outline-fieldset-copper p-4"&gt; 
+    &lt;asp:CheckBoxList ID="LargeCheckboxListExample" runat="server" RepeatLayout="UnorderedList"&gt;&lt;/asp:CheckBoxList&gt;
 &lt;/div&gt;
 </pre>
 <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Please Note:</strong>The ID is determined by the Developer to fit server-side code.</span>
 </div>
 </div>
 
-<!-- Radio Buttons Visual Studio 2017 Instructions (Large Width) -->
-<h3 class="fw-700">Visual Studio 2017 Instructions</h3>
-<ol>
-    <li>Change the <span class="inlineIndicator-slim htmlVer--lite danger">RepeatLayout=</span>property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">"UnorderedList"</span> by including <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> tag or manually in the properties tab.</li>
-    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">RadioButtonList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
-    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span></li>
-    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-radio-button-large-width</span></li>
-    <li><span class="fw-700 danger">NEVER</span> use a single radio button</li>
-    <li><span class="fw-700 success">ALWAYS</span> Use a minimum of two radio buttons</li>
-</ol>
-
 <div class="spacer"></div>
 
-<!-- Multiple Radio Buttons (Large Width) -->
+<!-- MULTIPLE CHECKBOXES (large width) Instructions -->
+<h3 class="fw-9800">Visual Studio 2017 Instructions</h3>
+<ol>
+    <li>Change the <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=</span> property of the <span class="inlineIndicator-slim info htmlVer--lite">.ASP </span> web form to <span class="inlineIndicator-slim info htmlVer--lite">UnorderedList</span> by including  the <span class="inlineIndicator-slim danger htmlVer--lite">RepeatLayout=<span class="info">"UnorderedList"</span></span> within the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> tag or manually in the properties tab.</li>
+    <li>Wrap the <span class="inlineIndicator-slim danger htmlVer--lite">CheckBoxList</span> with a <span class="inlineIndicator-slim primary htmlVer--lite">div</span> element as its container</li>
+    <li>Give the <span class="inlineIndicator-slim primary htmlVer--lite">div</span> container a class of <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span></li>
+    <li>Use both <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox</span> <i class="fas fa-plus fa-xs"></i>  <span class="inlineIndicator-slim danger htmlVer--lite">.wf-checkbox-large-width</span></li>
+</ol>
+
+
 <h6 class="fw-700 mt-4">Example (Large Width)</h6>
-<div class="wf-radio wf-radio-button-large-width outline-fieldset-copper p-4">
-    <div class="radioButtonList">
-        <ul id="RadioButtonList">
-            <li>
-                <input id="RadioButtonList99_0" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_0">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_1" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_1">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_2" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_2">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_3" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_3">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_4" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_4">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_5" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_5">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_6" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_6">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_7" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_7">12345678910111213141516171819202122</label>
-            </li>
-            <li>
-                <input id="RadioButtonList99_8" type="radio" name="RadioButtonList99" value="Selected" />
-                <label for="RadioButtonList99_8">12345678910111213141516171819202122</label>
-            </li>
-        </ul>
-    </div>
+<div class="wf-checkbox wf-checkbox-large-width outline-fieldset-copper p-4">
+    <ul id="CheckBoxList3x">
+        <li>
+            <input id="CheckBoxList3x_0" type="checkbox" name="CheckBoxList3x$0" value="12345678910111213141516171819202122" checked />
+            <label for="CheckBoxList3x_0">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_1" type="checkbox" name="CheckBoxList3x$1" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_1">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_2" type="checkbox" name="CheckBoxList3x$2" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_2">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_3" type="checkbox" name="CheckBoxList3x$3" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_3">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_4" type="checkbox" name="CheckBoxList3x$4" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_4">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_5" type="checkbox" name="CheckBoxList3x$5" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_5">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_6" type="checkbox" name="CheckBoxList3x$6" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_6">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_7" type="checkbox" name="CheckBoxList3x$7" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_7">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_8" type="checkbox" name="CheckBoxList3x$8" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_8">12345678910111213141516171819202122</label>
+        </li>
+        <li>
+            <input id="CheckBoxList3x_9" type="checkbox" name="CheckBoxList3x$9" value="12345678910111213141516171819202122" />
+            <label for="CheckBoxList3x_9">12345678910111213141516171819202122</label>
+        </li>
+    </ul>
 </div>
-<!-- Notes below (Large Width) -->
 <h6 class="my-2">
     <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> Example contains two optional classes: <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.outline-fieldset-info</span></span> and <span class="htmlVer--lite"><span class="inlineIndicator-slim info">.p-4</span></span></span>
+    <span class="fs-12 fw-600"><i class="fas fa-asterisk fa-xs danger"></i> <i class="fas fa-asterisk fa-xs danger"></i> Assumes default use of 14px font size and default <a href="https://getbootstrap.com/docs/4.4/content/typography/" class="fw-800" target="_blank">Bootstrap 4 typography</a>.</span>
+
 </h6>
+
+
+
 
 
                 <!-- Return to top -->
