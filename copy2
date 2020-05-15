@@ -1,587 +1,143 @@
 
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Add page title information here-->
-    <title>Description List - NEXTGEN UIkit</title>
-    <link rel="icon" href="img/NextGen-Fav.png" sizes="16x16 32x32" type="image/png">
-    
-    <!-- NEXTGEN UI -->
-    <link rel="stylesheet" href="css/msi-next-gen-ui.css">
-
-    <!-- Side Navigation -->
-    <link href="css/docs.min.css" rel="stylesheet">
-
-    <!-- CodeCopy Vanilla/UMD bundle -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css">
-
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-
-    <!-- jQuery Data Tables CDN -->
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js" type="text/javascript"
-        charset="utf8"></script>
-
-    <!-- Bootstrap Data Tables JS -->
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" type="text/javascript"
-        charset="utf8"></script>
-
-    <!-- Top Navbar and Side Menu.js -->
-    <script type="text/javascript" src="js/NEXTGEN-Side-Top-Footer.js"></script>
-
-    <!-- CodeCopy clipboard.js -->
-    <script src="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.js"></script>
-
-    <!-- clipboard.js  -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function(event) {
-            codecopy('pre');
-        });
-    </script>
-
-</head>
-<body>
-    <div id="common-top-navbar"></div>
-        <div class="container-fluid no-gutters">
-            <div class="row flex-xl-nowrap">
-                <div class="col-12 col-md-3 col-xl-2" id="common-sidebar"></div>
-                    <main class="col-12 col-md-9 col-xl-10 py-md-3 px-md-3 pl-md-3" role="main">
-                        <div class="col-12">
-
-                            <!-- Breadcrumb Navigation -->
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb pl-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="nextgen-getting-started.html">NEXTGEN</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Description List</li>
-                                </ol>
-                            </nav>
-
-                            <?xml version="1.0" encoding="UTF-8"?>
-                            <svg width="381px" height="64px" viewBox="0 0 381 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-                                <title>Page SVG Header</title>
-                                <desc>Created with Sketch.</desc>
-                                <g id="Page-SVG-Header" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <rect id="Rectangle-Copy-330" stroke="#CC0001" fill="#CC0001" x="0.5" y="0.5" width="157" height="63"></rect>
-                                    <rect id="Rectangle-Copy-331" stroke="#CC0001" stroke-width="4" x="160" y="2" width="219" height="60"></rect>
-                                    <path d="M19.7718289,43 L19.7718289,28.1757812 L19.9036648,28.1757812 L30.4065945,43 L33.6585476,43 L33.6585476,21.8623047 L30.0257351,21.8623047 L30.0257351,36.671875 L29.8938992,36.671875 L19.405618,21.8623047 L16.124368,21.8623047 L16.124368,43 L19.7718289,43 Z M50.1931869,43 L50.1931869,39.8066406 L40.2908432,39.8066406 L40.2908432,33.7714844 L49.6511948,33.7714844 L49.6511948,30.7685547 L40.2908432,30.7685547 L40.2908432,25.0556641 L50.1931869,25.0556641 L50.1931869,21.8623047 L36.5115463,21.8623047 L36.5115463,43 L50.1931869,43 Z M55.4924747,43 L60.5315372,35.2363281 L60.6487247,35.2363281 L65.6291934,43 L69.9797793,43 L63.0510684,32.4970703 L63.0510684,32.3945312 L70.0969668,21.8623047 L65.8635684,21.8623047 L60.9123965,29.8017578 L60.795209,29.8017578 L55.9026309,21.8623047 L51.4348575,21.8623047 L58.2610293,32.3066406 L58.2610293,32.4091797 L51.3762637,43 L55.4924747,43 Z M80.6550436,43 L80.6550436,25.0556641 L86.9685202,25.0556641 L86.9685202,21.8623047 L70.5622702,21.8623047 L70.5622702,25.0556641 L76.8903952,25.0556641 L76.8903952,43 L80.6550436,43 Z M96.7209329,43.3515625 C102.507066,43.3515625 105.9348,39.9091797 105.9348,34.1816406 L105.9348,31.9257812 L97.1457376,31.9257812 L97.1457376,34.8115234 L102.243394,34.8115234 L102.228745,35.1630859 C102.170152,38.1220703 99.9582376,40.1435547 96.7648782,40.1435547 C92.9562845,40.1435547 90.5832376,37.1699219 90.5832376,32.3066406 C90.5832376,27.5458984 92.8537454,24.71875 96.6623392,24.71875 C99.2551126,24.71875 101.218003,26.1542969 101.935777,28.5859375 L105.773667,28.5859375 C105.085191,24.3525391 101.452378,21.5107422 96.6476907,21.5107422 C90.5392923,21.5107422 86.7160501,25.6416016 86.7160501,32.3505859 C86.7160501,39.1621094 90.5539407,43.3515625 96.7209329,43.3515625 Z M121.81026,43 L121.81026,39.8066406 L111.907916,39.8066406 L111.907916,33.7714844 L121.268268,33.7714844 L121.268268,30.7685547 L111.907916,30.7685547 L111.907916,25.0556641 L121.81026,25.0556641 L121.81026,21.8623047 L108.128619,21.8623047 L108.128619,43 L121.81026,43 Z M127.856618,43 L127.856618,28.1757812 L127.988454,28.1757812 L138.491383,43 L141.743336,43 L141.743336,21.8623047 L138.110524,21.8623047 L138.110524,36.671875 L137.978688,36.671875 L127.490407,21.8623047 L124.209157,21.8623047 L124.209157,43 L127.856618,43 Z" id="NEXTGEN" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                    <path d="M184.155273,43 C190.439453,43 194.130859,39.0888672 194.130859,32.4238281 C194.130859,25.7734375 190.424805,21.8623047 184.155273,21.8623047 L177.050781,21.8623047 L177.050781,43 L184.155273,43 Z M183.979492,40.6269531 L179.6875,40.6269531 L179.6875,24.2353516 L183.979492,24.2353516 C188.78418,24.2353516 191.435547,27.1650391 191.435547,32.453125 C191.435547,37.6972656 188.769531,40.6269531 183.979492,40.6269531 Z M202.286133,43.2636719 C205.611328,43.2636719 208.189453,41.3007812 208.628906,38.6347656 L206.124023,38.6347656 C205.699219,40.0703125 204.27832,41.0517578 202.344727,41.0517578 C199.605469,41.0517578 197.891602,39.1328125 197.891602,36.2177734 L197.891602,36.0712891 L208.819336,36.0712891 L208.819336,35.1044922 C208.819336,30.4902344 206.285156,27.5019531 202.168945,27.5019531 C197.964844,27.5019531 195.269531,30.7099609 195.269531,35.4414062 C195.269531,40.2314453 197.920898,43.2636719 202.286133,43.2636719 Z M206.182617,34.0791016 L197.90625,34.0791016 C198.067383,31.5449219 199.737305,29.7138672 202.125,29.7138672 C204.527344,29.7138672 206.124023,31.5302734 206.182617,34.0791016 Z M215.802734,43.2636719 C219.201172,43.2636719 221.706055,41.3886719 221.706055,38.7373047 C221.706055,36.5546875 220.592773,35.3535156 217.516602,34.6064453 L215.099609,34.0205078 C213.400391,33.6103516 212.624023,32.8925781 212.624023,31.8378906 C212.624023,30.5048828 213.854492,29.5820312 215.714844,29.5820312 C217.589844,29.5820312 218.761719,30.5634766 218.952148,32.1601562 L221.383789,32.1601562 C221.28125,29.4648438 219.054688,27.5019531 215.714844,27.5019531 C212.418945,27.5019531 210.119141,29.3623047 210.119141,31.9697266 C210.119141,34.1669922 211.510742,35.5 214.381836,36.1884766 L216.798828,36.7744141 C218.541992,37.1992188 219.142578,37.8291016 219.142578,38.9277344 C219.142578,40.3046875 217.868164,41.1835938 215.802734,41.1835938 C213.737305,41.1835938 212.56543,40.3486328 212.257812,38.6054688 L209.708984,38.6054688 C210.001953,41.4619141 212.228516,43.2636719 215.802734,43.2636719 Z M229.626953,43.2636719 C233.083984,43.2636719 235.632812,41.125 236.02832,38.0927734 L233.523438,38.0927734 C233.083984,39.9238281 231.72168,41.0224609 229.641602,41.0224609 C227.004883,41.0224609 225.188477,38.9277344 225.188477,35.3828125 C225.188477,31.9257812 226.975586,29.7431641 229.612305,29.7431641 C231.853516,29.7431641 233.142578,31.1054688 233.508789,32.7607422 L235.999023,32.7607422 C235.676758,30.0214844 233.40625,27.5019531 229.597656,27.5019531 C225.393555,27.5019531 222.595703,30.578125 222.595703,35.3828125 C222.595703,40.2900391 225.408203,43.2636719 229.626953,43.2636719 Z M239.920898,43 L239.920898,33.5078125 C239.920898,31.3544922 241.209961,29.9335938 243.1875,29.9335938 C243.802734,29.9335938 244.344727,30.0068359 244.549805,30.0800781 L244.549805,27.6044922 C244.344727,27.5751953 243.963867,27.5019531 243.524414,27.5019531 C241.737305,27.5019531 240.331055,28.5712891 239.833008,30.2558594 L239.774414,30.2558594 L239.774414,27.765625 L237.37207,27.765625 L237.37207,43 L239.920898,43 Z M247.021484,25.0556641 C247.915039,25.0556641 248.618164,24.3378906 248.618164,23.4589844 C248.618164,22.5654297 247.915039,21.8623047 247.021484,21.8623047 C246.142578,21.8623047 245.424805,22.5654297 245.424805,23.4589844 C245.424805,24.3378906 246.142578,25.0556641 247.021484,25.0556641 Z M248.295898,43 L248.295898,27.765625 L245.74707,27.765625 L245.74707,43 L248.295898,43 Z M253.287109,48.0830078 L253.287109,40.5244141 L253.345703,40.5244141 C254.253906,42.1943359 256.011719,43.2636719 258.194336,43.2636719 C262.032227,43.2636719 264.654297,40.1582031 264.654297,35.3828125 C264.654297,30.6074219 262.017578,27.5019531 258.135742,27.5019531 C255.923828,27.5019531 254.151367,28.6298828 253.213867,30.34375 L253.155273,30.34375 L253.155273,27.765625 L250.738281,27.765625 L250.738281,48.0830078 L253.287109,48.0830078 Z M257.637695,41.0224609 C255.030273,41.0224609 253.272461,38.78125 253.272461,35.3828125 C253.272461,31.9990234 255.030273,29.7431641 257.637695,29.7431641 C260.347656,29.7431641 262.046875,31.9404297 262.046875,35.3828125 C262.046875,38.8398438 260.347656,41.0224609 257.637695,41.0224609 Z M270.919922,43.1171875 C271.520508,43.1171875 272.223633,43.0732422 272.53125,43 L272.53125,40.8613281 C272.355469,40.890625 271.769531,40.9345703 271.476562,40.9345703 C270.172852,40.9345703 269.586914,40.3046875 269.586914,38.9130859 L269.586914,29.8603516 L272.545898,29.8603516 L272.545898,27.765625 L269.586914,27.765625 L269.586914,24.0888672 L267.038086,24.0888672 L267.038086,27.765625 L264.767578,27.765625 L264.767578,29.8603516 L267.038086,29.8603516 L267.038086,39.0449219 C267.038086,41.9746094 268.12207,43.1171875 270.919922,43.1171875 Z M275.662109,25.0556641 C276.555664,25.0556641 277.258789,24.3378906 277.258789,23.4589844 C277.258789,22.5654297 276.555664,21.8623047 275.662109,21.8623047 C274.783203,21.8623047 274.06543,22.5654297 274.06543,23.4589844 C274.06543,24.3378906 274.783203,25.0556641 275.662109,25.0556641 Z M276.936523,43 L276.936523,27.765625 L274.387695,27.765625 L274.387695,43 L276.936523,43 Z M285.692383,43.2636719 C289.896484,43.2636719 292.738281,40.2314453 292.738281,35.3828125 C292.738281,30.5195312 289.896484,27.5019531 285.692383,27.5019531 C281.473633,27.5019531 278.631836,30.5195312 278.631836,35.3828125 C278.631836,40.2314453 281.473633,43.2636719 285.692383,43.2636719 Z M285.692383,41.0224609 C282.99707,41.0224609 281.224609,38.9716797 281.224609,35.3828125 C281.224609,31.7939453 282.99707,29.7431641 285.692383,29.7431641 C288.387695,29.7431641 290.145508,31.7939453 290.145508,35.3828125 C290.145508,38.9716797 288.387695,41.0224609 285.692383,41.0224609 Z M296.850586,43 L296.850586,34.0351562 C296.850586,31.4570312 298.417969,29.7578125 300.820312,29.7578125 C303.164062,29.7578125 304.321289,31.1054688 304.321289,33.5664062 L304.321289,43 L306.870117,43 L306.870117,33.1123047 C306.870117,29.6552734 304.936523,27.5019531 301.59668,27.5019531 C299.238281,27.5019531 297.612305,28.5566406 296.762695,30.1972656 L296.704102,30.1972656 L296.704102,27.765625 L294.301758,27.765625 L294.301758,43 L296.850586,43 Z M327.487305,43 L327.487305,40.6269531 L317.291992,40.6269531 L317.291992,21.8623047 L314.655273,21.8623047 L314.655273,43 L327.487305,43 Z M330.398438,25.0556641 C331.291992,25.0556641 331.995117,24.3378906 331.995117,23.4589844 C331.995117,22.5654297 331.291992,21.8623047 330.398438,21.8623047 C329.519531,21.8623047 328.801758,22.5654297 328.801758,23.4589844 C328.801758,24.3378906 329.519531,25.0556641 330.398438,25.0556641 Z M331.672852,43 L331.672852,27.765625 L329.124023,27.765625 L329.124023,43 L331.672852,43 Z M339.535156,43.2636719 C342.933594,43.2636719 345.438477,41.3886719 345.438477,38.7373047 C345.438477,36.5546875 344.325195,35.3535156 341.249023,34.6064453 L338.832031,34.0205078 C337.132812,33.6103516 336.356445,32.8925781 336.356445,31.8378906 C336.356445,30.5048828 337.586914,29.5820312 339.447266,29.5820312 C341.322266,29.5820312 342.494141,30.5634766 342.68457,32.1601562 L345.116211,32.1601562 C345.013672,29.4648438 342.787109,27.5019531 339.447266,27.5019531 C336.151367,27.5019531 333.851562,29.3623047 333.851562,31.9697266 C333.851562,34.1669922 335.243164,35.5 338.114258,36.1884766 L340.53125,36.7744141 C342.274414,37.1992188 342.875,37.8291016 342.875,38.9277344 C342.875,40.3046875 341.600586,41.1835938 339.535156,41.1835938 C337.469727,41.1835938 336.297852,40.3486328 335.990234,38.6054688 L333.441406,38.6054688 C333.734375,41.4619141 335.960938,43.2636719 339.535156,43.2636719 Z M351.777344,43.1171875 C352.37793,43.1171875 353.081055,43.0732422 353.388672,43 L353.388672,40.8613281 C353.212891,40.890625 352.626953,40.9345703 352.333984,40.9345703 C351.030273,40.9345703 350.444336,40.3046875 350.444336,38.9130859 L350.444336,29.8603516 L353.40332,29.8603516 L353.40332,27.765625 L350.444336,27.765625 L350.444336,24.0888672 L347.895508,24.0888672 L347.895508,27.765625 L345.625,27.765625 L345.625,29.8603516 L347.895508,29.8603516 L347.895508,39.0449219 C347.895508,41.9746094 348.979492,43.1171875 351.777344,43.1171875 Z" id="DescriptionList" fill="#555555" fill-rule="nonzero"></path>
-                                </g>
-                            </svg>
+Css:
+.dropdown-menu {font-size:0.875rem!important;}
 
 
-                        <div class="small-title-wrapper mb-4">
-                            <span class="small-title-copy-intro">Quick reference terms and descriptions aligned horizontally using Bootstrap 4's 'grid system.</span>
-                            <div class="small-title-border mb-2"></div>
-                        </div>
+html:
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	<div class="row">
+		<div class="col-12 col-md-12 col-lg-2 col-xl-2">
+			<div class="dropdown-submenu">
+				<a id="aa1" class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "href="#">Accounting1 <i id="ddh47" class="sub-fa float-right fas fa-chevron-down"></i></a>										
+			</div>
+			<div class="dropdown-submenu">
+				<a id="aa1" class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "href="#">Accounting2 <i id="ddh48" class="sub-fa float-right fas fa-chevron-down"></i></a>										
+			</div>
+			<div class="dropdown-submenu">
+				<a id="aa2" class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "href="#">Accounting3 <i id="ddh49" class="sub-fa float-right fas fa-chevron-down"></i></a>										
+			</div>
+			<div class="dropdown-submenu">
+				<a id="aa3" class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "href="#">Accounting4 <i id="ddh50" class="sub-fa float-right fas fa-chevron-down"></i></a>										
+			</div>
+			<div class="dropdown-submenu">
+				<a id="aa4" class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "href="#">Accounting5 <i id="ddh51" class="sub-fa float-right fas fa-chevron-down"></i></a>										
+			</div>
+			<div class="dropdown-submenu">
+				<a id="aa5" class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "href="#">Accounting6 <i id="ddh52" class="sub-fa float-right fas fa-chevron-down"></i></a>										
+			</div>																																																		
+		</div>
 
-                        <h5>
-                            <a class="flex-fill" href="https://getbootstrap.com/docs/4.3/content/typography/#description-list-alignment" target="_blank">
-                                <span class="my-2 badge badge-purple">Bootstrap 4 Description List</span>
-                            </a>
-                            <a class="flex-fill" href="#https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">
-                                <span class="my-2 badge badge-purple">Bootstrap 4 Grid System</span>
-                            </a>
-                            <a class="flex-fill" href="#quick-reference">
-                                <span class="my-2 badge badge-secondary">DL Quick Reference</span>
-                            </a> 
-                            <a class="flex-fill" href="#abbreviation-legend">
-                                <span class="my-2 badge badge-secondary">DL Abbreviation Legend</span>
-                            </a> 
-                            <a class="flex-fill" href="#standard-note">
-                                <span class="my-2 badge badge-secondary">DL Standard Note</span>
-                            </a> 
-                        </h5>
+		<div class="col-12 col-md-12 col-lg-2 col-xl-2">
+			<div class="dropdown-submenu">
+				<a id="aa"
+					class="parentDiv1 dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper "
+					href="#">Accounting <i id="ddh1"
+						class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd1" class=" sub">
+					<a class="dropdown-item" href="#">A/P Vouchers</a>
+					<a class="dropdown-item" href="#">A/P Claims</a>
+					<a class="dropdown-item" href="#">Post Dated Cheques</a>
+					<a class="dropdown-item" href="#">HD Remittance Advice</a>
+					<a class="dropdown-item" href="#">Payment Deposits</a>
+					<a class="dropdown-item" href="#">Cash Receipt Entry</a>
+					<a class="dropdown-item" href="#">Customer CC Processing</a>
+				</ul>
+			</div>
+			<div class="dropdown-submenu">
+				<a class="parentDiv2 dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Accounts Receivable <i id="ddh2"
+						class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd2" class=" sub">
+					<a class="dropdown-item" href="#">Customer Maintenance Report</a>
+					<a class="dropdown-item" href="#">Customer Requistion</a>
+					<a class="dropdown-item" href="#">Bulk AR Statement</a>
+					<a class="dropdown-item" href="#">Mass 500 Process</a>
+				</ul>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-2 col-xl-2">
+			<div class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Accounts Payable <i id="ddh3"
+						class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd3" class=" sub">
+					<a class="dropdown-item" href="#">A/P Invoice</a>
+					<a class="dropdown-item" href="#">Comments</a>
+					<a class="dropdown-item" href="#">Invoice Report</a>
+					<a class="dropdown-item" href="#">Import Invoices</a>
+					<a class="dropdown-item" href="#">Post Dated Checks</a>
+					<a class="dropdown-item" href="#">Vendor Search</a>
+					<a class="dropdown-item" href="#">Voucher Audit</a>
+					<a class="dropdown-item" href="#">Vendor Maintenance</a>
+					<a class="dropdown-item" href="#">Wire Transfer</a>
+				</ul>
+			</div>
+		</div>
 
-                        <h2>Description list Usage</h2>
-         
-                        <div id="quick-reference" class="spacer"></div>
-                        
-                        <h3 class="fw-300">Quick Reference Description List</h3>
-                        <p>Quick Reference Description list are nested within modified <a href="nextgen-callouts.html" class="fw-600" target="_blank">NEXTGEN Callouts</a>.</p>
-                            
-                        <h4 class="fw-300">Features:</h4>
-                        <ui>
-                            <li>Code highlighting</li>
-                            <li>Single description</li>
-                            <li>Single with multiple descriptions</li> 
-                            <li>Tool tips</li>
-                            <li>Fully responsive</li>
-                        </ui>
-
-                        <div class="spacer"></div>
-
-                        <p>Please Note: This example is configured at 100% width using the <span class="htmlVer--lite info">.w-100</span> class. <a href="nextgen-layout.html#sizing" class="fw-600" target="_blank">See all NEXTGEN width utility classes.</a></p>
-
-                        <div class="quick-reference callout default-info w-100 my-4">
-                            <div class="media">
-                                <div class="media-body">
-                                    <h4 class="fw-800 mt-3 text-uppercase">Quick Reference</h4>
-                                    <div class="b-line"></div>
-                                    <dl class="row">
-                                        <!-- Single definitions -->
-                                        <dt class="col-3">Data Source</dt>
-                                        <dd class="col-9">
-                                            <p>Inventory transaction data codes <span class="htmlVer--lite info">810</span> & <span class="htmlVer--lite info">812</span> indicate <span class="fw-700">last three months</span> of transactions.</p>
-                                        </dd>
-                                        <!-- Multiple definitions -->
-                                        <!-- Item restriction has three possibilities -->
-                                        <dt class="col-3">Item Restriction</dt>
-                                        <dd class="col-9">
-                                            <!-- First possibilities -->
-                                            <p><svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
-                                            </svg> Mismatch between recommended count</p>
-                                            <!-- Second possibilities -->
-                                            <p><svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
-                                            </svg> OR the item was received within the last 14 days.</p>
-                                            <!-- Third possibilities -->
-                                            <p><svg class="bi bi-chevron-right" width="15" height="15" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg> OR Use <strong>Optional Pop-Over</strong> 
-                                                <a tabindex="0" class="fw-600 quick-reference" data-toggle="popover" data-trigger="focus" title="Optional Popover Header" data-content="Optional pop-over includes quick look-up information. Pop-over disappears with user's next click"><em><u>Piece Packing Location Review</u></em></a>.</p>
-
-                                        </dd>
-                                        <!-- Header -->
-                                        <dt class="col-12">
-                                            <h5>Data Fields</h5>
-                                            <div class="b-line"></div>
-                                        </dt>
-                                        <dd> <!-- Keep Empty when only a header is necessary --> </dd>
-                                       
-                                        <!-- Single definitions -->
-                                        <dt class="col-3">Item Status</dt>
-                                        <dd class="col-9">
-                                            <p>This is the item status in MAS500. Items transactions have a reorder point set-up for it. NOTE: A discontinued item does not have a reorder point.</p>
-                                        </dd>
-                                        <!-- Single definitions -->
-                                        <dt class="col-3">Discontinued Quantity</dt>
-                                        <dd class="col-9">
-                                            <p>We will not order more inventory of a discontinued item. The discontinued quantity is what the warehouse has to deplete. We will continue to assign racking location/s until inventory is depleted. Periodically, we review discontinued stock for closeout, donation, or disposal.</p>
-                                        </dd>
-                                        <!-- Single definitions -->
-                                        <dt class="col-3">Newly Received in Last 14 Days</dt>
-                                        <dd class="col-9">
-                                            <p>These are new items received for the first time in the last 14 days. New items should be assigned at least 1 racking location.</p>
-                                        </dd>
-                                        <!-- Single definitions -->
-                                        <dt class="col-3">Count of Static Bin Location Assigned</dt>
-                                        <dd class="col-9">
-                                            <p>Number of static racking locations assigned to this item.</p>
-                                        </dd>
-                                        <!-- Single definitions  -->
-                                        <dt class="col-3">Difference Bins</dt>
-                                        <dd class="col-9">
-                                            <p>The difference between how many locations the item should have and what it actually has.</p>
-                                        </dd>
-                                        <!-- Crate Height - Single definitions -->
-                                        <dt class="col-3">Crate Height</dt>
-                                        <dd class="col-9">
-                                            <p>Some warehouses have varied racking openings to maximize vertical space. Use the crate height data (in inches) best determine where the item will fit.</p>
-                                        </dd>
-                                        <!-- Number of crates for two weeks - Single definitions -->
-                                        <dt class="col-3">Number of crates for two weeks</dt>
-                                        <dd class="col-9">
-                                            <p>Number of crates in static racks to satisfy two weeks of box-picking transactions.</p>
-                                        </dd>
-                                        <!-- Average Pieces Per Box Pick Trans -->
-                                        <dt class="col-3">Average Pieces Per Box Pick Trans</dt>
-                                        <dd class="col-9">
-                                            <p>Box picking quantity is the remainder of (Quantity / Pieces Per Crate). FOR EXAMPLE: Pieces per crate is 864. An order for 870 pieces will have box picking quantity of 6 pieces (1 full crate from the bulk, the balance from the racks).</p>
-
-                                        </dd>
-
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-
-<div class="msi-panel">
-<div class="msi-code htmlHigh notranwf-date">
-<h6>Description List</h6>
-<pre>
-&lt;div id="description list" class="callout default-info my-4"&gt;
-    &lt;div class="media"&gt;
-        &lt;div class="media-body"&gt;
-            &lt;h5 class="fw-800 my-3"&gt;QUICK REFERENCE&lt;/h5&gt;
-            &lt;dl class="row"&gt;
-                &lt;!-- Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Data Source&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;Inventory transaction data codes &lt;span class="htmlVer--lite info"&gt;810&lt;/span&gt; & &lt;span class="htmlVer--lite info"&gt;812&lt;/span&gt; indicate &lt;span class="fw-700"&gt;last three months&lt;/span&gt; of transactions.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Multiple definitions --&gt;
-                &lt;!-- Item restriction has three possibilities --&gt;
-                &lt;dt class="col-3"&gt;Item Restriction&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;!-- First possibilities --&gt;
-                    &lt;p&gt;&lt;svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"&gt;
-                    &lt;path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/&gt;
-                    &lt;/svg&gt; Mismatch between recommended count&lt;/p&gt;
-                    &lt;!-- Second possibilities --&gt;
-                    &lt;p&gt;&lt;svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"&gt;
-                    &lt;path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/&gt;
-                    &lt;/svg&gt; OR the item was received within the last 14 days.&lt;/p&gt;
-                    &lt;!-- Third possibilities --&gt;
-                    &lt;p&gt;&lt;svg class="bi bi-chevron-right" width="15" height="15" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/&gt;&lt;/svg&gt; OR item requires &lt;span class="fw-600" data-toggle="popover" title="Piece Packing Location" data-content="Piece Packing Location Review definition here."&gt;&lt;em&gt;&lt;u&gt;Piece Packing Location Review&lt;/u&gt;&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Header --&gt;
-                &lt;dt class="col-12"&gt;
-                    &lt;h5&gt;Data Fields&lt;/h5&gt;
-                    &lt;div class="b-line"&gt;&lt;/div&gt;
-                &lt;/dt&gt;
-                &lt;dd&gt; &lt;!-- Keep Empty when only a header is necessary --&gt; &lt;/dd&gt;
-                &lt;!-- Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Item Status&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;This is the item status in MAS500. Items transactions have a reorder point set-up for it. NOTE: A discontinued item does not have a reorder point.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Discontinued Quantity&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;We will not order more inventory of a discontinued item. The discontinued quantity is what the warehouse has to deplete. We will continue to assign racking location/s until inventory is depleted. Periodically, we review discontinued stock for closeout, donation, or disposal.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Newly Received in Last 14 Days&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;These are new items received for the first time in the last 14 days. New items should be assigned at least 1 racking location.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Count of Static Bin Location Assigned&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;Number of static racking locations assigned to this item.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Single definitions  --&gt;
-                &lt;dt class="col-3"&gt;Difference Bins&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;The difference between how many locations the item should have and what it actually has.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Crate Height - Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Crate Height&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;Some warehouses have varied racking openings to maximize vertical space. Use the crate height data (in inches) best determine where the item will fit.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Number of crates for two weeks - Single definitions --&gt;
-                &lt;dt class="col-3"&gt;Number of crates for two weeks&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;Number of crates in static racks to satisfy two weeks of box-picking transactions.&lt;/p&gt;
-                &lt;/dd&gt;
-                &lt;!-- Average Pieces Per Box Pick Trans --&gt;
-                &lt;dt class="col-3"&gt;Average Pieces Per Box Pick Trans&lt;/dt&gt;
-                &lt;dd class="col-9"&gt;
-                    &lt;p&gt;Box picking quantity is the remainder of (Quantity / Pieces Per Crate).
-                    &lt;!-- Average Pieces Per Box Pick Trans with example --&gt;
-                    FOR EXAMPLE: Pieces per crate is 864. An order for 870 pieces will have box picking quantity of 6 pieces (1 full crate from the bulk, the balance from the racks).&lt;/p&gt;
-                &lt;/dd&gt;
-            &lt;/dl&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+		<div class="col-12 col-md-12 col-lg-2 col-xl-2">
+			<div class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Employee Credit Card <i id="ddh4"
+						class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd4" class=" sub">
+					<a class="dropdown-item" href="#">Acknowledgement Report</a>
+					<a class="dropdown-item" href="#">CC Issuer Template</a>
+					<a class="dropdown-item" href="#">Credit Card Dashboard</a>
+					<a class="dropdown-item" href="#">Import Statement Data</a>
+					<a class="dropdown-item" href="#">Manage CC Users</a>
+					<a class="dropdown-item" href="#">Manage GL Accounts</a>
+					<a class="dropdown-item" href="#">User Statement Report</a>
+					<a class="dropdown-item" href="#">View Statements</a>
+				</ul>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-2 col-xl-2">
+			<div class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Expense Statement <i id="ddh5"
+						class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd5" class=" sub">
+					<a class="dropdown-item" href="#">Create / View Expense Report</a>
+					<a class="dropdown-item" href="#">Manage Expense Category</a>
+					<a class="dropdown-item" href="#">Manage Expense Approver</a>
+				</ul>
+			</div>
+			<div class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Cash
+					Management <i class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd6" class=" sub">
+					<a class="dropdown-item" href="#">Wells Fargo Daily Report</a>
+					<a class="dropdown-item" href="#">Pending Transactions</a>
+					<a class="dropdown-item" href="#">Match Transactions</a>
+					<a class="dropdown-item" href="#">Month Closing</a>
+					<a class="dropdown-item" href="#">Search Transactions</a>
+				</ul>
+			</div>
+		</div>
+		<div class="col-12 col-md-12 col-lg-2 col-xl-2">
+			<div class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Expense Statement <i id="ddh52"
+						class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd5" class=" sub">
+					<a class="dropdown-item" href="#">Create / View Expense Report</a>
+					<a class="dropdown-item" href="#">Manage Expense Category</a>
+					<a class="dropdown-item" href="#">Manage Expense Approver</a>
+				</ul>
+			</div>
+			<div class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle pl-4 pt-2 msi-text-copper"
+					href="#">Cash
+					Management <i class="sub-fa float-right fas fa-chevron-down"></i></a>
+				<ul id="dd6" class=" sub">
+					<a class="dropdown-item" href="#">Wells Fargo Daily Report</a>
+					<a class="dropdown-item" href="#">Pending Transactions</a>
+					<a class="dropdown-item" href="#">Match Transactions</a>
+					<a class="dropdown-item" href="#">Month Closing</a>
+					<a class="dropdown-item" href="#">Search Transactions</a>
+				</ul>
+			</div>
+		</div>									
+	</div>
 </div>
-</div>
-
-     
-                        <div id="abbreviation-legend" class="spacer"></div>
-                        
-                        <h3 class="fw-300">Abbreviation Legend Description List </h3>
-                        <p>Abbreviation Legend Description List is nested within a modified <a href="nextgen-callouts.html" class="fw-600" target="_blank">NEXTGEN Callouts</a>.</p>  
-
-                        <h4 class="fw-300">Features:</h4>
-                        <ui>
-                            <li>Single description</li>
-                            <li>Single with multiple descriptions</li> 
-                            <li>Custom background colors</li>
-                            <li>Fully responsive</li>
-                        </ui>
-
-                        <div class="spacer"></div>
-                        <p>This example is configured at 50% width using the <span class="htmlVer--lite info">.w-50</span> class. <a href="nextgen-layout.html#sizing" class="fw-600" target="_blank">See all NEXTGEN width utility classes.</a></p>
-
-                        <div class="abbreviation-legend callout default-info my-4 w-50">
-                            <div class="media">
-                                <div class="media-body">
-                                    <h5 class="fw-800 mt-3 text-uppercase">Abbreviation Legend</h5>
-                                    <div class="b-line"></div>
-                                    <dl class="row">
-                                        <!-- -->
-                                        <dt class="col-4">From DeskPh</dt>
-                                        <dd class="col-8">Dialed call from Avaya extension to other number</dd>
-                                        <!-- -->
-                                        <dt class="col-4">To DeskPh</dt>
-                                        <dd class="col-8">Received call from other number to Avaya extension</dd>
-                                        <!-- -->
-                                        <dt class="col-4">MSI to Mobile</dt>
-                                        <dd class="col-8">Call from Avaya extension to mobile number</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Mobile to MSI</dt>
-                                        <dd class="col-8">Call from mobile to Avaya extension</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Crd Card</dt>
-                                        <dd class="col-8">Credit Card</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Time Off</dt>
-                                        <dd class="col-8">Employee time-off request</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Reporting</dt>
-                                        <dd class="col-8">Reporting supervisor name</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Desk Log</dt>
-                                        <dd class="col-8">Desktop (intranet) log-in count</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Tablet Log</dt>
-                                        <dd class="col-8">Tablet log-in count</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Visit</dt>
-                                        <dd class="col-8">Branch/Sales/Vendor visit report count</dd>
-                                        <!-- -->
-                                        <dt class="col-4">DrPrv</dt>
-                                        <dd class="col-8">Driving privilege</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Employee Legend</dt>
-                                        <dd class="col-8 msi-bg-light-aqua fw-500">Hired within 6 weeks</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Employee Legend</dt>
-                                        <dd class="col-8 msi-bg-salmon fw-500">Possible Absentee</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Employee Legend</dt>
-                                        <dd class="col-8 msi-bg-success white fw-500">ACT Activity</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Employee Legend</dt>
-                                        <dd class="col-8 msi-bg-danger white fw-500">Absent</dd>
-                                        <!-- -->
-                                        <dt class="col-4">Employee Legend</dt>
-                                        <dd class="col-8 msi-bg-info white fw-500">Holiday</dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4 class="fw-300">Background colors used</h4>
-
-                        <div class="flex-fill">
-                            <span class="msi-bg-light-aqua htmlVer--lite text-center">.msi-bg-light-aqua&nbsp;</span>
-                            <span class="msi-bg-salmon htmlVer--lite text-center">.msi-bg-salmon&nbsp;</span>
-                            <span class="msi-bg-success htmlVer--lite white text-center">.msi-bg-success&nbsp;</span>
-                            <span class="msi-bg-danger htmlVer--lite white text-center">.msi-bg-danger&nbsp;</span>
-                            <span class="msi-bg-info htmlVer--lite white text-center">.msi-bg-info&nbsp;</span>
-                        </div>
-
-<div class="msi-panel">
-<div class="msi-code htmlHigh notranwf-date">
-<h6>Abbreviation Legend</h6>
-<pre>
-&lt;div class="abbreviation-legend callout default-info my-4 w-50"&gt;
-    &lt;div class="media"&gt;
-        &lt;div class="media-body"&gt;
-            &lt;h5 class="fw-800 my-3 text-uppercase"&gt;Abbreviation Legend&lt;/h5&gt;
-            &lt;dl class="row"&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;From DeskPh&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Dialed call from Avaya extension to other number&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;To DeskPh&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Received call from other number to Avaya extension&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;MSI to Mobile&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Call from Avaya extension to mobile number&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Mobile to MSI&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Call from mobile to Avaya extension&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Crd Card&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Credit Card&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Time Off&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Employee time-off request&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Reporting&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Reporting supervisor name&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Desk Log&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Desktop (intranet) log-in count&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Tablet Log&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Tablet log-in count&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Visit&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Branch/Sales/Vendor visit report count&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;DrPrv&lt;/dt&gt;
-                &lt;dd class="col-8"&gt;Driving privilege&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Employee Legend&lt;/dt&gt;
-                &lt;dd class="col-8 msi-bg-light-aqua fw-500"&gt;Hired within 6 weeks&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Employee Legend&lt;/dt&gt;
-                &lt;dd class="col-8 msi-bg-salmon fw-500"&gt;Possible Absentee&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Employee Legend&lt;/dt&gt;
-                &lt;dd class="col-8 msi-bg-success white fw-500"&gt;ACT Activity&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Employee Legend&lt;/dt&gt;
-                &lt;dd class="col-8 msi-bg-danger white fw-500"&gt;Absent&lt;/dd&gt;
-                &lt;!-- --&gt;
-                &lt;dt class="col-4"&gt;Employee Legend&lt;/dt&gt;
-                &lt;dd class="col-8 msi-bg-info white fw-500"&gt;Holiday&lt;/dd&gt;
-            &lt;/dl&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-</div>
-</div>
-
-<div id="standard-note" class="spacer"></div>
-                        
-<h3 class="fw-300">Standard Note Descriptive List</h3>
-<p>Standard Note Description List is nested within a modified <a href="nextgen-callouts.html" class="fw-600" target="_blank">NEXTGEN Callouts</a>.</p>  
-
-<h4 class="fw-300">Features:</h4>
-<ui>
-    <li>Single description</li>
-    <li>Single with multiple descriptions</li> 
-    <li>Fully responsive</li>
-</ui>
-
-<div class="spacer"></div>
-<p>This example is configured at 100% width using the <span class="htmlVer--lite info">.w-100</span> class. <a href="nextgen-layout.html#sizing" class="fw-600" target="_blank">See all NEXTGEN width utility classes.</a></p>
-
-<div class="abbreviation-legend callout default-info my-4 W-100">
-    <div class="media">
-        <div class="media-body">
-            <h6 class="fw-800 mt-3 text-uppercase">Standard Note:</h6>
-            <div class="b-line"></div>
-            <div class="row">
-                <div class="col-12 standard-note">
-                    <ul>
-                        <!-- Item One -->
-                        <li>The On Demand Report is based on logs from XenDesktop, WiFi Connect, Team MSI Log and Tablet Log. If no log is found in these areas, then the user is considered Inactive for the day and will be considered possibly absent.</li>
-                        <!-- Item Two -->
-                        <li>The report does not consider any data from the following to consider an employee absent/working:
-                            <ul>
-                                <li>Avaya to Avaya</li>
-                                <li>Avaya to Mobile</li>
-                                <li>Mobile to Avaya</li>
-                                <li>Avaya received call</li>
-                                <li>Pending time off request</li>
-                            </ul>
-                        </li>
-                        <!-- Item Three -->
-                        <li>The report only considers Salaried Employees and Overseas Employees</li>
-                        <!-- Item Four -->
-                        <li>Status of Presence or Absence clicking on Conform. Once conformed, editing the response isn't possible. </li>
-                        <!-- Item Five -->
-                        <li>To Desktop Phone includes answered calls. Forwarded calls and calls that goes to voicemail are not included.</li>
-                        <!-- Item Six -->
-                        <li>WiFi Field has been considered from 07/17/2017</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="msi-panel">
-<div class="msi-code htmlHigh notranwf-date">
-<h6>Standard Note</h6>
-<pre>
-&lt;div class="abbreviation-legend callout default-info my-4 W-100"&gt;
-    &lt;div class="media"&gt;
-        &lt;div class="media-body"&gt;
-            &lt;h6 class="fw-800 mt-3 text-uppercase"&gt;Standard Note:&lt;/h6&gt;
-            &lt;div class="b-line"&gt;&lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="col-12 standard-note"&gt;
-                    &lt;ul&gt;
-                        &lt;!-- Item One --&gt;
-                        &lt;li&gt;The On Demand Report is based on logs from XenDesktop, WiFi Connect, Team MSI Log and Tablet Log. If no log is found in these areas, then the user is considered Inactive for the day and will be considered possibly absent.&lt;/li&gt;
-                        &lt;!-- Item Two --&gt;
-                        &lt;li&gt;The report does not consider any data from the following to consider an employee absent/working:
-                            &lt;ul&gt;
-                                &lt;li&gt;Avaya to Avaya&lt;/li&gt;
-                                &lt;li&gt;Avaya to Mobile&lt;/li&gt;
-                                &lt;li&gt;Mobile to Avaya&lt;/li&gt;
-                                &lt;li&gt;Avaya received call&lt;/li&gt;
-                                &lt;li&gt;Pending time off request&lt;/li&gt;
-                            &lt;/ul&gt;
-                        &lt;/li&gt;
-                        &lt;!-- Item Three --&gt;
-                        &lt;li&gt;The report only considers Salaried Employees and Overseas Employees&lt;/li&gt;
-                        &lt;!-- Item Four --&gt;
-                        &lt;li&gt;Status of Presence or Absence clicking on Conform. Once conformed, editing the response isn't possible. &lt;/li&gt;
-                        &lt;!-- Item Five --&gt;
-                        &lt;li&gt;To Desktop Phone includes answered calls. Forwarded calls and calls that goes to voicemail are not included.&lt;/li&gt;
-                        &lt;!-- Item Six --&gt;
-                        &lt;li&gt;WiFi Field has been considered from 07/17/2017&lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-</div>
-</div>
-
-
-
-
-
-<script>
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    })
-</script>
-<script>
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    })
-</script>
-
-<!-- w3codecolor.js -->
-<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
-
-<script>
-    w3CodeColor();
-</script>
-
-                        </div>
-                    </main>
-            </div>
-        </div>
-</body>
-</html>
-
-
-
-
-
-
