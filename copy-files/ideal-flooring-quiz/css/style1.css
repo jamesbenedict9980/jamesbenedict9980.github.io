@@ -1,3 +1,140 @@
+.row {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.spacer {
+    width: 100%;
+    height: 0;
+    border-bottom: 0 transparent;
+    margin: 100px 0;
+}
+/* SHORTHAND: Margin 
+----------------------------------------*/
+.m-0 {margin: 0 !important;}
+.m-1 {margin: .25em !important;}
+.m-2 {margin: .50em !important;}
+.m-3 {margin: 1em !important;}
+.m-4 {margin: 1.5em !important;}
+.m-5 {margin: 2em !important;}
+.m-auto {margin: auto !important;}
+
+/* SHORTHAND: Negative Margin 
+----------------------------------------*/
+.m-n1 {margin: -0.25em !important;}
+.m-n2 {margin: -0.50em !important;}
+.m-n3 {margin: -1em !important;}
+.m-n4 {margin: -1.5em !important;}
+.m-n5 {margin: -2em !important;}
+/* SHORTHAND: Margin Top 
+----------------------------------------*/
+.mt-n0 {margin-top: 0 !important;}
+.mt-n1 {margin-top: -.25em !important;}
+.mt-n2 {margin-top: -.50em !important;}
+.mt-n3 {margin-top: -1em !important;}
+.mt-n4 {margin-top: -1.5em !important;}
+.mt-n5 {margin-top: -2em !important;}
+
+/* SHORTHAND: Margin Top 
+----------------------------------------*/
+.mt-0 {margin-top: 0 !important;}
+.mt-1 {margin-top: .25em !important;}
+.mt-2 {margin-top: .50em !important;}
+.mt-3 {margin-top: 1em !important;}
+.mt-4 {margin-top: 1.5em !important;}
+.mt-5 {margin-top: 2em !important;}
+
+/* SHORTHAND: Margin Right 
+----------------------------------------*/
+.mr-0 {margin-right: 0 !important;}
+.mr-1 {margin-right: .25em !important;}
+.mr-2 {margin-right: .50em !important;}
+.mr-3 {margin-right: 1em !important;}
+.mr-4 {margin-right: 1.5em !important;}
+.mr-5 {margin-right: 2em !important;}
+
+/* SHORTHAND: Margin Bottom 
+----------------------------------------*/
+.mb-0 {margin-bottom: 0 !important;}
+.mb-1 {margin-bottom: .25em !important;}
+.mb-2 {margin-bottom: .50em !important;}
+.mb-3 {margin-bottom: 1em !important;}
+.mb-4 {margin-bottom: 1.5em !important;}
+.mb-5 {margin-bottom: 3em !important;}
+
+/* SHORTHAND: Margin Left 
+----------------------------------------*/
+.ml-0 {margin-left: 0 !important;}
+.ml-1 {margin-left: .25em !important;}
+.ml-2 {margin-left: .50em !important;}
+.ml-3 {margin-left: 1em !important;}
+.ml-4 {margin-left: 1.5em !important;}
+.ml-5 {margin-left: 3em !important;}
+
+/* SHORTHAND: Padding 
+----------------------------------------*/
+.p-0 {padding: 0 !important;}
+.p-1 {padding: .25em !important;}
+.p-2 {padding: .50em !important;}
+.p-3 {padding: 1em !important;}
+.p-4 {padding: 1.5em !important;}
+.p-5 {padding: 3em !important;}
+
+/* SHORTHAND: Padding (Negative) 
+----------------------------------------*/
+.p-auto {padding: auto !important;}
+.p-n1 {padding: -0.25em !important;}
+.p-n2 {padding: -0.50em !important;}
+.p-n3 {padding: -1em !important;}
+.p-n4 {padding: -1.5em !important;}
+.p-n5 {padding: -3em !important;}
+
+/* SHORTHAND: Padding Top 
+----------------------------------------*/
+.pt-0 {padding-top: 0 !important;}
+.pt-1 {padding-top: .25em !important;}
+.pt-2 {padding-top: .5em !important;}
+.pt-3 {padding-top: 1em !important;}
+.pt-4 {padding-top: 1.5em !important;}
+.pt-5 {padding-top: 3em !important;}
+
+/* SHORTHAND: Padding Right 
+----------------------------------------*/
+.py-0,.pr-0 {padding-right: 0 !important;}
+.py-1,.pr-1 {padding-right: .25em !important;}
+.py-2,.pr-2 {padding-right: .5em !important;}
+.py-3,.pr-3 {padding-right: 1em !important;}
+.py-4,.pr-4 {padding-right: 1.5em !important;}
+.py-5,.pr-5 {padding-right: 3em !important;}
+
+/* SHORTHAND: Padding Bottom 
+----------------------------------------*/
+.pb-0 {padding-bottom: 0 !important;}
+.pb-1 {padding-bottom: .25em !important;}
+.pb-2 {padding-bottom: .5em !important;}
+.pb-3 {padding-bottom: 1em !important;}
+.pb-4 {padding-bottom: 1.5em !important;}
+.pb-5 {padding-bottom: 3em !important;}
+
+/* SHORTHAND: Padding Left 
+----------------------------------------*/
+.py-0,.pl-0 {padding-left: 0 !important;}
+.py-1,.pl-1 {padding-left: .25em !important;}
+.py-2,.pl-2 {padding-left: .5em !important;}
+.py-3,.pl-3 {padding-left: 1em !important;}
+.py-4,.pl-4 {padding-left: 1.5em !important;}
+.py-5,.pl-5 {padding-left: 3em !important;}
+
+
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    text-decoration: none;
+  }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -5,24 +142,21 @@ body {
 #data {
     visibility: hidden;
 }
-.thumbnail {
-    position: absolute;
-    border: none;
-    top: 100px;
-}
-.visible-xs img {
-    margin-top: 20%;
-}
+
+
 #bg {
     position: fixed;
     top: 0;
     left: 0;
 }
 .bgwidth {
-    width: 80%;
+    width: 100%;
 }
 .bgheight {
     height: 100%;
+}
+.gradmdWidth {
+    width: 30%;
 }
 .grad-md {
     position: absolute;
@@ -30,7 +164,8 @@ body {
     top: 0;
     right: 0;
     width: 35%;
-    height: 100%;
+    min-height: 100vh;
+    flex:1 1 auto;
     opacity: initial;
     display: block;
     cursor: inherit;
@@ -44,7 +179,7 @@ body {
     position: absolute;
     top: 15%;
     width: 100%;
-    height: 35%;
+    height: 100%;
     opacity: 1;
     display: block;
     cursor: inherit;
@@ -65,14 +200,9 @@ body {
     z-index: 5;
 }
 .caption-xs {
-    position: absolute;
-    float: right;
-    right: 41%;
-    width: 25%;
     z-index: 5;
 }
 .pulse-button {
-    position: absolute;
     display: block;
     width: 500px;
     height: 110px;
@@ -262,7 +392,6 @@ p {
     margin-top: -12px;
 }
 .first-textS {
-    position: absolute;
     opacity: 1;
     font-weight: 900;
     animation-name: leftFadeIn;
@@ -271,7 +400,6 @@ p {
     font-weight: 300;
 }
 .first-text {
-    position: absolute;
     opacity: 1;
     animation-name: rightFadeIn;
     animation-duration: 5s;
@@ -279,22 +407,13 @@ p {
 .first-text h1 {
     font-weight: 700;
 }
-.second-text {
-    position: absolute;
-    top: 30rem;
-    opacity: 0;
-    left: -10px;
-}
+.second-text { opacity: 0;font-family: "Open Sans", sans-serif;}
 .second-textS {
-    position: absolute;
     opacity: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
 .third-text {
-    position: absolute;
-    top: 70rem;
-    left: 2%;
     opacity: 0;
 }
 .bld {
@@ -326,9 +445,7 @@ p {
 .item.i02 {
     animation: fade-in-item 3.5s 4.5s ease-out forwards;
 }
-.second-text p {
-    font-family: "Open Sans", sans-serif;
-}
+
 .centered {
     position: absolute;
     top: 15%;
@@ -348,29 +465,18 @@ p {
     .space-top-minus-1 {
         margin-top: 10px;
     }
-    .second-text {
-        opacity: 0;
-        left: 0;
-    }
-    .third-text {
-        left: 10%;
-        opacity: 0;
-        top: 80rem;
-    }
+
 }
 @media only screen and (max-width: 1680px) {
-    .second-text {
-        top: 30rem;
-        left: 0;
-    }
-    .third-text {
-        top: 55rem;
-        left: -8%;
-    }
+
+
 }
-@media only screen and (max-width: 1600px) {
-    .third-text {
-        left: -5%;
+@media only screen and (max-width: 1550px) {
+    .pulse-button {
+        width: 300px;
+        height: 80px;
+        font-size: 2.5em;
+        line-height: 77px;
     }
 }
 @media only screen and (max-width: 1440px) {
@@ -380,14 +486,7 @@ p {
         font-size: 2.5em;
         line-height: 77px;
     }
-    .second-text {
-        top: 25rem;
-        left: -15px;
-    }
-    .third-text {
-        left: 8%;
-        top: 55rem;
-    }
+
     .space-top-minus-1 {
         margin-top: -40px;
     }
@@ -396,44 +495,20 @@ p {
     .space-top-minus-1 {
         margin-top: -20px;
     }
-    .pulse-button {
-        width: 300px;
-        height: 80px;
-        font-size: 2.5em;
-        line-height: 77px;
-    }
-    .second-text {
-        top: 23rem;
-        left: -2em;
-    }
-    .third-text {
-        left: 11%;
-        top: 51rem;
-    }
+
+
 }
 @media only screen and (max-width: 1400px) {
-    .third-text {
-        left: 11%;
-    }
+
 }
 @media only screen and (max-width: 1366px) {
-    .third-text {
-        left: 8%;
-    }
+
 }
-@media only screen and (max-width: 1280px) {
-    .grad-md {
-        height: 100%;
-        top: 0%;
-    }
-    .third-text {
-        left: 8%;
-    }
+@media only screen and (max-width: 1199px) {
+    .spacer {margin: 50px 0;}
 }
 @media only screen and (max-width: 1080px) {
-    .grad-md {
-        top: 6%;
-    }
+
     .space-top-minus {
         margin-top: 0;
     }
@@ -444,28 +519,9 @@ p {
         text-align: center;
         line-height: 77px;
     }
-    .second-text {
-        top: 20rem;
-        left: -10px;
-    }
-    .third-text {
-        left: -2%;
-        top: 43rem;
-    }
 }
 @media only screen and (max-width: 1024px) {
-    .col-md-12 img {
-        width: 745px;
-        height: 513px;
-    }
-    .grad-md {
-        height: 75%;
-        top: 6%;
-    }
-    .third-text {
-        left: -6%;
-        top: 39rem;
-    }
+
 }
 @media only screen and (max-width: 920px) {
     .caption-xs img {
@@ -479,46 +535,17 @@ p {
         text-align: center;
         line-height: 40px;
     }
-    .second-text {
-        top: 17rem;
-        left: -15px;
-    }
-    .third-text {
-        left: 8%;
-        top: 35rem;
-    }
 }
 @media only screen and (max-device-width: 800px) {
-    .col-md-12 img {
-        width: 582px;
-        height: 400px;
-    }
-    .grad-md {
-        height: 35%;
-        top: 6%;
-    }
-    .second-text {
-        top: 15rem;
-        left: -10%;
-    }
-    .third-text {
-        left: 4%;
-        top: 30rem;
-    }
+
 }
 @media only screen and (max-width: 768px) {
-    .col-md-12 img {
-        width: 582px;
-        height: 400px;
-    }
+
     .caption-xs img {
         width: 150px;
         height: 90px;
     }
-    .grad-md {
-        height: 60%;
-        top: 7%;
-    }
+
     .pulse-button {
         width: 240px;
         height: 60px;
@@ -526,48 +553,28 @@ p {
         text-align: center;
         line-height: 55px;
     }
-    .second-text {
-        top: 18rem;
-        font-size: 3em;
-    }
     .second-text p {
         font-size: 20px;
-    }
-    .third-text {
-        left: 0%;
-        top: 30rem;
     }
 }
 @media only screen and (max-device-width: 768px) {
-    .col-md-12 img {
-        width: 582px;
-        height: 400px;
+    .spacer {
+        margin: 30px 0;
     }
     .caption-xs img {
         width: 150px;
         height: 90px;
     }
-    .grad-md {
-        height: 55%;
-    }
+
     .pulse-button {
-        width: 240px;
+        width: 200px;
         height: 60px;
         font-size: 2em;
         text-align: center;
         line-height: 55px;
     }
-    .second-text {
-        top: 14rem;
-        font-size: 3em;
-        left: -8%;
-    }
     .second-text p {
         font-size: 20px;
-    }
-    .third-text {
-        left: -6%;
-        top: 30rem;
     }
 }
 @media only screen and (max-width: 750px) {
@@ -587,28 +594,7 @@ p {
         text-align: center;
         line-height: 60px;
     }
-    .first-textS {
-        top: 110%;
-        left: -36%;
-        width: 289px;
-    }
-    .first-text {
-        top: 150%;
-        right: -56%;
-        width: 200%;
-    }
-    .first-text h1 {
-        padding-top: 5%;
-    }
-    .second-textS {
-        margin-left: -140px;
-        width: 500px;
-        top: 222%;
-    }
-    .third-text {
-        left: -8%;
-        top: 400%;
-    }
+
 }
 @media only screen and (max-device-width: 720px) {
     .grad-xs {
@@ -627,27 +613,7 @@ p {
         text-align: center;
         line-height: 60px;
     }
-    .first-textS {
-        top: 110%;
-        left: -36%;
-        width: 289px;
-    }
-    .first-text {
-        top: 150%;
-        right: -63%;
-    }
-    .first-text h1 {
-        padding-top: 5%;
-    }
-    .second-textS {
-        margin-left: -140px;
-        width: 500px;
-        top: 235%;
-    }
-    .third-text {
-        left: -10%;
-        top: 420%;
-    }
+
 }
 @media only screen and (max-device-width: 703px) {
     .grad-xs {
@@ -658,7 +624,6 @@ p {
     .caption-xs img {
         width: 150px;
         height: 90px;
-        margin-top: 10%;
     }
     .pulse-button {
         width: 240px;
@@ -666,27 +631,6 @@ p {
         font-size: 2.5em;
         text-align: center;
         line-height: 60px;
-    }
-    .first-textS {
-        top: 110%;
-        left: -36%;
-        width: 281px;
-    }
-    .first-text {
-        right: -76%;
-        width: 220%;
-    }
-    .first-text h1 {
-        padding-top: 5%;
-    }
-    .second-textS {
-        margin-left: -140px;
-        width: 500px;
-        top: 250%;
-    }
-    .third-text {
-        left: -15px;
-        top: 450%;
     }
 }
 @media only screen and (min-device-width: 640px) {
@@ -712,42 +656,15 @@ p {
         text-align: center;
         line-height: 46px;
     }
-    .first-textS {
-        top: 110%;
-        left: -36%;
-        width: 256px;
-    }
-    .first-text {
-        top: 150%;
-        right: -74%;
-    }
-    .first-text h1 {
-        padding-top: 5%;
-    }
-    .second-textS {
-        margin-left: -140px;
-        width: 450px;
-        top: 235%;
-    }
-    .third-text {
-        left: -20%;
-        top: 410%;
-    }
 }
 @media only screen and (max-device-width: 600px) {
-    .visible-xs img {
-        margin-top: 10%;
-    }
-    .first-text {
-        top: 150%;
-        right: -78%;
-    }
-    .third-text {
-        left: -18%;
-        top: 410%;
-    }
+
+
 }
 @media only screen and (max-device-width: 480px) {
+    .spacer {
+        margin: 15px 0;
+    }
     .grad-xs {
         width: 85%;
         left: 7%;
@@ -763,27 +680,6 @@ p {
         font-size: 2em;
         text-align: center;
         line-height: 40px;
-    }
-    .first-textS {
-        top: 100%;
-        left: -42%;
-        width: 200px;
-    }
-    .first-text {
-        top: 150%;
-        right: -70%;
-    }
-    .first-text h1 {
-        padding-top: 5%;
-    }
-    .second-textS {
-        margin-left: -60px;
-        width: 260px;
-        top: 230%;
-    }
-    .third-text {
-        left: -15%;
-        top: 450%;
     }
 }
 @media only screen and (max-device-width: 414px) {
@@ -803,36 +699,9 @@ p {
         text-align: center;
         line-height: 35px;
     }
-    .first-textS {
-        top: 100%;
-        left: -46%;
-        width: 166px;
-    }
-    .first-text {
-        top: 150%;
-        right: -63%;
-    }
-    .first-text h1 {
-        padding-top: 5%;
-    }
-    .second-textS {
-        margin-left: -50px;
-        width: 200px;
-        top: 230%;
-    }
-    .third-text {
-        left: -25%;
-        top: 480%;
-    }
 }
 @media only screen and (max-device-width: 412px) {
-    .visible-xs img {
-        margin-top: 10%;
-    }
-    .third-text {
-        left: -18%;
-        top: 480%;
-    }
+
 }
 @media only screen and (max-device-width: 384px) {
     .grad-xs {
@@ -850,22 +719,6 @@ p {
         font-size: 1em;
         text-align: center;
         line-height: 33px;
-    }
-    .first-textS {
-        top: 100%;
-        left: -50%;
-        width: 166px;
-    }
-    .first-text {
-        top: 140%;
-        right: -65%;
-    }
-    .second-textS {
-        top: 210%;
-    }
-    .third-text {
-        top: 470%;
-        left: -5%;
     }
 }
 @media only screen and (max-device-width: 375px) {
@@ -885,32 +738,8 @@ p {
         text-align: center;
         line-height: 33px;
     }
-    .first-textS {
-        top: 100%;
-        left: -50%;
-        width: 166px;
-    }
-    .first-text {
-        top: 140%;
-        right: -69%;
-    }
-    .second-textS {
-        top: 225%;
-        margin-left: -66px;
-        width: 290%;
-    }
-    .third-text {
-        top: 450%;
-        left: -12%;
-    }
 }
 @media only screen and (max-device-width: 360px) {
-    .visible-xs img {
-        margin-top: 10%;
-    }
-    .first-text {
-        right: -74%;
-    }
 }
 @media only screen and (max-device-width: 320px) {
     .grad-xs {
@@ -927,24 +756,7 @@ p {
         height: 40px;
         font-size: 1em;
         text-align: center;
-        line-height: 33px;
-    }
-    .first-textS {
-        top: 100%;
-        left: -65%;
-        width: 166px;
-    }
-    .first-text {
-        top: 140%;
-        right: -72%;
-    }
-    .second-textS {
-        top: 210%;
-        margin-left: -52px;
-    }
-    .third-text {
-        top: 410%;
-        left: -15px;
+        line-height: 38px;
     }
     .space-top-minus-2 {
         margin-top: -8px;
