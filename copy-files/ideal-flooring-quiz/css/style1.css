@@ -179,7 +179,6 @@ body {
     position: absolute;
     top: 15%;
     width: 100%;
-    height: 100%;
     opacity: 1;
     display: block;
     cursor: inherit;
@@ -506,6 +505,7 @@ p {
 }
 @media only screen and (max-width: 1199px) {
     .spacer {margin: 50px 0;}
+    .start-hgt{height:16.4vw;}
 }
 @media only screen and (max-width: 1080px) {
 
