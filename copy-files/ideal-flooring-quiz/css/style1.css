@@ -6,7 +6,7 @@
     width: 100%;
     height: 0;
     border-bottom: 0 transparent;
-    margin: 100px 0;
+    margin: 10vh 0;
 }
 /* SHORTHAND: Margin 
 ----------------------------------------*/
@@ -159,12 +159,13 @@ body {
     width: 30%;
 }
 .grad-md {
-    position: absolute;
+    position: fixed;
     float: right;
     top: 0;
     right: 0;
     width: 35%;
-    min-height: 100vh;
+    height: 100%;
+    overflow: auto;
     flex:1 1 auto;
     opacity: initial;
     display: block;
@@ -460,14 +461,19 @@ p {
     width: 100%;
     z-index: 9999;
 }
+
+
+
+
+
 @media only screen and (min-width: 1991px) {
     .space-top-minus-1 {
         margin-top: 10px;
     }
 
 }
-@media only screen and (max-width: 1680px) {
-
+@media only screen and (max-width: 1599px) {
+    .spacer {margin: 8vh 0;}
 
 }
 @media only screen and (max-width: 1550px) {
@@ -504,8 +510,7 @@ p {
 
 }
 @media only screen and (max-width: 1199px) {
-    .spacer {margin: 50px 0;}
-    .start-hgt{height:16.4vw;}
+    .spacer {margin: 5vh 0;}
 }
 @media only screen and (max-width: 1080px) {
 
@@ -538,6 +543,11 @@ p {
 }
 @media only screen and (max-device-width: 800px) {
 
+}
+@media screen and ( max-height: 640px ) {
+    .spacer {
+        margin: 20px 0;
+    }
 }
 @media only screen and (max-width: 768px) {
 
