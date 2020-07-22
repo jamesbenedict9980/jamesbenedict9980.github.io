@@ -571,13 +571,20 @@ p {
     }
 
     .pulse-button {
-        width:50%;
         font-size: 2em;
         text-align: center;
         line-height: 55px;
     }
     .second-text p {
         font-size: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .pulse-button {
+        width:50%;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 60px;
     }
 }
 @media only screen and (max-width: 750px) {
@@ -590,12 +597,7 @@ p {
         width: 150px;
         height: 90px;
     }
-    .pulse-button {
 
-        font-size: 2.5em;
-        text-align: center;
-        line-height: 60px;
-    }
 
 }
 @media only screen and (max-device-width: 720px) {
@@ -674,10 +676,9 @@ p {
         height: 60px;
     }
     .pulse-button {
-
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
-        line-height: 40px;
+        line-height: 30px;
     }
 }
 @media only screen and (max-device-width: 414px) {
