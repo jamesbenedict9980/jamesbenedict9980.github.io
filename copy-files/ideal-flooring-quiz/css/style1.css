@@ -177,8 +177,8 @@ body {
     z-index: 5;
 }
 .grad-xs {
-    position: absolute;
-    top: 15%;
+    position: fixed;
+    top: 10%;
     width: 100%;
     opacity: 1;
     display: block;
