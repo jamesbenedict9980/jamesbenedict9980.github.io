@@ -178,8 +178,10 @@ body {
 }
 .grad-xs {
     position: fixed;
+    width: 85%;
+    height: 50%;
     top: 10%;
-    width: 100%;
+    overflow:auto;
     opacity: 1;
     display: block;
     cursor: inherit;
@@ -190,6 +192,10 @@ body {
     background-image: none;
     box-shadow: none;
     z-index: 999;
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 .caption-md {
     position: absolute;
@@ -466,6 +472,11 @@ p {
 
 
 
+@media only screen and (min-width: 2560px) {
+    #bg {
+        width: 120%;
+    }
+}
 @media only screen and (min-width: 1991px) {
     .space-top-minus-1 {
         margin-top: 10px;
@@ -588,11 +599,6 @@ p {
     }
 }
 @media only screen and (max-width: 750px) {
-    .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 600px;
-    }
     .caption-xs img {
         width: 150px;
         height: 90px;
@@ -601,11 +607,6 @@ p {
 
 }
 @media only screen and (max-device-width: 720px) {
-    .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 600px;
-    }
     .caption-xs img {
         width: 150px;
         height: 90px;
@@ -619,11 +620,6 @@ p {
 
 }
 @media only screen and (max-device-width: 703px) {
-    .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 600px;
-    }
     .caption-xs img {
         width: 150px;
         height: 90px;
@@ -640,12 +636,8 @@ p {
         margin-top: 0;
     }
 }
-@media only screen and (max-device-width: 640px) {
-    .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 500px;
-    }
+@media only screen and (max-width: 640px) {
+
     .caption-xs img {
         width: 150px;
         height: 90px;
@@ -658,18 +650,19 @@ p {
         line-height: 46px;
     }
 }
-@media only screen and (max-device-width: 600px) {
-
+@media only screen and (max-width: 600px) {
+    .grad-xs {
+height:45%;
+    }
 
 }
+@media screen and ( max-height: 990px ) { .grad-xs{height:350px;}}
 @media only screen and (max-device-width: 480px) {
     .spacer {
         margin: 15px 0;
     }
     .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 410px;
+
     }
     .caption-xs img {
         width: 100px;
@@ -681,11 +674,10 @@ p {
         line-height: 30px;
     }
 }
+@media screen and ( max-height: 480px ) { .grad-xs{top:5%;}}
 @media only screen and (max-device-width: 414px) {
     .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 350px;
+
     }
     .caption-xs img {
         width: 90px;
@@ -698,9 +690,7 @@ p {
 }
 @media only screen and (max-device-width: 384px) {
     .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 300px;
+
     }
     .caption-xs img {
         width: 80px;
@@ -708,11 +698,10 @@ p {
     }
 
 }
+@media screen and ( max-height: 360px ) { .grad-xs{height:300px;}}
 @media only screen and (max-device-width: 375px) {
     .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 300px;
+
     }
     .caption-xs img {
         width: 80px;
@@ -724,9 +713,7 @@ p {
 }
 @media only screen and (max-device-width: 320px) {
     .grad-xs {
-        width: 85%;
-        left: 7%;
-        height: 300px;
+
     }
     .caption-xs img {
         width: 80px;
