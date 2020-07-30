@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Style your home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/decoStyle.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-M2KXQ3');</script>  
+</head>
+<body>
+<div id="data"></div>
+<script>
+function processForm(){
+
+ var parameters = location.search.substring(1).split("&");
+ var temp = parameters[0].split("=");
+	k = unescape(temp[1]);
+	document.getElementById("data").innerHTML = k;
+}
+processForm();
+</script>
+<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-sm hidden-xs col-md-12">  
+			<p class="line-h" style="font-size:3vw;" class="first">WHICH <b>STYLE</b> BEST DESCRIBES <b>YOUR HOME?</b></br>
+			<a data-toggle="modal" data-target="#myModal"><small><i>Need a hint?</i></small></a></p>
+		</div>
+		<div class="visible-xs visible-sm col-xs-12 space-topp">  
+			<p style="font-size:6vw;" class="first">WHICH <b>STYLE</b> BEST DESCRIBES <b>YOUR HOME?</b></br>
+			<a data-toggle="modal" data-target="#myModal"><small style="font-size:4vw;"><i>Need a hint?</i></small></a></p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="visible-xs visible-sm col-xs-6">
+			<a id="aqImage" value="beach-bungalow"><img class="second img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-beach-bungalow-half.jpg" alt="kitchen"></a>
+		</div>
+		<div class="visible-xs visible-sm col-xs-6">
+			<a id="arImage" value="classic-colonial"><img class="third img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-classic-colonial-half.jpg" alt="kitchen"></a>
+		</div>
+	</div></br>
+		<div class="row">
+			<div class="visible-xs visible-sm col-xs-6">
+				<a id="asImage" value="country-estate"><img class="fourth img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-country-estate-half.jpg" alt="kitchen"></a>
+			</div>
+			<div class="visible-xs visible-sm col-xs-6">
+				<a id="atImage" value="contemporary-mode"><img class="fifth img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-contemporary-mod-half.jpg" alt="kitchen"></a>
+			</div>
+		</div></br>
+		<div class="row">
+			<div class="visible-xs visible-sm col-xs-6">
+				<a id="auImage" value="rustic-revival"><img class="sixth img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-rustic-revival-half.jpg" alt="kitchen"></a>
+			</div>
+			<div class="visible-xs visible-sm col-xs-6">
+				<a id="avImage" value="victorian-charm"><img class="seventh img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-victorian-charm-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+		
+	
+	
+	<div class="row">
+		<div class="hidden-sm hidden-xs col-md-4">  
+			<p style="font-size:3vw;" class="second styleText">BEACH</br>BUNGALOW</p>
+			<div class="overlay">
+				<a id="awImage" value="beach-bungalow"><img class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-beach-bungalow-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+		
+		
+		<div class="hidden-sm hidden-xs col-md-4">  
+			<p style="font-size:3vw;" class="third styleText">CLASSIC</br>COLONIAL</p>
+			<div class="overlay">
+				<a id="axImage" value="classic-colonial"><img class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-classic-colonial-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+		
+		<div class="hidden-sm hidden-xs col-md-4">  
+			<p style="font-size:3vw;" class="fourth styleText">COUNTRY</br>ESTATE</p>
+			<div class="overlay">
+				<a id="ayImage" value="country-estate"><img class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-country-estate-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="hidden-sm hidden-xs col-md-4">  
+			<p style="font-size:3vw;" class="fifth styleText">CONTEMPORARY</br>MOD</p>
+			<div class="overlay">
+				<a id="azImage" value="contemporary-mod"><img class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-contemporary-mod-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+		
+		
+		<div class="hidden-sm hidden-xs col-md-4">  
+			<p style="font-size:3vw;" class="sixth styleText">RUSTIC</br>REVIVAL</p>
+			<div class="overlay">
+				<a id="baImage" value="rustic-revival"><img class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-rustic-revival-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+		
+		<div class="hidden-sm hidden-xs col-md-4">  
+			<p style="font-size:3vw;" class="seventh styleText">VICTORIAN</br>CHARM</p>
+			<div class="overlay">
+				<a id="bbImage" value="victorian-charm"><img class="img-responsive" src="https://cdn.msisurfaces.com/images/countertop-quiz/home-victorian-charm-half.jpg" alt="kitchen"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+		  <h1 style="font-size:3vw;">Hint: Live in a one-of-a-kind?</h1>
+		  <h1 style="font-size:3vw;">Choose the one that captures its</h1>
+		  <h1 style="font-size:3vw;">aesthetic best.</h1>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2KXQ3"
+height="0" width="0" class="iframe_Home"></iframe></noscript>
+<script>
+	var aqImage = document.getElementById("aqImage");
+	aqImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + aqImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var arImage = document.getElementById("arImage");
+	arImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + arImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var asImage = document.getElementById("asImage");
+	asImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + asImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var atImage = document.getElementById("atImage");
+	atImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + atImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var auImage = document.getElementById("auImage");
+	auImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + auImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var avImage = document.getElementById("avImage");
+	avImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + avImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var awImage = document.getElementById("awImage");
+	awImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + awImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var axImage = document.getElementById("axImage");
+	axImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + axImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var ayImage = document.getElementById("ayImage");
+	ayImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + ayImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var azImage = document.getElementById("azImage");
+	azImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + azImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var baImage = document.getElementById("baImage");
+	baImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + baImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script>
+	var bbImage = document.getElementById("bbImage");
+	bbImage.onclick = function () {
+	var tempVar = '';
+	document.getElementById("data").innerHTML = k;
+	tempVar = "Value=" + k + "/" + bbImage.getAttribute("value");
+	window.location.href = 'mood.html?' + tempVar;};
+</script>
+<script  src="../js/index.js"></script>
+</body>
+</html>
