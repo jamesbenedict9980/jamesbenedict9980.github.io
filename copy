@@ -1,1 +1,83 @@
-https://xd.adobe.com/view/11d1e155-18a6-4c4a-6c96-d34035d1408e-67e0/
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add application name here-->
+    <title>Application Name - MSI</title>
+    <!-- Add a custom Favicon here (.png, 32x32 or 16x16).  -->
+    <link rel="icon" src="NEXTGEN--FAV.ico" sizes="16x16 32x32" type="image/png">
+
+    <!-- .CSS -->
+    <!-- NEXTGEN UI Stylesheet -->
+    <link rel="stylesheet" href="css/NEXTGEN-v2.css">
+    <!-- Bootstrap 4.5.0 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- .JS  -->
+    <!-- jquery-3.5.1.slim.min.js Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- popper.js@1.16.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Bootstrap.js 4.5.0 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    
+    <!-- jQuery Data Tables CDN 1.10.21 -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js" type="text/javascript" charset="utf8"></script>
+    <!-- Bootstrap Data Tables 1.10.21 -->
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js" type="text/javascript" charset="utf8"></script>
+</head>
+<body>
+    <!-- Inject Top Navbar here -->
+    <div id="top-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand-special ml-3" href="#"><span class="fw-800">MSI </span>| <span class="fw-600">Application Name</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i> User.Name</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://getbootstrap.com" target="_blank">Get Bootstrap</a>
+                        <a class="dropdown-item" href="https://www.w3schools.com" target="_blank">w3schools.com</a>
+                        <a class="dropdown-item" href="https://developer.mozilla.org/" target="_blank">Mozilla Dev
+                            Network</a>
+                    </div>
+                </li>
+                <li class="nav-item active mr-4">
+                    <a class="nav-link" href="#">
+                        <!-- Add country flag here -->
+                        <img src="img/united-states-of-america-flag-icon-32.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END Inject Top Navbar here -->
+    <div class="container-fluid">
+        <div class="row p-2">
+            <div class="col-lg-12">
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb pl-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">NEXTGEN</li>
+                    </ol>
+                </nav>
+                <!-- BEGIN -->
+                <h2>NEXTGEN Starter Template</h2>
+                <p class="msi-lead">Tablet responsive starter page built with Bootstrap 4</p>
+                <div class="b-line"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
