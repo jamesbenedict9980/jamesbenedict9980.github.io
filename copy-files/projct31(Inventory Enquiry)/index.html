@@ -47,33 +47,35 @@
 <body>
     <!-- Inject Top Navbar here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand-special marg-auto" href="#"><span class="fw-600">MSI </span>| <span
-        class="fw-600">Inventory Inquiry</span></a>
-        <img class="mr-3 d-block s-sm-block d-md-block d-lg-none d-xl-none pointer" src="img/more.png" style="width:30px;">
-    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand-special marg-auto" href="#"><span class="fw-600">MSI </span>| <span
+                class="fw-600">Inventory Inquiry</span></a>
+        <img class="mr-3 d-block s-sm-block d-md-block d-lg-none d-xl-none pointer" src="img/more.png"
+            style="width:30px;">
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link"><i class="fas fa-user-circle"></i> User Name</a>
-            </li>              
-            <li class="nav-item dropdown mr-4">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/united-states-of-america-flag-icon-32.png">
-                </a>
-                <div class="dropdown-menu dropdown-menu-for-flag" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><img src="img/canada-flag-icon-32.png" class="img"></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><img src="img/india-flag-icon-32.png" class="img"></a>
-                </div>
-            </li>	
-        </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link"><i class="fas fa-user-circle"></i> User Name</a>
+                </li>
+                <li class="nav-item dropdown mr-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/united-states-of-america-flag-icon-32.png">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-for-flag" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><img src="img/canada-flag-icon-32.png" class="img"></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><img src="img/india-flag-icon-32.png" class="img"></a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <!-- END Inject Top Navbar here -->
     <div class="container-fluid">
         <div class="abc centered">
@@ -92,12 +94,211 @@
                     </div>
                 </div>
                 <div class="btnn col-12 text-center">
-                    <button type="button" class="btn btn-secondary width-150 mr-1">Advanced</button>
-                    <button type="button" class="btn btn-primary width-150 ml-1">Search</button>
+                    <button type="button" class="btn btn-secondary width-150 mr-1 btn-advance">Advanced</button>
+                    <button type="button" class="btn btn-primary width-150 ml-1 btn-search">Search</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
+                    <div class="advance-hide">
+                        <h4>Advance Search</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-4 col-sm-4 col-md-2 col-lg-1 col-xl-1 pr-0">
+                                <div class="wf-checkbox pt-1">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox">
+                                            <label>Match</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-2 col-lg-1 col-xl-1 p-0 ml-n3">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                        <option>ALL</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                                <label class="pt-2">of the following rules:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <small class="label" for="input">MSI Company</small>
+                                    <select class="form-control form-control-lg inputssss"
+                                        id="exampleFormControlSelect2">
+                                        <option>Nothing Selected</option>
+                                        <option>Selected</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer"></div>
+                        <h4>Filter by Condition</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs-rgt">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect3">
+                                        <option>Item Number</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect4">
+                                        <option>Contains</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <table>
+                                    <tr>
+                                        <td><a class="text-dark" href="#"><i class="fa fa-minus-circle fa-lg"
+                                                    aria-hidden="true"></i></a></td>
+                                        <td><a class="text-dark" href="#"><i class="fa fa-plus-circle fa-lg"
+                                                    aria-hidden="true"></i></a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="btn-group btn-toggle mb-3">
+                            <button class="btn btn-default btn-and">And</button>
+                            <button class="btn btn-primary active btn-or">Or</button>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs-rgt">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect3">
+                                        <option>Item Number</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect4">
+                                        <option>Contains</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <table>
+                                    <tr>
+                                        <td><a class="text-dark" href="#"><i class="fa fa-minus-circle fa-lg"
+                                                    aria-hidden="true"></i></a></td>
+                                        <td><a class="text-dark" href="#"><i class="fa fa-plus-circle fa-lg"
+                                                    aria-hidden="true"></i></a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="btn-group btn-toggle mb-3">
+                            <button class="btn btn-default btn-and">And</button>
+                            <button class="btn btn-primary active btn-or">Or</button>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs-rgt">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect3">
+                                        <option>Item Number</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect4">
+                                        <option>Contains</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
+                                <table>
+                                    <tr>
+                                        <td><a class="text-dark" href="#"><i class="fa fa-minus-circle fa-lg"
+                                                    aria-hidden="true"></i></a></td>
+                                        <td><a class="text-dark" href="#"><i class="fa fa-plus-circle fa-lg"
+                                                    aria-hidden="true"></i></a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="btn-group btn-toggle mb-3">
+                            <button class="btn btn-default btn-and">And</button>
+                            <button class="btn btn-primary active btn-or">Or</button>
+                        </div>
+                        <div class="spacer"></div>
+                        <h4>Filter by Condition</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="wf-checkbox">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox">
+                                            <label>Active</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox">
+                                            <label>Discontinued</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox">
+                                            <label>Deleted</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox">
+                                            <label>Inactive</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12 text-center mb-5">
+                                <button class="btn btn-secondary width-150"
+                                    onClick="location.href=location.href">CANCEL</button>
+                                <button class="btn btn-primary width-150">APPLY</button>
+                            </div>
+                        </div>
+                    </div>
+
                     <table class="table w-100 main-table">
                         <thead class="msi-bg-secondary white">
                             <tr>
@@ -156,12 +357,17 @@
                                                 <li class="nav-item">
                                                     <a class="nav-link" id="pills-two-tab" data-toggle="pill"
                                                         href="#pills-two" role="tab" aria-controls="pills-two"
-                                                        aria-selected="false"><span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">ATTRIBUTES</span><span class="d-block d-sm-block d-md-block d-lg-none d-xl-none">ATTR</span></a>
+                                                        aria-selected="false"><span
+                                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">ATTRIBUTES</span><span
+                                                            class="d-block d-sm-block d-md-block d-lg-none d-xl-none">ATTR</span></a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" id="pills-three-tab" data-toggle="pill"
                                                         href="#pills-three" role="tab" aria-controls="pills-three"
-                                                        aria-selected="false"><span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">LOT DETAILS</span><span class="d-block d-sm-block d-md-block d-lg-none d-xl-none">LOT</span></a>
+                                                        aria-selected="false"><span
+                                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">LOT
+                                                            DETAILS</span><span
+                                                            class="d-block d-sm-block d-md-block d-lg-none d-xl-none">LOT</span></a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" id="pills-four-tab" data-toggle="pill"
@@ -176,7 +382,10 @@
                                                 <li class="nav-item">
                                                     <a class="nav-link" id="pills-six-tab" data-toggle="pill"
                                                         href="#pills-six" role="tab" aria-controls="pills-six"
-                                                        aria-selected="false"><span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">NON-SLAB PRICING</span><span class="d-block d-sm-block d-md-block d-lg-none d-xl-none">Price</span></a>
+                                                        aria-selected="false"><span
+                                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">NON-SLAB
+                                                            PRICING</span><span
+                                                            class="d-block d-sm-block d-md-block d-lg-none d-xl-none">Price</span></a>
                                                 </li>
                                             </ul>
                                             <div class="tab-content" id="pills-tabContent">
@@ -204,9 +413,12 @@
                                                                         <th>Available</th>
                                                                         <th class="td-hide">SO Qty Req Ship</th>
                                                                         <th class="td-hide">TR Qty Req Ship</th>
-                                                                        <th class="td-hide">Qty On-Hand After Req Ship</th>
-                                                                        <th class="td-hide">SO Qty On-Hand Not Req Ship</th>
-                                                                        <th class="td-hide">TR Qty On-Hand Not Req Ship</th>
+                                                                        <th class="td-hide">Qty On-Hand After Req Ship
+                                                                        </th>
+                                                                        <th class="td-hide">SO Qty On-Hand Not Req Ship
+                                                                        </th>
+                                                                        <th class="td-hide">TR Qty On-Hand Not Req Ship
+                                                                        </th>
                                                                         <th class="td-hide">FAB Loose $ per SQFT</th>
                                                                     </tr>
                                                                 </thead>
@@ -313,7 +525,7 @@
                                                                 </th>
                                                             </tr>
                                                         </thead>
-                                                    </table>   
+                                                    </table>
                                                     <div class="row p-4">
                                                         <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
                                                             <h6>Size</h6>
@@ -347,8 +559,8 @@
                                                             <h6>Product Line</h6>
                                                             <p>123445.00</p>
                                                         </div>
-                                                            </div>
-                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <!-- Tab Three -->
                                                 <div class="tab-pane fade" id="pills-three" role="tabpanel"
                                                     aria-labelledby="pills-three-tab">
@@ -474,18 +686,33 @@
     </div>
 </body>
 <script>
-    $('.btn-primary').on('click', function () {
+    $('.btn-search').on('click', function () {
         $('.abc').removeClass('centered');
         $('.add').addClass('col-lg-6 col-xl-4');
         $('.btnn').removeClass('text-center');
         $('.btnn').addClass('col-lg-6 col-xl-4 text-center-xs');
-        $('.btnn').css('padding-top','0.9rem');
-        $('.btnn').css('padding-bottom','0.9rem');
+        $('.btnn').css('padding-top', '0.9rem');
+        $('.btnn').css('padding-bottom', '0.9rem');
         $('.main-table').css('display', 'inline-table');
         $('.h2-hide').hide();
 
         if (window.innerWidth > 992) {
-            $('.left-and-right-inner-addon').css('width','100%');
+            $('.left-and-right-inner-addon').css('width', '100%');
+        }
+
+
+    });
+</script>
+<script>
+    $('.btn-advance').on('click', function () {
+        $('.abc').removeClass('centered');
+        $('.advance-hide').css('display', 'block');
+        $('.h2-hide').hide();
+        $('.btnn').hide();
+        $('.main-table').hide();
+        $('.add').addClass('col-lg-12 col-xl-12');
+        if (window.innerWidth > 992) {
+            $('.left-and-right-inner-addon').css('width', '600px');
         }
     });
 </script>
@@ -495,6 +722,15 @@
             $(this).find(".fa").removeClass("fa-plus-circle success").addClass("fa-minus-circle warning");
         else
             $(this).find(".fa").removeClass("fa-minus-circle warning").addClass("fa-plus-circle success");
+    });
+</script>
+<script>
+    $('.btn-toggle').click(function () {
+        $(this).find('.btn').toggleClass('active');
+
+        if ($(this).find('.btn-primary').length > 0) {
+            $(this).find('.btn').toggleClass('btn-primary');
+        }
     });
 </script>
 

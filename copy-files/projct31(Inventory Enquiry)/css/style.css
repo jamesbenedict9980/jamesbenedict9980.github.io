@@ -62,9 +62,39 @@ input.myInput[type=text]{padding-left:40px;}
     background-color: #555;
 }
 .marg-auto{margin-left: 1rem!important;}
+.advance-hide{display:none;}
+.advance-hide label{text-transform: unset;}
 
+.holder {
+    height: 50px;
+}
+.label {
+    /* margin-bottom: -50px; */
+    padding-left: 0.8rem;
+    padding-top: 0px;
+    position: absolute;
+    color: #495057;
+}
+.input {
+    height: 100%;
+    padding-bottom: -10px;
+}
+div>.form-control-lg {
+    height: calc(2em + 1rem + 2px);
+    padding-left: 6px;
+    padding-top: 15px;}
 
+    /* .btn-and {    border: 1px solid #ccc!important;
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius:10px!important;
+    }
+    .btn-or {    border: 1px solid #ccc!important;
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius:10px!important;
+    } */
 
+    .btn-group, .btn-group-vertical{ border: 1px solid #ccc!important;border-radius:10px;}
+    .btn-and.active,.btn-or.active{border: 1px solid #8b6f4e!important;border-radius:10px!important;}
 
 /*Media Query*/
 @media only screen and (max-width : 1990px){
@@ -109,6 +139,8 @@ input.myInput[type=text]{padding-left:40px;}
 @media only screen and (max-width:680px) {
 }
 @media only screen and (max-width:640px) {
+    .pad-xs{padding:0!important;}
+    .pad-xs-rgt{padding-right:0!important;}
 }
 @media only screen and (max-width:600px) {
     .left-and-right-inner-addon {width:100%;}
