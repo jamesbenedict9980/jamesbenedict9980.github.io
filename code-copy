@@ -1,762 +1,172 @@
-<!doctype html>
-<html lang="en">
+input.myInput[type=text]{padding-left:40px;}
+.right-inner-addon {
+    position: relative;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align:center;
+  }
+.right-inner-addon input {
+    padding-right: 35px !important;
+}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Add application name here-->
-    <title>Inventory Inquiry</title>
-    <!-- Add a custom Favicon here (.png, 32x32 or 16x16).  -->
-    <!-- <link rel="icon" src="NEXTGEN--FAV.ico" sizes="16x16 32x32" type="image/png"> -->
+.right-inner-addon img{
+    position: absolute;
+    right: 0px;
+    padding: 12px 12px;
+    pointer-events: none;
+}
 
-    <!-- .CSS -->
-    <!-- NEXTGEN UI Stylesheet -->
-    <link rel="stylesheet" href="css/NEXTGEN-v2.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap 4.5.0 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+.left-and-right-inner-addon {
+    position: relative;
+    width:600px;
+    text-align: center;
+    margin: 15px 0;
+}
 
-    <!-- .JS  -->
-    <!-- jquery-3.5.1.slim.min.js Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <!-- popper.js@1.16.0 -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap.js 4.5.0 -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+.left-and-right-inner-addon i.left {
+    position: absolute;
+    padding: 12px 12px;
+    pointer-events: none;
+    left:0;
+}
 
+.left-and-right-inner-addon i.right {
+    position: absolute;
+    right: 0px;
+    padding: 12px 12px;
+    pointer-events: none;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .col-lg-6.text-center-xs,.col-xl-4.text-center-xs{text-align:left;}
+  .table td, .table th{
+      border-top:1px solid transparent!important;
+      padding:10px!important;
+  }
+  .main-table.thead th {
+    border-left: 1px solid #555555 !important;
+    border-right: 1px solid #555555 !important;
+}
+.sub-main-table.thead th {
+    border-left: 1px solid #8b6f4e !important;
+    border-right: 1px solid #8b6f4e !important;
+    border-top: 1px solid #8b6f4e !important;
+    border-bottom: 1px solid #8b6f4e !important;
+}
+.main-table{display:none;border:1px solid #dedede;}
+.main-table td{ border-bottom:1px solid #dedede;}
+.nav-link {padding:5px!important;}
+.nav-justified .nav-item {
+    background-color: #555;
+}
+.marg-auto{margin-left: 1rem!important;}
+.advance-hide{display:none;}
+.advance-hide label{text-transform: unset;}
 
-    <!-- jQuery Data Tables CDN 1.10.21 -->
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js" type="text/javascript"
-        charset="utf8"></script>
-    <!-- Bootstrap Data Tables 1.10.21 -->
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js" type="text/javascript"
-        charset="utf8"></script>
+.holder {
+    height: 50px;
+}
+.label {
+    /* margin-bottom: -50px; */
+    padding-left: 0.8rem;
+    padding-top: 0px;
+    position: absolute;
+    color: #495057;
+}
+.input {
+    height: 100%;
+    padding-bottom: -10px;
+}
+div>.form-control-lg {
+    height: calc(2em + 1rem + 2px);
+    padding-left: 6px;
+    padding-top: 15px;}
 
-</head>
-
-<body>
-    <!-- Inject Top Navbar here -->
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand-special marg-auto" href="#"><span class="fw-600">MSI </span>| <span
-                class="fw-600">Inventory Inquiry</span></a>
-        <img class="mr-3 d-block s-sm-block d-md-block d-lg-none d-xl-none pointer" src="img/more.png"
-            style="width:30px;">
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link"><i class="fas fa-user-circle"></i> User Name</a>
-                </li>
-                <li class="nav-item dropdown mr-4">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="img/united-states-of-america-flag-icon-32.png">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-for-flag" aria-labelledby="navbarDropdownMenuLink">
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><img src="img/canada-flag-icon-32.png" class="img"></a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><img src="img/india-flag-icon-32.png" class="img"></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- END Inject Top Navbar here -->
-    <div class="container-fluid">
-        <div class="abc centered">
-            <div class="spacer"></div>
-            <h2 class="text-center h2-hide"><span class="fw-700">MSI </span><span class="fw-600">Inventory
-                    Enquiry</span></h2>
-            <div class="row">
-                <div class="add col-12">
-                    <div class="left-and-right-inner-addon mx-auto">
-                        <i class="fa fa-search left fa-lg"></i>
-                        <i class="fa fa-camera right fa-lg d-md-block d-lg-none d-xl-none"></i>
-                        <div class="right-inner-addon">
-                            <img src="img/united-states-of-america-flag-icon-32.png" class="">
-                        </div>
-                        <input type="text" class="form-control myInput" placeholder="Search Inventory">
-                    </div>
-                </div>
-                <div class="btnn col-12 text-center">
-                    <button type="button" class="btn btn-secondary width-150 mr-1 btn-advance">Advanced</button>
-                    <button type="button" class="btn btn-primary width-150 ml-1 btn-search">Search</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="advance-hide">
-                        <h4>Advance Search</h4>
-                        <hr>
-                        <div class="row">
-                            <div class="col-4 col-sm-4 col-md-2 col-lg-1 col-xl-1 pr-0">
-                                <div class="wf-checkbox pt-1">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox">
-                                            <label>Match</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-2 col-lg-1 col-xl-1 p-0 ml-n3">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect2">
-                                        <option>ALL</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
-                                <label class="pt-2">of the following rules:</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="form-group">
-                                    <small class="label" for="input">MSI Company</small>
-                                    <select class="form-control form-control-lg inputssss"
-                                        id="exampleFormControlSelect2">
-                                        <option>Nothing Selected</option>
-                                        <option>Selected</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="spacer"></div>
-                        <h4>Filter by Condition</h4>
-                        <hr>
-                        <div class="row">
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs-rgt">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect3">
-                                        <option>Item Number</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect4">
-                                        <option>Contains</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Value">
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <table>
-                                    <tr>
-                                        <td><a class="text-dark" href="#"><i class="fa fa-minus-circle fa-lg"
-                                                    aria-hidden="true"></i></a></td>
-                                        <td><a class="text-dark" href="#"><i class="fa fa-plus-circle fa-lg"
-                                                    aria-hidden="true"></i></a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="btn-group btn-toggle mb-3">
-                            <button class="btn btn-default btn-and">And</button>
-                            <button class="btn btn-primary active btn-or">Or</button>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs-rgt">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect3">
-                                        <option>Item Number</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect4">
-                                        <option>Contains</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Value">
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <table>
-                                    <tr>
-                                        <td><a class="text-dark" href="#"><i class="fa fa-minus-circle fa-lg"
-                                                    aria-hidden="true"></i></a></td>
-                                        <td><a class="text-dark" href="#"><i class="fa fa-plus-circle fa-lg"
-                                                    aria-hidden="true"></i></a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="btn-group btn-toggle mb-3">
-                            <button class="btn btn-default btn-and">And</button>
-                            <button class="btn btn-primary active btn-or">Or</button>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs-rgt">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect3">
-                                        <option>Item Number</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect4">
-                                        <option>Contains</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Value">
-                                </div>
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pad-xs">
-                                <table>
-                                    <tr>
-                                        <td><a class="text-dark" href="#"><i class="fa fa-minus-circle fa-lg"
-                                                    aria-hidden="true"></i></a></td>
-                                        <td><a class="text-dark" href="#"><i class="fa fa-plus-circle fa-lg"
-                                                    aria-hidden="true"></i></a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="btn-group btn-toggle mb-3">
-                            <button class="btn btn-default btn-and">And</button>
-                            <button class="btn btn-primary active btn-or">Or</button>
-                        </div>
-                        <div class="spacer"></div>
-                        <h4>Filter by Condition</h4>
-                        <hr>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="wf-checkbox">
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox">
-                                            <label>Active</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox">
-                                            <label>Discontinued</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox">
-                                            <label>Deleted</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox">
-                                            <label>Inactive</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-12 text-center mb-5">
-                                <button class="btn btn-secondary width-150"
-                                    onClick="location.href=location.href">CANCEL</button>
-                                <button class="btn btn-primary width-150">APPLY</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <table class="table w-100 main-table">
-                        <thead class="msi-bg-secondary white">
-                            <tr>
-                                <th>ITEM</th>
-                                <th>DESCRIPTION</th>
-                                <th class="text-right">AVAIL</th>
-                                <th class="td-hide">PRODUCT</th>
-                                <th class="td-hide">COLOR</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="ef" aria-hidden="true" data-toggle="collapse" href="#collapseExample"
-                                    role="button" aria-expanded="false" aria-controls="collapseExample"><i
-                                        class="fa fa-plus-circle success mr-3"></i>
-                                    <a href="#">QSL-CALALAZA-3CM-BK</a></td>
-                                <td>CALAALTO ALTO 3CM POL QUARTZ</td>
-                                <td class="text-right">1,398,488</td>
-                                <td class="td-hide"><a href="#">Go To Website</a></td>
-                                <td class="td-hide">White Cool</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="collapse" id="collapseExample">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-                                            <div class="form-group">
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>Zone Selection - Nothing Selected</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-                                            <div class="form-group">
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>Warehouse - Nothing selected</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" id="pills-one-tab" data-toggle="pill"
-                                                        href="#pills-one" role="tab" aria-controls="pills-one"
-                                                        aria-selected="true">MAIN</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="pills-two-tab" data-toggle="pill"
-                                                        href="#pills-two" role="tab" aria-controls="pills-two"
-                                                        aria-selected="false"><span
-                                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">ATTRIBUTES</span><span
-                                                            class="d-block d-sm-block d-md-block d-lg-none d-xl-none">ATTR</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="pills-three-tab" data-toggle="pill"
-                                                        href="#pills-three" role="tab" aria-controls="pills-three"
-                                                        aria-selected="false"><span
-                                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">LOT
-                                                            DETAILS</span><span
-                                                            class="d-block d-sm-block d-md-block d-lg-none d-xl-none">LOT</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="pills-four-tab" data-toggle="pill"
-                                                        href="#pills-four" role="tab" aria-controls="pills-four"
-                                                        aria-selected="false">Four</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="pills-five-tab" data-toggle="pill"
-                                                        href="#pills-five" role="tab" aria-controls="pills-five"
-                                                        aria-selected="false">ETA</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="pills-six-tab" data-toggle="pill"
-                                                        href="#pills-six" role="tab" aria-controls="pills-six"
-                                                        aria-selected="false"><span
-                                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">NON-SLAB
-                                                            PRICING</span><span
-                                                            class="d-block d-sm-block d-md-block d-lg-none d-xl-none">Price</span></a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content" id="pills-tabContent">
-                                                <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
-                                                    aria-labelledby="pills-one-tab">
-                                                    <div class="row m-0">
-                                                        <div class="col-12 p-0">
-                                                            <table class="table w-100 table-striped sub-main-table">
-                                                                <thead class="msi-bg-primary white">
-                                                                    <tr>
-                                                                        <th>
-                                                                            <div class="form-group">
-                                                                                <select class="form-control"
-                                                                                    id="exampleFormControlSelect1">
-                                                                                    <option>Show 10</option>
-                                                                                    <option>2</option>
-                                                                                    <option>3</option>
-                                                                                    <option>4</option>
-                                                                                    <option>5</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </th>
-                                                                        <th>WHS</th>
-                                                                        <th>On-Hand</th>
-                                                                        <th>Available</th>
-                                                                        <th class="td-hide">SO Qty Req Ship</th>
-                                                                        <th class="td-hide">TR Qty Req Ship</th>
-                                                                        <th class="td-hide">Qty On-Hand After Req Ship
-                                                                        </th>
-                                                                        <th class="td-hide">SO Qty On-Hand Not Req Ship
-                                                                        </th>
-                                                                        <th class="td-hide">TR Qty On-Hand Not Req Ship
-                                                                        </th>
-                                                                        <th class="td-hide">FAB Loose $ per SQFT</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tfoot>
-                                                                    <tr>
-                                                                        <td>Total</td>
-                                                                        <td>--</td>
-                                                                        <td>413367</td>
-                                                                        <td>292950</td>
-                                                                        <td class="td-hide">11753</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">401614</td>
-                                                                        <td class="td-hide">107344</td>
-                                                                        <td class="td-hide">1320</td>
-                                                                        <td class="td-hide">--</td>
-                                                                    </tr>
-                                                                </tfoot>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>AR, Phoenix</td>
-                                                                        <td>AZPH</td>
-                                                                        <td>608</td>
-                                                                        <td>385</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">608</td>
-                                                                        <td class="td-hide">223</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">$25.39</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>AR, Phoenix</td>
-                                                                        <td>AZPH</td>
-                                                                        <td>608</td>
-                                                                        <td>385</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">608</td>
-                                                                        <td class="td-hide">223</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">$25.39</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>AR, Phoenix</td>
-                                                                        <td>AZPH</td>
-                                                                        <td>608</td>
-                                                                        <td>385</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">608</td>
-                                                                        <td class="td-hide">223</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">$25.39</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>AR, Phoenix</td>
-                                                                        <td>AZPH</td>
-                                                                        <td>608</td>
-                                                                        <td>385</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">608</td>
-                                                                        <td class="td-hide">223</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">$25.39</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>AR, Phoenix</td>
-                                                                        <td>AZPH</td>
-                                                                        <td>608</td>
-                                                                        <td>385</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">608</td>
-                                                                        <td class="td-hide">223</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">$25.39</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>AR, Phoenix</td>
-                                                                        <td>AZPH</td>
-                                                                        <td>608</td>
-                                                                        <td>385</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">608</td>
-                                                                        <td class="td-hide">223</td>
-                                                                        <td class="td-hide">0</td>
-                                                                        <td class="td-hide">$25.39</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Tab Two -->
-                                                <div class="tab-pane fade" id="pills-two" role="tabpanel"
-                                                    aria-labelledby="pills-two-tab">
-                                                    <table class="table w-100 table-striped">
-                                                        <thead class="msi-bg-primary white">
-                                                            <tr>
-                                                                <th colspan='5'>
-                                                                    Units of Measure
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                    </table>
-                                                    <div class="row p-4">
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Size</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Pieces in Box</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Weight per Box</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Weight per PC</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Material</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>SQFT/Stock Unit</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Primary Color</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                        <div class="col-6 col-sm-4 col-md-3 col-lg col-xl">
-                                                            <h6>Product Line</h6>
-                                                            <p>123445.00</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Tab Three -->
-                                                <div class="tab-pane fade" id="pills-three" role="tabpanel"
-                                                    aria-labelledby="pills-three-tab">
-                                                    <div class="row m-0">
-                                                        <div class="col-12 p-0">
-                                                            <table class="table w-100 table-striped">
-                                                                <thead class="msi-bg-primary white">
-                                                                    <tr>
-                                                                        <th colspan='5'>
-                                                                            Units of Measure
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tr>
-                                                                    <td>AR, Phoenix</td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Tab Four -->
-                                                <div class="tab-pane fade" id="pills-four" role="tabpanel"
-                                                    aria-labelledby="pills-four-tab">
-                                                    <div class="row m-0">
-                                                        <div class="col-12 p-0">
-                                                            <table class="table w-100 table-striped">
-                                                                <thead class="msi-bg-primary white">
-                                                                    <tr>
-                                                                        <th colspan='5'>
-                                                                            Units of Measure
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tr>
-                                                                    <td>AR, Phoenix</td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Tab Five -->
-                                                <div class="tab-pane fade" id="pills-five" role="tabpanel"
-                                                    aria-labelledby="pills-five-tab">
-                                                    <div class="row m-0">
-                                                        <div class="col-12 p-0">
-                                                            <table class="table w-100 table-striped">
-                                                                <thead class="msi-bg-primary white">
-                                                                    <tr>
-                                                                        <th colspan='5'>
-                                                                            Units of Measure
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tr>
-                                                                    <td>AR, Phoenix</td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Tab Six -->
-                                                <div class="tab-pane fade" id="pills-six" role="tabpanel"
-                                                    aria-labelledby="pills-six-tab">
-                                                    <div class="row m-0">
-                                                        <div class="col-12 p-0">
-                                                            <table class="table w-100 table-striped">
-                                                                <thead class="msi-bg-primary white">
-                                                                    <tr>
-                                                                        <th colspan='5'>
-                                                                            Units of Measure
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tr>
-                                                                    <td>AR, Phoenix</td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-plus-circle success mr-3" aria-hidden="true"></i> <a
-                                        href="#">QSL-CALALAZA-3CM-BK</a></td>
-                                <td>CALAALTO ALTO 3CM POL QUARTZ</td>
-                                <td class="text-right">1,398,488</td>
-                                <td class="td-hide"><a href="#">Go To Website</a></td>
-                                <td class="td-hide">White Cool</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-plus-circle success mr-3" aria-hidden="true"></i> <a
-                                        href="#">QSL-CALALAZA-3CM-BK</a></td>
-                                <td>CALAALTO ALTO 3CM POL QUARTZ</td>
-                                <td class="text-right">1,398,488</td>
-                                <td class="td-hide"><a href="#">Go To Website</a></td>
-                                <td class="td-hide">White Cool</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-plus-circle success mr-3" aria-hidden="true"></i> <a
-                                        href="#">QSL-CALALAZA-3CM-BK</a></td>
-                                <td>CALAALTO ALTO 3CM POL QUARTZ</td>
-                                <td class="text-right">1,398,488</td>
-                                <td class="td-hide"><a href="#">Go To Website</a></td>
-                                <td class="td-hide">White Cool</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-plus-circle success mr-3" aria-hidden="true"></i> <a
-                                        href="#">QSL-CALALAZA-3CM-BK</a></td>
-                                <td>CALAALTO ALTO 3CM POL QUARTZ</td>
-                                <td class="text-right">1,398,488</td>
-                                <td class="td-hide"><a href="#">Go To Website</a></td>
-                                <td class="td-hide">White Cool</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-<footer>
-    <a class="pointer desktop-mobile" onclick="requestDesktopSite()"><i class="fa fa-desktop" aria-hidden="true"></i>Desktop Version</a>
-    <!-- <a class="pointer" onclick="requestDesktopSite()"><i class="fa fa-mobile" aria-hidden="true"></i> Desktop Version</a> -->
-</footer>
-</body>
-<script>
-    function requestDesktopSite(){
-     if(document.getElementsByTagName('meta')['viewport'].content=='width= 1440px;'){
-      document.getElementsByTagName('meta')['viewport'].content='width= 768px;';
-     }else {
-      document.getElementsByTagName('meta')['viewport'].content='width= 1440px;';
-     }
+    /* .btn-and {    border: 1px solid #ccc!important;
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius:10px!important;
     }
-</script>
- <script>
-     $('.desktop-mobile').click(function () {
-         if ($(this).find(".fa").hasClass('fa-desktop')){
-            $(this).find(".fa").removeClass("fa-desktop").addClass("fa-mobile");
-         }
-         else{
-             $(this).find(".fa").removeClass("fa-mobile").addClass("fa-desktop");	
-         }
-     });
-//</script>
-<script>
-    $('.btn-search').on('click', function () {
-        $('.abc').removeClass('centered');
-        $('.add').addClass('col-lg-6 col-xl-4');
-        $('.btnn').removeClass('text-center');
-        $('.btnn').addClass('col-lg-6 col-xl-4 text-center-xs');
-        $('.btnn').css('padding-top', '0.9rem');
-        $('.btnn').css('padding-bottom', '0.9rem');
-        $('.main-table').css('display', 'inline-table');
-        $('.h2-hide').hide();
+    .btn-or {    border: 1px solid #ccc!important;
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius:10px!important;
+    } */
 
-        if (window.innerWidth > 992) {
-            $('.left-and-right-inner-addon').css('width', '100%');
-        }
+    .btn-group, .btn-group-vertical{ border: 1px solid #ccc!important;border-radius:10px;}
+    .btn-and.active,.btn-or.active{border: 1px solid #8b6f4e!important;border-radius:10px!important;}
 
-
-    });
-</script>
-<script>
-    $('.btn-advance').on('click', function () {
-        $('.abc').removeClass('centered');
-        $('.advance-hide').css('display', 'block');
-        $('.h2-hide').hide();
-        $('.btnn').hide();
-        $('.main-table').hide();
-        $('.add').addClass('col-lg-12 col-xl-12');
-        if (window.innerWidth > 992) {
-            $('.left-and-right-inner-addon').css('width', '600px');
-        }
-    });
-</script>
-<script>
-    $('#ef').click(function () {
-        if ($(this).find(".fa").hasClass('fa-plus-circle success'))
-            $(this).find(".fa").removeClass("fa-plus-circle success").addClass("fa-minus-circle warning");
-        else
-            $(this).find(".fa").removeClass("fa-minus-circle warning").addClass("fa-plus-circle success");
-    });
-</script>
-<script>
-    $('.btn-toggle').click(function () {
-        $(this).find('.btn').toggleClass('active');
-
-        if ($(this).find('.btn-primary').length > 0) {
-            $(this).find('.btn').toggleClass('btn-primary');
-        }
-    });
-</script>
-
-</html>
+/*Media Query*/
+@media only screen and (max-width : 1990px){
+}
+@media only screen and (max-width : 1919px){
+}
+@media only screen and (max-width : 1759px){
+}
+@media only screen and (max-width : 1599px){
+}
+@media only screen and (max-width : 1420px) {
+}
+@media only screen and (max-width:1320px) {
+}
+@media only screen and (max-width:1260px) {
+}
+@media only screen and (max-width:1199px) {
+}
+@media only screen and (max-width:1080px) {
+}
+@media only screen and (max-width:1024px) {
+}
+@media only screen and (max-width:991px) {
+    .left-and-right-inner-addon{width:600px;}
+    .left-and-right-inner-addon i.right {right:40px;}
+    input.myInput[type=text]{padding-left:0px;text-align:center;}
+    .col-12.text-center-xs{text-align:center;}
+    .centered {position: static;transform: none;}
+    .h2-hide{display:none;}
+    .marg-auto{margin-left: auto!important;margin-right: auto!important;}
+}
+@media only screen and (max-width:920px) {
+}
+@media only screen and (max-width:768px) {
+}
+@media only screen and (max-width:750px) {
+}
+@media only screen and (max-width:720px) {
+}
+@media only screen and (max-width:703px) {
+}
+@media only screen and (max-width:680px) {
+}
+@media only screen and (max-width:640px) {
+    .pad-xs{padding:0!important;}
+    .pad-xs-rgt{padding-right:0!important;}
+}
+@media only screen and (max-width:600px) {
+    .left-and-right-inner-addon {width:100%;}
+}
+@media only screen and (max-width:480px) {
+    .td-hide{display:none;}
+}
+@media only screen and (max-width:414px) {
+    .navbar-brand-special{font-size:1.2em;}
+}
+@media only screen and (max-width:412px) {
+    .btn-primary.width-150{float:right;}
+    .btn-secondary.width-150{float:left;}
+}
+@media only screen and (max-width:375px) {
+    
+}
+@media only screen and (max-width:360px) {
+    .width-150{width:140px!important;}
+    
+}
+@media only screen and (max-width:320px) {
+}
