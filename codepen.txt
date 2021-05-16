@@ -1,3 +1,22 @@
+ .row-flex,
+  .row-flex>div[class*="col-"] {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex: 1 auto;
+      -ms-flex: 1 auto;
+      flex: 1 auto;
+  }
+
+  .row-flex-wrap {
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  }
+
+  .row-flex>div[class*="col-"] div {
+      width: 100%;
+  }
 <div class="js-responsive-table">
     <table>
         <tr class="thead">
@@ -13,7 +32,7 @@
             <td>Am Ort</td>
             <td>Kurze Beschreibung</td>
             <td>Uhrzeit</td>
-            <td>Uhrzeit (MItteleurop‰isch)</td>
+            <td>Uhrzeit (MItteleurop√§isch)</td>
         </tr>
         <tr>
        <td>+</td>     <td>Beispielkurs</td>
